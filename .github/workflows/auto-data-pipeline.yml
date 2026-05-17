@@ -1,0 +1,39 @@
+name: Auto Data Pipeline
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 04:00 UTC = 09:30 IST. Daily keeps late filings and corrections fresh.
+    - cron: "0 4 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run auto monthly pipeline
+        working-directory: auto_intel_platform/auto_intel
+        run: python -m pipeline.run
+
+      - name: Commit refreshed data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Refresh auto monthly operational data"
+          file_pattern: |
+            auto_intel_platform/auto_intel/data/*.csv
+            auto_intel_platform/auto_intel/logs/*.jsonl
