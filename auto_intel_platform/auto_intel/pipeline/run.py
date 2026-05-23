@@ -22,13 +22,14 @@ sys.path.insert(0, str(ROOT))
 
 from registry import OEM_REGISTRY, get_all_active
 from schema import ParserStatus
-from pipeline.fetch import fetch_all_companies
+from pipeline.fetch_ir import fetch_all_ir          # PRIMARY: OEM IR pages (legal)
 from pipeline.extract import extract_from_pdf
 from pipeline.validate import validate_batch
 from pipeline.store import (
     load_normalized, save_normalized, save_granular,
     save_review_queue, update_filing_status,
 )
+from config import SOURCE_POLICY
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 LOG_DIR = ROOT / "logs"
@@ -104,28 +105,40 @@ def run_pipeline(
 
     # ── STEP 1: Fetch announcements ────────────────────────────────────────────
     logger.info("=" * 60)
-    logger.info("STEP 1: Fetching announcements from NSE/BSE")
+    logger.info("STEP 1: Fetching announcements from OEM Investor Relations pages")
+    logger.info("        (Primary source: companies' own public IR pages — 100% legal)")
 
-    # Group by NSE symbol (multiple OEM keys may share a symbol e.g. TATAMOTORS)
-    symbol_to_keys = {}
-    for oem in active_oems:
-        sym = oem.nse_symbol
-        symbol_to_keys.setdefault(sym, []).append(oem.key)
+    oem_keys_to_fetch = [o.key for o in active_oems]
+    lookback = SOURCE_POLICY.get("ir_lookback_days", 60)
 
-    # Fetch once per symbol, then fan out to OEM keys
-    raw_by_symbol = fetch_all_companies(
-        company_keys=list(symbol_to_keys.keys()),
-        from_date=from_date,
-        to_date=to_date,
+    # PRIMARY: OEM IR pages
+    raw_by_oem = fetch_all_ir(
+        oem_keys=oem_keys_to_fetch,
+        lookback_days=lookback,
     )
+    for key, anns in raw_by_oem.items():
+        summary["fetched"] += len(anns)
 
-    # Distribute to OEM keys
-    raw_by_oem = {}
-    for sym, oem_keys in symbol_to_keys.items():
-        announcements = raw_by_symbol.get(sym, [])
-        for key in oem_keys:
-            raw_by_oem[key] = announcements
-        summary["fetched"] += len(announcements)
+    # SECONDARY (disabled by default — requires NSE/BSE data license)
+    if SOURCE_POLICY.get("use_exchange_apis", False):
+        logger.info("STEP 1b: Exchange API fallback enabled — fetching from NSE/BSE")
+        from pipeline.fetch import fetch_all_companies  # only imported if licensed
+        symbol_to_keys: dict[str, list[str]] = {}
+        for oem in active_oems:
+            symbol_to_keys.setdefault(oem.nse_symbol, []).append(oem.key)
+        raw_by_symbol = fetch_all_companies(
+            company_keys=list(symbol_to_keys.keys()),
+            from_date=from_date,
+            to_date=to_date,
+        )
+        # Merge: only fill OEMs that got 0 results from IR pages
+        for sym, keys_for_sym in symbol_to_keys.items():
+            exchange_anns = raw_by_symbol.get(sym, [])
+            for key in keys_for_sym:
+                if not raw_by_oem.get(key):
+                    raw_by_oem[key] = exchange_anns
+                    summary["fetched"] += len(exchange_anns)
+                    logger.info(f"  {key}: IR page empty, using exchange fallback ({len(exchange_anns)} results)")
 
     # ── STEP 2: Filter ────────────────────────────────────────────────────────
     logger.info("STEP 2: Filtering relevant filings")

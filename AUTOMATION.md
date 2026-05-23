@@ -9,15 +9,20 @@ chain.
 
 ## Source priority
 
-1. **NSE corporate announcements** (primary)
-2. **BSE corporate announcements** (fallback)
-3. **OEM investor-relations pages** (cross-check / redundancy)
-4. **Manual review queue** (parser failures, conflicts, delayed filings)
+1. **OEM Investor Relations pages** (primary — 100% legal, companies publish this themselves)
+2. **Manual review queue** (IR page unreachable, parser failure, or data conflict)
 
-When two sources are seen for the same `(oem, segment, month)`, the pipeline
-runs `cross_source_agreement` and accepts the row only if the totals match
-within 2%. Otherwise it routes the row to the review queue with status
-`CONFLICT`.
+NSE/BSE exchange APIs are **disabled by default** (`use_exchange_apis: False` in `config.py`).
+They require a valid data license under NSE/BSE Terms of Service.
+Only enable if you hold such a license.
+
+The underlying data is identical — OEM IR press-release PDFs are the same documents
+filed on the exchanges. Going directly to the source is legally cleaner and more
+stable long-term (exchange API endpoints change; company IR pages rarely do).
+
+When two IR page entries appear for the same `(oem, segment, month)`, the pipeline
+runs `cross_source_agreement` and accepts only if totals match within 2%.
+Otherwise routes to the review queue with status `CONFLICT`.
 
 ## Scheduling
 

@@ -245,6 +245,20 @@ VALIDATION = {
     "confidence_threshold":   0.6,    # minimum score to store data
 }
 
+# ─── DATA SOURCE POLICY ───────────────────────────────────────────────────────
+# Primary source: OEM Investor Relations pages (100% legal — companies publish
+# this data themselves and intend for it to be read publicly).
+#
+# use_exchange_apis: False (default) — uses only OEM IR pages.
+#   Set True ONLY if you hold a valid data license from NSE/BSE.
+#   NSE/BSE JSON endpoints have Terms of Service that restrict automated access
+#   without a license, so we default off for long-term legal compliance.
+SOURCE_POLICY = {
+    "use_ir_pages":       True,   # primary — OEM's own public IR/press pages
+    "use_exchange_apis":  False,  # secondary — requires NSE/BSE data license
+    "ir_lookback_days":   60,     # how far back to scan IR pages each run
+}
+
 # ─── INSIGHT ENGINE ───────────────────────────────────────────────────────────
 INSIGHT_CONFIG = {
     "use_llm":            False,      # True requires ANTHROPIC_API_KEY in env; False = fully free
