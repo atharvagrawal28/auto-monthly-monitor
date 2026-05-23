@@ -33,6 +33,8 @@ from dashboard.views import (
     filing_tracker,
     data_quality,
     review_queue,
+    retail_insights,
+    forecast,
 )
 
 
@@ -48,12 +50,17 @@ apply_theme()
 
 # ── Navigation map ───────────────────────────────────────────────────────────
 NAV = [
+    # ── Wholesale section ─────────────────────────────────────────────────────
     ("Overview",         "Industry headline, segment heat, top movers", overview.render),
     ("Monitoring",       "This-month change deep-dive & alerts",         monitoring.render),
     ("Deep Dive",        "Single-OEM analyst profile",                   deep_dive.render),
     ("Market Share",     "Ranked share, HHI, share migration",           market_share.render),
     ("Exports",          "Export volume, mix, decoupling check",         exports_view.render),
     ("EV Penetration",   "Industry EV share + per-OEM exposure",         ev_penetration.render),
+    # ── Retail section (separate data, FADA source) ───────────────────────────
+    ("Retail Pulse",     "FADA retail registrations & dealer inventory",  retail_insights.render),
+    ("Forecast",         "3-month demand forecast · Holt-Winters model",  forecast.render),
+    # ── Data ops ──────────────────────────────────────────────────────────────
     ("Filing Tracker",   "Filing SLA & data freshness",                  filing_tracker.render),
     ("Data Quality",     "Reliability scorecard & anomaly feed",         data_quality.render),
     ("Review Queue",     "Reviewer workflow",                            review_queue.render),

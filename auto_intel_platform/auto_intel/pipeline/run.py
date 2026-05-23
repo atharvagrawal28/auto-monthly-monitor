@@ -301,6 +301,20 @@ def run_pipeline(
     _log_summary(summary)
     _save_run_log(summary)
 
+    # ── FADA retail fetch (separate pipeline, separate CSV) ────────────────────
+    logger.info("STEP 7: Fetching FADA retail registration data")
+    logger.info("        (Separate from wholesale — stored in data/retail.csv)")
+    try:
+        from pipeline.fetch_fada import fetch_fada_retail, save_retail
+        retail_rows = fetch_fada_retail(lookback_days=90)
+        if retail_rows:
+            written_retail = save_retail(retail_rows)
+            logger.info(f"  FADA: {len(retail_rows)} new rows, {written_retail} total in retail.csv")
+        else:
+            logger.info("  FADA: 0 rows fetched (page may not have updated yet)")
+    except Exception as e:
+        logger.warning(f"  FADA retail fetch failed: {e} — retail.csv unchanged")
+
     # ── Monthly close summary ───────────────────────────────────────────────
     try:
         from pipeline.monthly_close import (
