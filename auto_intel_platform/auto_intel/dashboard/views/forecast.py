@@ -218,7 +218,7 @@ def render():
             "label": fm,
             "value": C.fmt_units(int(fv)),
             "unit":  "units",
-            "foot":  f"80% CI: {int(lo):,} – {int(hi):,}",
+            "foot":  f"80% CI: {C.fmt_indian(int(lo))} – {C.fmt_indian(int(hi))}",
             "delta_dir": "up" if fv > trailing_6m else "down",
         })
 
@@ -371,9 +371,9 @@ def render():
 
     fc_table = pd.DataFrame({
         "Month":         fcast_months,
-        "Forecast":      [f"{int(v):,}" for v in fcast.values],
-        "Lower (80% CI)": [f"{int(v):,}" for v in lower.values],
-        "Upper (80% CI)": [f"{int(v):,}" for v in upper.values],
+        "Forecast":      [C.fmt_indian(int(v)) for v in fcast.values],
+        "Lower (80% CI)": [C.fmt_indian(int(v)) for v in lower.values],
+        "Upper (80% CI)": [C.fmt_indian(int(v)) for v in upper.values],
         "vs Trailing 6M": [
             f"{(v - trailing_6m)/trailing_6m*100:+.1f}%" if trailing_6m else "—"
             for v in fcast.values

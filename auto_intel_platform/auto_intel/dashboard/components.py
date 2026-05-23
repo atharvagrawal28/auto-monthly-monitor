@@ -127,13 +127,34 @@ def chip(text: str, color: str = "neutral") -> str:
 
 # ── Number formatters ───────────────────────────────────────────────────────
 
-def fmt_units(value, dash: str = "—") -> str:
-    if value is None or (isinstance(value, float) and pd.isna(value)):
+def fmt_indian(n, dash: str = "—", sign: bool = False) -> str:
+    """
+    Indian comma style: 1,82,718 (not 182,718).
+    Last group = 3 digits, every group before = 2 digits.
+    """
+    if n is None or (isinstance(n, float) and pd.isna(n)):
         return dash
     try:
-        return f"{int(round(float(value))):,}"
+        n = int(round(float(n)))
     except (TypeError, ValueError):
         return dash
+    negative = n < 0
+    s = str(abs(n))
+    if len(s) <= 3:
+        result = s
+    else:
+        result = s[-3:]
+        s = s[:-3]
+        while s:
+            result = s[-2:] + "," + result
+            s = s[:-2]
+    prefix = "-" if negative else ("+" if sign else "")
+    return prefix + result
+
+
+def fmt_units(value, dash: str = "—") -> str:
+    """Format a whole-number unit count with Indian comma style."""
+    return fmt_indian(value, dash=dash)
 
 
 def fmt_pct(value, dash: str = "—", precision: int = 1) -> str:
@@ -166,7 +187,7 @@ def fmt_lakh(value, dash: str = "—") -> str:
         return f"{v/1e7:.2f} Cr"
     if abs(v) >= 1e5:
         return f"{v/1e5:.2f} L"
-    return f"{v:,.0f}"
+    return fmt_indian(int(round(v)))
 
 
 def delta_dir(value) -> str:

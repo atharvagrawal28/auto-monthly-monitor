@@ -106,7 +106,7 @@ def render_sidebar() -> str:
                 <div><span style='color:#94A3B8;'>OEMs tracked</span>
                     <span style='float:right;color:#F8FAFC;font-weight:600;'>{n_oems}</span></div>
                 <div><span style='color:#94A3B8;'>Total rows</span>
-                    <span style='float:right;color:#F8FAFC;font-weight:600;'>{rows:,}</span></div>
+                    <span style='float:right;color:#F8FAFC;font-weight:600;'>{C.fmt_indian(rows)}</span></div>
                 <div><span style='color:#94A3B8;'>Review queue</span>
                     <span style='float:right;color:{"#F87171" if review_n else "#15803D"};font-weight:600;'>{review_n}</span></div>
                 </div>
@@ -155,7 +155,7 @@ def main():
         meta=[
             ("Latest filing month", lm or "—"),
             ("OEMs", str(n_oems)),
-            ("Rows", f"{rows:,}"),
+            ("Rows", C.fmt_indian(rows)),
             ("Last refreshed", datetime.now().strftime("%d %b %Y %H:%M")),
         ],
     )

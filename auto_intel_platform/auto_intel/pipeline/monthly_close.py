@@ -178,7 +178,13 @@ def write_markdown_report(report: dict, out_dir: Path | None = None) -> Path:
     lines.append("## Industry")
     lines.append("")
     if report["industry_total"]:
-        lines.append(f"- Total wholesale: **{report['industry_total']:,}** units")
+        def _ind(n):
+            s = str(abs(int(n)))
+            if len(s) <= 3: return s
+            r, s = s[-3:], s[:-3]
+            while s: r, s = s[-2:] + "," + r, s[:-2]
+            return r
+        lines.append(f"- Total wholesale: **{_ind(report['industry_total'])}** units")
     if report["industry_yoy_pct"] is not None:
         lines.append(f"- YoY:             **{report['industry_yoy_pct']*100:+.1f}%**")
     if report["ev_penetration"] is not None:

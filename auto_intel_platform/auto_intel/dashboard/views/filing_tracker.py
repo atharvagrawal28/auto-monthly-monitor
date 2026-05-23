@@ -118,7 +118,7 @@ def _cell_html(status: str, days_late, units) -> str:
     if status == "ON_TIME" and units:
         extra = (
             f"<br><span style='font-size:0.72rem;color:#475569;'>"
-            f"{int(units):,}</span>"
+            f"{C.fmt_indian(int(units))}</span>"
         )
     return f"{pill}{extra}"
 

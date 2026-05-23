@@ -117,7 +117,7 @@ def render():
         },
         {
             "label": "Monthly Spread",
-            "value": f"{'+' if spread>=0 else ''}{spread:,}",
+            "value": C.fmt_indian(spread, sign=True),
             "unit":  "units",
             "delta_dir": "down" if spread > 0 else "up",
             "foot":  "Wholesale − Retail (positive = stock building)",
@@ -207,9 +207,9 @@ def render():
                 "Inventory (units)": f"{int(row['cum_inventory']):+,}",
                 "Weeks of Supply":   f"{row['weeks_of_supply']:.1f}w" if not pd.isna(row.get("weeks_of_supply")) else "—",
                 "Status":            lbl,
-                "Wholesale":         f"{int(row['wholesale_total']):,}",
-                "Retail":            f"{int(row['retail_total']):,}",
-                "Monthly Spread":    f"{int(row['monthly_spread']):+,}",
+                "Wholesale":         C.fmt_indian(int(row['wholesale_total'])),
+                "Retail":            C.fmt_indian(int(row['retail_total'])),
+                "Monthly Spread":    C.fmt_indian(int(row['monthly_spread']), sign=True),
             })
 
         st.dataframe(
