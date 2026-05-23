@@ -74,15 +74,15 @@ def kpi(
         if delta else ""
     )
     foot_html  = f'<div class="kpi-foot">{html.escape(foot)}</div>' if foot else ""
+    # Single-line HTML — prevents Streamlit's markdown parser from treating
+    # blank-line-separated <div> tags as raw text blocks.
     st.markdown(
-        f"""
-        <div class="kpi-card">
-            <div class="kpi-label">{html.escape(label)}</div>
-            <div class="kpi-value">{html.escape(value)}{unit_html}</div>
-            {delta_html}
-            {foot_html}
-        </div>
-        """,
+        f'<div class="kpi-card">'
+        f'<div class="kpi-label">{html.escape(label)}</div>'
+        f'<div class="kpi-value">{html.escape(value)}{unit_html}</div>'
+        f'{delta_html}'
+        f'{foot_html}'
+        f'</div>',
         unsafe_allow_html=True,
     )
 
