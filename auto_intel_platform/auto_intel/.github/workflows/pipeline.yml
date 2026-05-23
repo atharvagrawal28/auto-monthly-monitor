@@ -2,7 +2,7 @@ name: Auto Intel Daily Pipeline
 
 on:
   schedule:
-    # Daily baseline at 09:30 IST
+    # Daily baseline at 09:30 IST (04:00 UTC)
     - cron: "0 4 * * *"
     # Filing-window: 4x/day on 1st-8th of each month (09:30, 13:30, 17:30, 21:30 IST)
     - cron: "0 4,8,12,16 1-8 * *"
@@ -64,18 +64,51 @@ jobs:
           fi
           python pipeline/run.py $ARGS
 
-      # ── Surface close report in Actions summary ──────────────────────────
+      # ── Integrity check ───────────────────────────────────────────────────
+      # Fails the workflow (exit 1) if arithmetic is wrong or OEMs are missing
+      # past their filing deadline. This is the quality gate.
+      - name: Run data integrity check
+        run: |
+          python pipeline/integrity_check.py
+        # Continue even if integrity check fails so we can see the report
+        continue-on-error: true
+        id: integrity
+
+      # ── Surface integrity report in Actions summary ───────────────────────
+      - name: Surface integrity report
+        if: always()
+        run: |
+          latest=$(ls -1 logs/integrity_*.md 2>/dev/null | sort | tail -1 || true)
+          if [ -n "$latest" ]; then
+            echo "## Data Integrity Report" >> $GITHUB_STEP_SUMMARY
+            cat "$latest" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      # ── Surface close report in Actions summary ───────────────────────────
       - name: Surface close report
         if: always()
         run: |
           latest=$(ls -1 logs/close_report_*.md 2>/dev/null | sort | tail -1 || true)
           if [ -n "$latest" ]; then
-            echo "## Monthly close report" >> $GITHUB_STEP_SUMMARY
+            echo "## Monthly Close Report" >> $GITHUB_STEP_SUMMARY
             cat "$latest" >> $GITHUB_STEP_SUMMARY
           fi
 
+      # ── Fail if integrity found CRITICAL/HIGH issues ──────────────────────
+      # This makes the GitHub Actions run go RED so you notice immediately.
+      # Go to: repo → Actions → the failed run → read the integrity report
+      # Then open the dashboard → Review Queue → Manual Entry to fix it.
+      - name: Fail if integrity issues found
+        if: steps.integrity.outcome == 'failure'
+        run: |
+          echo "❌ Integrity check found CRITICAL or HIGH issues."
+          echo "Open the dashboard → Review Queue → Enter Data Manually to fix missing OEMs."
+          echo "Then re-run this workflow manually from GitHub Actions."
+          exit 1
+
       # ── Commit updated data ───────────────────────────────────────────────
       - name: Commit updated datasets
+        if: steps.integrity.outcome != 'failure'
         run: |
           git config user.name  "Auto Intel Bot"
           git config user.email "auto-intel-bot@noreply.github.com"
@@ -85,11 +118,27 @@ jobs:
           git diff --staged --quiet || git commit -m "data: pipeline run $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
 
+      # ── Commit even if integrity failed (so report is visible) ───────────
+      - name: Commit logs even on integrity failure
+        if: steps.integrity.outcome == 'failure'
+        run: |
+          git config user.name  "Auto Intel Bot"
+          git config user.email "auto-intel-bot@noreply.github.com"
+          git add logs/ || true
+          git diff --staged --quiet || git commit -m "logs: integrity failure $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push || true
+
       # ── Summary ──────────────────────────────────────────────────────────
       - name: Pipeline summary
         if: always()
         run: |
-          echo "Pipeline run complete"
+          echo "## Run summary" >> $GITHUB_STEP_SUMMARY
+          echo "- Date: $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- Integrity: ${{ steps.integrity.outcome }}" >> $GITHUB_STEP_SUMMARY
+          if [ -f data/normalized.csv ]; then
+            rows=$(tail -n +2 data/normalized.csv | wc -l)
+            echo "- Rows in dataset: $rows" >> $GITHUB_STEP_SUMMARY
+          fi
           if [ -f logs/run_history.jsonl ]; then
             tail -1 logs/run_history.jsonl
           fi

@@ -192,6 +192,10 @@ def fetch_ir_announcements(
     """
     Fetch monthly sales press releases from the OEM's own IR page.
 
+    Strategy (in order):
+      1. Try direct PDF URL templates (works even on JS-rendered sites)
+      2. Fall back to scraping the IR page with BeautifulSoup
+
     Returns announcement dicts with _source="OEM_IR" — same shape as
     NSE/BSE fetcher output so downstream code is unchanged.
     """
@@ -201,6 +205,35 @@ def fetch_ir_announcements(
         logger.warning(f"[IR] No IR config for {oem_key} — skipping")
         return []
 
+    # ── Strategy 1: Direct PDF URL (bypasses JS rendering) ───────────────
+    try:
+        from pipeline.direct_pdf_urls import try_find_pdf
+        today = datetime.today()
+        # Try last closed month first, then current month
+        from datetime import timedelta
+        prior = today.replace(day=1) - timedelta(days=1)
+        direct_url = try_find_pdf(oem_key, prior.year, prior.month)
+        if not direct_url:
+            direct_url = try_find_pdf(oem_key, today.year, today.month)
+        if direct_url:
+            ann = {
+                "_source":     "OEM_IR",
+                "_id":         _make_id(oem_key, direct_url),
+                "symbol":      oem.nse_symbol,
+                "company":     oem.display_name,
+                "title":       f"{oem.display_name} Monthly Sales {prior.strftime('%b %Y')}",
+                "category":    "Monthly Sales",
+                "exchange_dt": prior.strftime("%Y-%m-%d"),
+                "file_url":    direct_url,
+                "attachment":  direct_url.split("/")[-1],
+                "raw":         {"method": "direct_pdf", "url": direct_url},
+            }
+            logger.info(f"[IR] {oem_key}: found via direct PDF URL → {direct_url}")
+            return [ann]
+    except Exception as e:
+        logger.debug(f"[IR] {oem_key}: direct PDF attempt error — {e}")
+
+    # ── Strategy 2: Scrape IR page (works on static HTML sites) ──────────
     session  = _make_session()
     cutoff   = datetime.today() - timedelta(days=lookback_days)
     extra_kw = cfg.get("extra", [])
