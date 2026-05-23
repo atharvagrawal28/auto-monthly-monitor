@@ -213,9 +213,16 @@ def sparkline(values: list[float], width: int = 110, height: int = 28,
 
 def footer(left: str, right: str | None = None) -> None:
     right = right or f"Generated {datetime.now().strftime('%d %b %Y %H:%M')}"
+    built_by = (
+        'Built by <a href="https://www.linkedin.com/in/atharv-agrawal-295743233" '
+        'target="_blank" style="color:#94A3B8;text-decoration:underline;">Atharv Agrawal</a>'
+    )
     st.markdown(
-        f'<div class="app-footer"><span>{html.escape(left)}</span>'
-        f'<span>{html.escape(right)}</span></div>',
+        f'<div class="app-footer">'
+        f'<span>{html.escape(left)}</span>'
+        f'<span style="color:#64748B;font-size:0.72rem;">{built_by}</span>'
+        f'<span>{html.escape(right)}</span>'
+        f'</div>',
         unsafe_allow_html=True,
     )
 
