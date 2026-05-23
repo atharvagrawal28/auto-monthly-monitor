@@ -1,9 +1,22 @@
-name: Auto Data Pipeline
+name: Auto Data Pipeline — Daily baseline
+
+# Runs once a day at 09:30 IST. The heavy lifting (multi-run-per-day during
+# the 1st-7th filing window) is handled by auto-data-pipeline-filing-window.yml
+# to keep this baseline workflow lean.
 
 on:
   workflow_dispatch:
+    inputs:
+      force_download:
+        description: "Force re-download PDFs"
+        required: false
+        default: "false"
+      oems:
+        description: "Specific OEM keys (space separated, blank = all active)"
+        required: false
+        default: ""
   schedule:
-    # 04:00 UTC = 09:30 IST. Daily keeps late filings and corrections fresh.
+    # 04:00 UTC = 09:30 IST
     - cron: "0 4 * * *"
 
 permissions:
@@ -12,7 +25,7 @@ permissions:
 jobs:
   refresh-data:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 45
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -28,12 +41,32 @@ jobs:
 
       - name: Run auto monthly pipeline
         working-directory: auto_intel_platform/auto_intel
-        run: python -m pipeline.run
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.force_download }}" = "true" ]; then
+            ARGS="$ARGS --force"
+          fi
+          if [ -n "${{ github.event.inputs.oems }}" ]; then
+            ARGS="$ARGS --oems ${{ github.event.inputs.oems }}"
+          fi
+          python -m pipeline.run $ARGS
+
+      - name: Surface close report in run summary
+        if: always()
+        working-directory: auto_intel_platform/auto_intel
+        run: |
+          latest=$(ls -1 logs/close_report_*.md 2>/dev/null | sort | tail -1 || true)
+          if [ -n "$latest" ]; then
+            echo "## Monthly close report" >> $GITHUB_STEP_SUMMARY
+            cat "$latest" >> $GITHUB_STEP_SUMMARY
+          fi
 
       - name: Commit refreshed data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Refresh auto monthly operational data"
+          commit_message: "data: daily refresh"
           file_pattern: |
             auto_intel_platform/auto_intel/data/*.csv
             auto_intel_platform/auto_intel/logs/*.jsonl
+            auto_intel_platform/auto_intel/logs/close_report_*.md
+            auto_intel_platform/auto_intel/logs/close_report_*.json

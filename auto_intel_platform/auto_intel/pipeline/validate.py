@@ -7,23 +7,35 @@ Rules:
   3. Anomaly: YoY change > ±50% → FLAGGED
   4. Duplicate: (company, segment, month) already in dataset
   5. Reconciliation: new vs existing — conflict if >10% delta
+  6. Z-score: row deviates >3σ from OEM's trailing 12M distribution → FLAGGED
+  7. Granular check (when granular rows provided): Σ(sub-segments) ≈ total ±3%
+  8. Cross-source check (when multiple sources present for same row): ≤2% delta
+
+Every flagged row carries a 'review_note' explaining which rule fired.
 """
 
 import logging
 from typing import Optional
+import numpy as np
 import pandas as pd
 
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).parent.parent))
-from schema import NormalizedRow, ParserStatus, NORMALIZED_COLUMNS
+from schema import NormalizedRow, GranularRow, ParserStatus, NORMALIZED_COLUMNS
+from pipeline.reconcile import (
+    cross_source_agreement, granular_reconcile, downgrade_on_failure,
+)
 
 logger = logging.getLogger(__name__)
 
-ARITHMETIC_TOLERANCE = 0.05
+ARITHMETIC_TOLERANCE  = 0.05
 ANOMALY_YOY_THRESHOLD = 0.50
+ANOMALY_Z_THRESHOLD   = 3.0     # |z| ≥ 3σ vs OEM's trailing 12M
 MIN_UNITS = 10
 MAX_UNITS = 2_000_000
-CONFLICT_THRESHOLD = 0.10   # 10% delta → CONFLICT
+CONFLICT_THRESHOLD = 0.10
+GRANULAR_TOLERANCE = 0.03
+CROSS_SOURCE_TOLERANCE = 0.02
 
 
 def validate(row: NormalizedRow, existing_df: pd.DataFrame) -> NormalizedRow:
@@ -52,6 +64,11 @@ def validate(row: NormalizedRow, existing_df: pd.DataFrame) -> NormalizedRow:
     if row.yoy_pct is not None:
         if abs(row.yoy_pct) > ANOMALY_YOY_THRESHOLD:
             issues.append(f"YoY anomaly: {row.yoy_pct:.1%}")
+
+    # ── 3b. Z-score anomaly vs OEM's own trailing 12 months ──────────────────
+    z = _z_score_vs_history(row, existing_df)
+    if z is not None and abs(z) >= ANOMALY_Z_THRESHOLD:
+        issues.append(f"Z-score anomaly: {z:+.2f}σ vs T12M")
 
     # ── 4. Reconciliation against existing data ───────────────────────────────
     recon_issue = _reconcile(row, existing_df)
@@ -190,17 +207,52 @@ def validate_batch(
     rows: list[NormalizedRow],
     existing_df: pd.DataFrame,
     history_df: pd.DataFrame,
+    granular_by_pk: Optional[dict[tuple, list[GranularRow]]] = None,
 ) -> tuple[list[NormalizedRow], list[NormalizedRow]]:
     """
     Validate a batch of rows.
+
+    Args:
+        rows: NormalizedRow list to validate.
+        existing_df: current stored normalized dataset (for reconciliation).
+        history_df: historical dataset (for YoY/MoM growth + z-score).
+        granular_by_pk: optional {(oem,segment,month): [GranularRow]} so we
+            can reconcile sub-segment sums against the parent total.
 
     Returns:
         (accepted_rows, review_queue_rows)
     """
     accepted = []
     review   = []
+    granular_by_pk = granular_by_pk or {}
 
-    for row in rows:
+    # ── Pre-pass: cross-source agreement ────────────────────────────────────
+    # Group same (oem,segment,month) rows from multiple sources; keep one.
+    by_pk: dict[tuple, list[NormalizedRow]] = {}
+    for r in rows:
+        by_pk.setdefault(r.pk, []).append(r)
+
+    consolidated = []
+    for pk, group in by_pk.items():
+        if len(group) == 1:
+            consolidated.append(group[0])
+            continue
+        cs = cross_source_agreement(group, tolerance=CROSS_SOURCE_TOLERANCE)
+        # Pick the row whose total matches the agreed median (or the first)
+        if cs.ok and cs.agreed_total is not None:
+            picked = min(group, key=lambda r: abs((r.total or 0) - cs.agreed_total))
+            picked = downgrade_on_failure(picked, cs)
+            consolidated.append(picked)
+            logger.info(f"[Validate] cross-source OK for {pk}: {cs.note}")
+        else:
+            picked = group[0]
+            picked.parser_status = ParserStatus.CONFLICT
+            picked.review_note = (picked.review_note + " | " + cs.note).strip(" |")
+            consolidated.append(picked)
+            logger.warning(f"[Validate] cross-source FAIL for {pk}: {cs.note}")
+
+    # ── Main pass ───────────────────────────────────────────────────────────
+    for row in consolidated:
         duplicate_note = _reconcile(row, existing_df)
         if duplicate_note and duplicate_note.startswith("DUPLICATE"):
             logger.info(
@@ -212,11 +264,54 @@ def validate_batch(
         row = compute_growth(row, history_df)
         row = validate(row, existing_df)
 
+        # Granular check (only when sub-rows supplied)
+        gr = granular_by_pk.get(row.pk, [])
+        if gr:
+            gres = granular_reconcile(row, gr, tolerance=GRANULAR_TOLERANCE)
+            row = downgrade_on_failure(row, gres)
+
         if row.parser_status in (ParserStatus.NEEDS_REVIEW, ParserStatus.CONFLICT):
             review.append(row)
-            logger.warning(f"→ REVIEW QUEUE: {row.company_key} {row.filing_month_year} [{row.parser_status}]")
+            logger.warning(f"-> REVIEW QUEUE: {row.company_key} {row.filing_month_year} [{row.parser_status}]")
         else:
             accepted.append(row)
 
     logger.info(f"Validation: {len(accepted)} accepted, {len(review)} in review queue")
     return accepted, review
+
+
+# ── Z-score helper ──────────────────────────────────────────────────────────
+
+def _z_score_vs_history(
+    row: NormalizedRow,
+    history_df: pd.DataFrame,
+    window: int = 12,
+    min_samples: int = 6,
+) -> Optional[float]:
+    """
+    Z-score of row.total vs the OEM/segment's prior `window` months.
+    Returns None when fewer than `min_samples` history rows exist.
+    """
+    if history_df is None or history_df.empty or row.total is None:
+        return None
+    mask = (
+        (history_df["company_key"] == row.company_key) &
+        (history_df["segment"]     == row.segment)
+    )
+    h = history_df[mask].copy()
+    if h.empty:
+        return None
+
+    h["_dt"] = pd.to_datetime(h["filing_month_year"] + "-01", errors="coerce")
+    cur_dt = pd.to_datetime(row.filing_month_year + "-01", errors="coerce")
+    h = h[h["_dt"] < cur_dt].sort_values("_dt").tail(window)
+    h["total"] = pd.to_numeric(h["total"], errors="coerce")
+    h = h.dropna(subset=["total"])
+    if len(h) < min_samples:
+        return None
+
+    mean = h["total"].mean()
+    std  = h["total"].std()
+    if not std or std == 0:
+        return None
+    return round((row.total - mean) / std, 2)

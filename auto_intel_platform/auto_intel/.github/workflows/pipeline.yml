@@ -2,7 +2,10 @@ name: Auto Intel Daily Pipeline
 
 on:
   schedule:
-    - cron: "0 4 * * *"   # 4:00 AM UTC = 9:30 AM IST daily
+    # Daily baseline at 09:30 IST
+    - cron: "0 4 * * *"
+    # Filing-window: 4x/day on 1st-8th of each month (09:30, 13:30, 17:30, 21:30 IST)
+    - cron: "0 4,8,12,16 1-8 * *"
   workflow_dispatch:        # allow manual trigger from GitHub UI
     inputs:
       force_download:
@@ -60,6 +63,16 @@ jobs:
             ARGS="$ARGS --oems ${{ github.event.inputs.oems }}"
           fi
           python pipeline/run.py $ARGS
+
+      # ── Surface close report in Actions summary ──────────────────────────
+      - name: Surface close report
+        if: always()
+        run: |
+          latest=$(ls -1 logs/close_report_*.md 2>/dev/null | sort | tail -1 || true)
+          if [ -n "$latest" ]; then
+            echo "## Monthly close report" >> $GITHUB_STEP_SUMMARY
+            cat "$latest" >> $GITHUB_STEP_SUMMARY
+          fi
 
       # ── Commit updated data ───────────────────────────────────────────────
       - name: Commit updated datasets

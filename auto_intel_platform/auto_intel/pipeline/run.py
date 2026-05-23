@@ -250,7 +250,17 @@ def run_pipeline(
     # ── Batch validate ─────────────────────────────────────────────────────────
     logger.info("STEP 5: Validating batch")
 
-    accepted, review = validate_batch(norm_rows_collected, existing_df, existing_df)
+    # Group granular rows by parent normalized PK for reconciliation
+    granular_by_pk: dict[tuple, list] = {}
+    for g in all_granular:
+        granular_by_pk.setdefault(
+            (g.company_key, g.segment, g.filing_month_year), []
+        ).append(g)
+
+    accepted, review = validate_batch(
+        norm_rows_collected, existing_df, existing_df,
+        granular_by_pk=granular_by_pk,
+    )
     summary["accepted"]     = len(accepted)
     summary["review_queue"] = len(review)
 
@@ -277,6 +287,32 @@ def run_pipeline(
 
     _log_summary(summary)
     _save_run_log(summary)
+
+    # ── Monthly close summary ───────────────────────────────────────────────
+    try:
+        from pipeline.monthly_close import (
+            build_close_report, write_markdown_report, write_json_report,
+        )
+        from pipeline.store import load_normalized, load_granular
+        norm = load_normalized()
+        gran = load_granular()
+        report = build_close_report(norm, gran)
+        write_markdown_report(report)
+        write_json_report(report)
+        summary["close_report"] = {
+            "target_month":  report["target_month"],
+            "oems_filed":    report["oems_filed"],
+            "oems_expected": report["oems_expected"],
+            "filings_late":  report["filings_late"],
+            "filings_missing": report["filings_missing"],
+        }
+        logger.info(
+            f"Close report ({report['target_month']}): "
+            f"{report['oems_filed']}/{report['oems_expected']} filed, "
+            f"{report['filings_late']} late, {report['filings_missing']} missing"
+        )
+    except Exception as e:
+        logger.warning(f"Close report failed: {e}")
 
     return summary
 

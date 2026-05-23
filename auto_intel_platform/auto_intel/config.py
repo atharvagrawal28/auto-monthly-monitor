@@ -247,7 +247,7 @@ VALIDATION = {
 
 # ─── INSIGHT ENGINE ───────────────────────────────────────────────────────────
 INSIGHT_CONFIG = {
-    "use_llm":            True,       # set False to use rule-based only
+    "use_llm":            False,      # True requires ANTHROPIC_API_KEY in env; False = fully free
     "llm_model":          "claude-sonnet-4-20250514",
     "llm_max_tokens":     800,
     "top_insights_count": 5,

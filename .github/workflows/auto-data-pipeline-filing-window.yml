@@ -1,0 +1,75 @@
+name: Auto Data Pipeline — Filing window (1st-8th of month)
+
+# Indian OEMs file monthly sales data in the first week of each month.
+# Maruti files day 1, Bajaj day 2, Tata day 3, Hero/M&M day 3-4, AL day 5,
+# Escorts as late as day 8. This workflow fires 4 times per day from the
+# 1st to the 8th to capture each filing as soon as it lands.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 04:00 / 08:00 / 12:00 / 16:00 UTC = 09:30 / 13:30 / 17:30 / 21:30 IST
+    # GitHub cron quirk: 1st-8th of every month (day-of-month list)
+    - cron: "0 4,8,12,16 1-8 * *"
+
+permissions:
+  contents: write
+
+jobs:
+  filing-window:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run filing-window fetch
+        working-directory: auto_intel_platform/auto_intel
+        run: |
+          # Always look back 60 days during the filing window so we catch
+          # late filings that landed after the prior monthly close.
+          FROM_DATE=$(date -u -d '60 days ago' '+%d-%m-%Y')
+          TO_DATE=$(date -u '+%d-%m-%Y')
+          python -m pipeline.run --from "$FROM_DATE" --to "$TO_DATE"
+
+      - name: Show close report
+        if: always()
+        working-directory: auto_intel_platform/auto_intel
+        run: |
+          latest=$(ls -1 logs/close_report_*.md 2>/dev/null | sort | tail -1 || true)
+          if [ -n "$latest" ]; then
+            echo "## Monthly close report" >> $GITHUB_STEP_SUMMARY
+            cat "$latest" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Alert on missing filings past SLA
+        if: always()
+        working-directory: auto_intel_platform/auto_intel
+        run: |
+          latest=$(ls -1 logs/close_report_*.json 2>/dev/null | sort | tail -1 || true)
+          if [ -n "$latest" ]; then
+            missing=$(python -c "import json; d=json.load(open('$latest')); print(d['filings_missing'])")
+            late=$(python -c "import json; d=json.load(open('$latest')); print(d['filings_late'])")
+            if [ "$missing" -gt 0 ] || [ "$late" -gt 0 ]; then
+              echo "::warning ::Filing SLA breach: $missing missing, $late late"
+            fi
+          fi
+
+      - name: Commit refreshed data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "data: filing-window refresh"
+          file_pattern: |
+            auto_intel_platform/auto_intel/data/*.csv
+            auto_intel_platform/auto_intel/logs/*.jsonl
+            auto_intel_platform/auto_intel/logs/close_report_*.md
+            auto_intel_platform/auto_intel/logs/close_report_*.json
