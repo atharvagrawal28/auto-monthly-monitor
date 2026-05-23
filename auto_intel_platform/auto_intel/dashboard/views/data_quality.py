@@ -6,7 +6,7 @@ quality posture of every OEM:
   - Per-OEM scorecard (clean %, mean confidence, mean quality, # needs-review)
   - Anomaly feed (z-score / industry-divergence flagged rows)
   - Recent reconciliation issues (CONFLICT rows)
-  - Cross-source coverage (NSE vs BSE)
+  - Source coverage (OEM IR pages / FADA / Manual)
 """
 
 from __future__ import annotations
@@ -127,6 +127,18 @@ def render():
     # ── Source coverage ────────────────────────────────────────────────────
     C.section_header("Source coverage", "where the data came from")
     source_mix = norm.groupby("source")["company_key"].count().reset_index(name="rows")
+    # Map internal source keys to readable labels
+    _SOURCE_LABELS = {
+        "OEM_IR":  "OEM IR Pages",
+        "FADA":    "FADA Retail",
+        "MANUAL":  "Manual Entry",
+        "NSE":     "OEM IR Pages",   # legacy rows — treat as OEM_IR
+        "BSE":     "OEM IR Pages",   # legacy rows — treat as OEM_IR
+    }
+    source_mix["source"] = source_mix["source"].map(
+        lambda s: _SOURCE_LABELS.get(s, s)
+    )
+    source_mix = source_mix.groupby("source")["rows"].sum().reset_index()
     if not source_mix.empty:
         fig = px.pie(source_mix, values="rows", names="source", hole=0.55,
                      color_discrete_sequence=[BRAND["accent"], "#F59E0B", "#15803D"])

@@ -118,7 +118,7 @@ def render_sidebar() -> str:
         st.markdown(
             "<div style='font-size:0.74rem;color:#94A3B8;line-height:1.55;'>"
             "<b style='color:#E2E8F0;'>Source priority</b><br>"
-            "NSE corporate announcements → BSE fallback → OEM IR pages.<br><br>"
+            "OEM Investor Relations pages (primary) · FADA retail (separate).<br><br>"
             "<b style='color:#E2E8F0;'>Automation</b><br>"
             "Filing-window workflow runs 4×/day during 1st-7th of each month "
             "(post-month-close). Daily baseline otherwise."
@@ -163,7 +163,7 @@ def main():
     page[2]()
 
     C.footer(
-        "India Auto Monthly Monitor · NSE/BSE filings · pipeline-validated data",
+        "India Auto Monthly Monitor · OEM IR pages · pipeline-validated data",
     )
 
 

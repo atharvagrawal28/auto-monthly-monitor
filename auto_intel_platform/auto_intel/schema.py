@@ -57,7 +57,7 @@ class NormalizedRow:
     mom_pct:           Optional[float] = None
 
     # Provenance
-    source:            str  = "NSE"           # NSE | BSE
+    source:            str  = "OEM_IR"         # OEM_IR | FADA | MANUAL
     filing_date:       str  = ""              # "2025-04-02"
     parser_version:    str  = ""              # "MARUTI_V2"
     extraction_method: str  = ExtractionMethod.PDFPLUMBER_TABLE

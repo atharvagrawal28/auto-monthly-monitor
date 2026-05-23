@@ -159,7 +159,7 @@ def generate(months_back: int = MONTHS_BACK) -> pd.DataFrame:
                 "total":             total,
                 "yoy_pct":           None,   # filled below
                 "mom_pct":           None,   # filled below
-                "source":            random.choices(["NSE", "BSE"], weights=[9, 1])[0],
+                "source":            "OEM_IR",
                 "filing_date":       filing_dt.strftime("%Y-%m-%d"),
                 "parser_version":    f"{cfg['key']}_V1",
                 "extraction_method": ExtractionMethod.MANUAL,
