@@ -165,8 +165,12 @@ def render():
         bridge_df = pd.concat(movers_rows, ignore_index=True)
         bridge_df["display_name"] = bridge_df["company_key"].map(DISPLAY_NAMES).fillna(bridge_df["company_key"])
         bridge_df["segment_label"] = bridge_df["segment"].map(SEGMENT_LABELS).fillna(bridge_df["segment"])
-        top_pos = bridge_df.nlargest(5, "contribution_pp")
-        top_neg = bridge_df.nsmallest(5, "contribution_pp")
+        # Split by sign first — nlargest/nsmallest on all-negative data
+        # would put negatives in the "positive" column, which is wrong.
+        pos_df = bridge_df[bridge_df["contribution_pp"] > 0]
+        neg_df = bridge_df[bridge_df["contribution_pp"] < 0]
+        top_pos = pos_df.nlargest(5,  "contribution_pp") if not pos_df.empty else pd.DataFrame()
+        top_neg = neg_df.nsmallest(5, "contribution_pp") if not neg_df.empty else pd.DataFrame()
 
         c1, c2 = st.columns(2)
         with c1:
@@ -175,14 +179,20 @@ def render():
                 f'{C.chip("positive contribution", "green")}',
                 unsafe_allow_html=True,
             )
-            _render_mover_table(top_pos)
+            if top_pos.empty:
+                C.empty_state("No positive contributors", "All OEMs declined vs prior period.")
+            else:
+                _render_mover_table(top_pos)
         with c2:
             st.markdown(
                 f'**Dragging on industry growth** '
                 f'{C.chip("negative contribution", "red")}',
                 unsafe_allow_html=True,
             )
-            _render_mover_table(top_neg)
+            if top_neg.empty:
+                C.empty_state("No negative contributors", "All OEMs grew vs prior period.")
+            else:
+                _render_mover_table(top_neg)
 
     # ── Industry trend & EV trend ──────────────────────────────────────────
     C.section_header("Volume trend", "last 12 months, stacked by segment")
@@ -238,7 +248,7 @@ def render():
 def _render_mover_table(df: pd.DataFrame):
     show = df[["display_name", "segment_label", "delta", "contribution_pp"]].copy()
     show.columns = ["OEM", "Segment", "Δ units", "Industry contribution (pp)"]
-    show["Δ units"] = show["Δ units"].apply(lambda v: f"{int(v):+,}")
+    show["Δ units"] = show["Δ units"].apply(lambda v: C.fmt_indian(int(v), sign=True))
     show["Industry contribution (pp)"] = show["Industry contribution (pp)"].apply(
         lambda v: f"{v:+.2f}"
     )
