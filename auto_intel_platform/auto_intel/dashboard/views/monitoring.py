@@ -46,23 +46,44 @@ def render():
         C.empty_state("No rows", "Selected month/segment has no data yet.")
         return
 
-    # ── Quick KPI strip
-    total      = cur["total"].sum()
-    domestic   = cur["domestic"].sum()
-    exports    = cur["exports"].sum()
-    yoy_median = cur["yoy_pct"].median()
-    mom_median = cur["mom_pct"].median()
+    # ── Quick KPI strip — row 1: volume summary
+    all_month = norm[norm["filing_month_year"] == sel_month]  # unfiltered for industry totals
+    total    = cur["total"].sum()
+    domestic = cur["domestic"].sum()
+    exports  = cur["exports"].sum()
+    oems_filed = norm[norm["filing_month_year"] == sel_month]["company_key"].nunique()
 
     C.kpi_row([
-        {"label": "Volume",   "value": C.fmt_units(total),     "unit": "units"},
-        {"label": "Domestic", "value": C.fmt_units(domestic),  "unit": "units"},
-        {"label": "Exports",  "value": C.fmt_units(exports),   "unit": "units"},
-        {"label": "Median YoY",
-         "value": C.fmt_pct(yoy_median),
-         "delta": "across OEMs", "delta_dir": C.delta_dir(yoy_median)},
-        {"label": "Median MoM",
-         "value": C.fmt_pct(mom_median),
-         "delta": "across OEMs", "delta_dir": C.delta_dir(mom_median)},
+        {"label": "Total Volume",  "value": C.fmt_units(total),    "unit": "units"},
+        {"label": "Domestic",      "value": C.fmt_units(domestic), "unit": "units"},
+        {"label": "Exports",       "value": C.fmt_units(exports),  "unit": "units"},
+        {"label": "OEMs filed",
+         "value": f"{oems_filed}/12",
+         "foot":  f"{sel_month} coverage"},
+    ])
+
+    # ── Quick KPI strip — row 2: industry segment totals
+    def _seg_kpi(seg: str, label: str) -> dict:
+        seg_rows = all_month[all_month["segment"] == seg]
+        total_v  = seg_rows["total"].sum() if not seg_rows.empty else 0
+        yoy_v    = (
+            pd.to_numeric(seg_rows["yoy_pct"], errors="coerce").median()
+            if not seg_rows.empty else None
+        )
+        return {
+            "label":     label,
+            "value":     C.fmt_units(total_v),
+            "unit":      "units",
+            "delta":     C.fmt_pct(yoy_v),
+            "delta_dir": C.delta_dir(yoy_v),
+            "foot":      "industry YoY",
+        }
+
+    C.kpi_row([
+        _seg_kpi("PV",  "PV Industry"),
+        _seg_kpi("2W",  "2W Industry"),
+        _seg_kpi("CV",  "CV Industry"),
+        _seg_kpi("EV",  "EV Industry"),
     ])
 
     # ── OEM detail grid ─────────────────────────────────────────────────────
@@ -72,7 +93,7 @@ def render():
     )
 
     grid = cur.copy().sort_values("total", ascending=False)
-    grid_show = pd.DataFrame({
+    grid_dict = {
         "OEM":               grid["display_name"],
         "Segment":           grid["segment"].map(SEGMENT_LABELS).fillna(grid["segment"]),
         "Total":             grid["total"].apply(C.fmt_units),
@@ -82,6 +103,16 @@ def render():
                                   lambda v: f"{v*100:.1f}%" if pd.notna(v) else "—"),
         "YoY":               grid["yoy_pct"].apply(C.fmt_pct),
         "MoM":               grid["mom_pct"].apply(C.fmt_pct),
+    }
+    # FYTD columns (computed by add_fytd in data_layer)
+    if "fytd_total" in grid.columns:
+        grid_dict["FYTD Total"] = grid["fytd_total"].apply(
+            lambda v: C.fmt_units(v) if pd.notna(v) else "—"
+        )
+    if "fytd_yoy_pct" in grid.columns:
+        grid_dict["FYTD YoY"] = grid["fytd_yoy_pct"].apply(C.fmt_pct)
+
+    grid_dict.update({
         "Market share":      grid["market_share_pct"].apply(
                                   lambda v: f"{v*100:.2f}%" if pd.notna(v) else "—"),
         "Share Δ MoM (pp)":  grid["market_share_delta_mom_pp"].apply(C.fmt_pp),
@@ -96,6 +127,7 @@ def render():
         "Source":            grid["source"],
         "Filed":             grid["filing_date"],
     })
+    grid_show = pd.DataFrame(grid_dict)
     st.dataframe(grid_show, use_container_width=True, hide_index=True, height=420)
 
     # ── Alerts ──────────────────────────────────────────────────────────────

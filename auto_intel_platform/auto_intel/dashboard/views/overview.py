@@ -44,6 +44,9 @@ def render():
         if cur else None
     )
 
+    # ── ABSOLUTE FIRST: Industry Quick Summary ────────────────────────────────
+    _render_industry_quick_summary(norm, cur, prev, yoy_month)
+
     # ── Filter bar ───────────────────────────────────────────────────────────
     sel_col1, sel_col2, _ = st.columns([1, 1, 3])
     selected_month = sel_col1.selectbox(
@@ -244,6 +247,101 @@ def render():
 
 
 # ── helpers ──────────────────────────────────────────────────────────────────
+
+def _render_industry_quick_summary(
+    norm: pd.DataFrame,
+    cur_month: str,
+    prev_month: str | None,
+    yoy_month: str | None,
+) -> None:
+    """Industry Quick Summary — the at-a-glance table shown first on every load."""
+    cur_df  = norm[norm["filing_month_year"] == cur_month]
+    prev_df = norm[norm["filing_month_year"] == prev_month] if prev_month else pd.DataFrame()
+    yoy_df  = norm[norm["filing_month_year"] == yoy_month]  if yoy_month  else pd.DataFrame()
+
+    SEG_ORDER = ["PV", "2W", "CV", "3W", "Tractor", "EV"]
+
+    rows = []
+    for seg in SEG_ORDER:
+        cur_seg  = cur_df[cur_df["segment"] == seg]
+        prev_seg = prev_df[prev_df["segment"] == seg] if not prev_df.empty else pd.DataFrame()
+        yoy_seg  = yoy_df[yoy_df["segment"] == seg]  if not yoy_df.empty  else pd.DataFrame()
+
+        total    = cur_seg["total"].sum()
+        if total == 0:
+            continue
+
+        prev_tot = prev_seg["total"].sum() if not prev_seg.empty else None
+        yoy_tot  = yoy_seg["total"].sum()  if not yoy_seg.empty  else None
+        mom_pct  = (total - prev_tot) / prev_tot if prev_tot else None
+        yoy_pct  = (total - yoy_tot)  / yoy_tot  if yoy_tot  else None
+
+        # Coverage: OEMs with non-null total in this segment
+        oems_filed = int(cur_seg["company_key"].nunique())
+        # Expected OEMs per segment (static reference from registry)
+        _SEG_EXPECTED = {"PV": 3, "2W": 4, "CV": 3, "3W": 2, "Tractor": 2, "EV": 2}
+        oems_exp = _SEG_EXPECTED.get(seg, oems_filed)
+
+        rows.append({
+            "Segment":   SEGMENT_LABELS.get(seg, seg),
+            "Units":     C.fmt_units(total),
+            "YoY":       C.fmt_pct(yoy_pct)  if yoy_pct  is not None else "—",
+            "MoM":       C.fmt_pct(mom_pct)  if mom_pct  is not None else "—",
+            "Coverage":  f"{oems_filed}/{oems_exp} OEMs",
+            "_yoy":      yoy_pct,
+            "_mom":      mom_pct,
+        })
+
+    if not rows:
+        return
+
+    month_label = pd.to_datetime(cur_month + "-01").strftime("%B %Y") if cur_month else "—"
+
+    st.markdown(
+        f"<div style='background:#0F172A;border:1px solid #1E293B;border-radius:8px;"
+        f"padding:0.9rem 1.1rem 0.7rem;margin-bottom:1.1rem;'>"
+        f"<div style='font-size:0.72rem;color:#64748B;font-weight:600;letter-spacing:0.08em;"
+        f"text-transform:uppercase;margin-bottom:0.55rem;'>Industry Quick Summary — {month_label}</div>",
+        unsafe_allow_html=True,
+    )
+
+    # Build styled table rows
+    table_rows_html = ""
+    for r in rows:
+        yoy_color = "#15803D" if (r["_yoy"] or 0) >= 0 else "#B91C1C"
+        mom_color = "#15803D" if (r["_mom"] or 0) >= 0 else "#B91C1C"
+        table_rows_html += (
+            f"<tr>"
+            f"<td style='padding:5px 10px;color:#F1F5F9;font-size:0.82rem;'>{r['Segment']}</td>"
+            f"<td style='padding:5px 10px;color:#F8FAFC;font-weight:600;font-size:0.82rem;"
+            f"font-family:monospace;'>{r['Units']}</td>"
+            f"<td style='padding:5px 10px;color:{yoy_color};font-weight:600;font-size:0.82rem;"
+            f"font-family:monospace;'>{r['YoY']}</td>"
+            f"<td style='padding:5px 10px;color:{mom_color};font-weight:600;font-size:0.82rem;"
+            f"font-family:monospace;'>{r['MoM']}</td>"
+            f"<td style='padding:5px 10px;color:#94A3B8;font-size:0.78rem;'>{r['Coverage']}</td>"
+            f"</tr>"
+        )
+
+    st.markdown(
+        f"<table style='width:100%;border-collapse:collapse;'>"
+        f"<thead><tr style='border-bottom:1px solid #1E3A5F;'>"
+        f"<th style='padding:4px 10px;color:#64748B;font-size:0.72rem;font-weight:600;"
+        f"text-align:left;text-transform:uppercase;letter-spacing:0.07em;'>Segment</th>"
+        f"<th style='padding:4px 10px;color:#64748B;font-size:0.72rem;font-weight:600;"
+        f"text-align:left;text-transform:uppercase;letter-spacing:0.07em;'>Units</th>"
+        f"<th style='padding:4px 10px;color:#64748B;font-size:0.72rem;font-weight:600;"
+        f"text-align:left;text-transform:uppercase;letter-spacing:0.07em;'>YoY</th>"
+        f"<th style='padding:4px 10px;color:#64748B;font-size:0.72rem;font-weight:600;"
+        f"text-align:left;text-transform:uppercase;letter-spacing:0.07em;'>MoM</th>"
+        f"<th style='padding:4px 10px;color:#64748B;font-size:0.72rem;font-weight:600;"
+        f"text-align:left;text-transform:uppercase;letter-spacing:0.07em;'>Coverage</th>"
+        f"</tr></thead>"
+        f"<tbody>{table_rows_html}</tbody>"
+        f"</table></div>",
+        unsafe_allow_html=True,
+    )
+
 
 def _render_mover_table(df: pd.DataFrame):
     show = df[["display_name", "segment_label", "delta", "contribution_pp"]].copy()

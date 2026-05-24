@@ -54,39 +54,81 @@ def render():
              "foot":  f"{review_cnt} review events in T12M"},
         ])
 
-        # ── Per-OEM scorecard ─────────────────────────────────────────────────
-        C.section_header("Per-OEM scorecard", "trailing 12 months")
-        score_show = score_df.copy()
-        score_show["display_name"] = score_show["oem"].map(DISPLAY_NAMES).fillna(score_show["oem"])
-        score_show["clean_pct"] = (score_show["clean_pct"] * 100).round(1).astype(str) + "%"
-        score_show["mean_confidence"] = (score_show["mean_confidence"] * 100).round(1).astype(str) + "%"
-        show = score_show[[
-            "display_name", "rows", "months_covered", "clean_pct",
-            "mean_confidence", "mean_quality", "needs_review",
-            "flagged", "manual", "latest_month",
-        ]]
-        show.columns = ["OEM", "Rows", "Months", "Clean %",
-                        "Confidence", "Quality /100", "Needs Review",
-                        "Flagged", "Manual", "Latest month"]
-        st.dataframe(show, use_container_width=True, hide_index=True)
-
-        # Quality chart
-        chart = score_df.copy()
-        chart["display_name"] = chart["oem"].map(DISPLAY_NAMES).fillna(chart["oem"])
-        fig = px.bar(
-            chart.sort_values("mean_quality"),
-            x="mean_quality", y="display_name", orientation="h",
-            color="mean_quality",
-            color_continuous_scale=["#B91C1C", "#FEF3C7", "#15803D"],
-            range_color=[40, 100],
-            text=chart.sort_values("mean_quality")["mean_quality"].apply(lambda v: f"{int(v)}"),
+        # ── Per-OEM scorecard table ───────────────────────────────────────────
+        C.section_header(
+            "Per-OEM data quality scorecard",
+            "trailing 12 months · green = conf ≥ 85% · yellow = 70–85% · red < 70%",
         )
-        fig.update_traces(textposition="outside", textfont_size=10)
-        fig.update_layout(**plotly_layout(height=max(280, 26 * len(chart))))
-        fig.update_layout(coloraxis_showscale=False, bargap=0.35)
-        fig.update_xaxes(title_text="Quality score (0-100)")
-        fig.update_yaxes(title_text="")
-        st.plotly_chart(fig, use_container_width=True)
+        score_show = score_df.copy()
+        score_show["display_name"]    = score_show["oem"].map(DISPLAY_NAMES).fillna(score_show["oem"])
+        score_show["Clean rows"]      = score_show.apply(
+            lambda r: int(round(r["clean_pct"] * r["rows"])), axis=1
+        )
+        score_show["Flagged rows"]    = score_show["flagged"].fillna(0).astype(int)
+        score_show["Needs Review"]    = score_show["needs_review"].fillna(0).astype(int)
+        score_show["Avg Confidence"]  = (score_show["mean_confidence"] * 100).round(1).astype(str) + "%"
+        score_show["Quality /100"]    = score_show["mean_quality"].astype(int)
+
+        # Colour coding for Avg Confidence
+        def _conf_color(conf_float: float) -> str:
+            if conf_float >= 0.85:  return "🟢"
+            if conf_float >= 0.70:  return "🟡"
+            return "🔴"
+
+        score_show["Status"] = score_show["mean_confidence"].apply(_conf_color)
+
+        # Parser version: take mode across the OEM's rows
+        pv_map = (
+            norm.groupby("company_key")["parser_version"]
+            .agg(lambda s: s.mode().iloc[0] if not s.mode().empty else "—")
+        )
+        score_show["Parser"] = score_show["oem"].map(pv_map).fillna("—")
+
+        show_cols = score_show[[
+            "Status", "display_name", "rows", "months_covered",
+            "Clean rows", "Flagged rows", "Needs Review",
+            "Avg Confidence", "Quality /100", "latest_month", "Parser",
+        ]].copy()
+        show_cols.columns = [
+            "●", "OEM", "Total rows", "Months",
+            "Clean", "Flagged", "Needs Review",
+            "Avg Confidence", "Quality /100", "Last filed", "Parser",
+        ]
+        st.dataframe(show_cols, use_container_width=True, hide_index=True)
+
+        # ── Coverage gaps ─────────────────────────────────────────────────────
+        C.section_header(
+            "Coverage gaps",
+            "OEM × month combinations missing from the dataset",
+        )
+        all_months = sorted(norm["filing_month_year"].dropna().unique())
+        all_oems   = sorted(norm["company_key"].dropna().unique())
+        present = set(zip(norm["company_key"], norm["filing_month_year"]))
+
+        gap_rows = []
+        for oem in all_oems:
+            for mo in all_months:
+                if (oem, mo) not in present:
+                    gap_rows.append({
+                        "OEM":   DISPLAY_NAMES.get(oem, oem),
+                        "Month": mo,
+                        "Gap":   "MISSING",
+                    })
+
+        if not gap_rows:
+            st.success("No coverage gaps — all OEMs present in all months.")
+        else:
+            gap_df = pd.DataFrame(gap_rows)
+            st.warning(
+                f"{len(gap_df)} missing OEM × month combinations across "
+                f"{gap_df['OEM'].nunique()} OEMs and {gap_df['Month'].nunique()} months."
+            )
+            # Pivot to matrix view
+            gap_pivot = gap_df.pivot_table(
+                index="OEM", columns="Month", values="Gap", aggfunc="first"
+            ).fillna("✅")
+            gap_pivot = gap_pivot.replace("MISSING", "❌")
+            st.dataframe(gap_pivot, use_container_width=True)
 
     # ── Anomaly feed ────────────────────────────────────────────────────────
     C.section_header(

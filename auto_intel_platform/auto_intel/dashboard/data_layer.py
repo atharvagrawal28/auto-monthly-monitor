@@ -75,6 +75,19 @@ def load_all():
     if norm.empty:
         return norm, gran, fs, rq
 
+    # ── Deduplication guard (defence against double-pipeline runs)
+    pk = ["company_key", "segment", "filing_month_year"]
+    dupes = norm.duplicated(subset=pk, keep=False)
+    if dupes.any():
+        import logging
+        logging.getLogger(__name__).warning(
+            f"data_layer: {dupes.sum()} duplicate PK rows detected in normalized.csv — "
+            "keeping highest confidence_score. Fix store.py upsert logic."
+        )
+        norm["confidence_score"] = pd.to_numeric(norm["confidence_score"], errors="coerce").fillna(0)
+        norm = norm.sort_values("confidence_score", ascending=False)
+        norm = norm.drop_duplicates(subset=pk, keep="first")
+
     # ── Coerce numerics
     for col in ["domestic", "exports", "total"]:
         if col in norm.columns:

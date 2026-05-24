@@ -174,8 +174,11 @@ def save_granular(rows: list[GranularRow]) -> int:
     new_df = new_df[GRANULAR_COLUMNS]
 
     combined = pd.concat([existing, new_df], ignore_index=True)
+    # Full PK for granular: includes is_export to allow both domestic and
+    # export breakdowns under the same raw_category.
     combined = combined.drop_duplicates(
-        subset=["company_key", "segment", "filing_month_year", "raw_category"]
+        subset=["company_key", "segment", "filing_month_year", "raw_category", "is_export"],
+        keep="first",
     )
     GRAN_PATH.parent.mkdir(parents=True, exist_ok=True)
     combined.to_csv(GRAN_PATH, index=False)

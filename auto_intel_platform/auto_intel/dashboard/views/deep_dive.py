@@ -204,37 +204,102 @@ def render():
 
     # ── Sub-segment breakdown ──────────────────────────────────────────────
     if not gran.empty:
+        latest_month_yr = latest["filing_month_year"]
         gsub = gran[
             (gran["company_key"] == sel_oem) &
             (gran["segment"] == sel_seg) &
-            (gran["filing_month_year"] == latest["filing_month_year"])
+            (gran["filing_month_year"] == latest_month_yr)
         ].copy()
         if not gsub.empty:
             C.section_header(
                 "Sub-segment breakdown",
-                f"granular contributors, {pd.to_datetime(latest['filing_month_year'] + '-01').strftime('%b %Y')}",
+                f"granular contributors, {pd.to_datetime(latest_month_yr + '-01').strftime('%b %Y')}",
             )
             gsub["units"] = pd.to_numeric(gsub["units"], errors="coerce")
             gsub = gsub.dropna(subset=["units"]).sort_values("units", ascending=False)
             total_g = gsub["units"].sum()
             gsub["share"] = gsub["units"] / total_g if total_g > 0 else 0
 
-            c1, c2 = st.columns([2, 3])
-            with c1:
-                fig = px.pie(
-                    gsub, values="units", names="normalized_category",
-                    hole=0.55, color_discrete_sequence=px.colors.qualitative.Set2,
+            # ── 6-month sub-segment trend (stacked horizontal bars) ─────────
+            cutoff_6m = (
+                pd.to_datetime(latest_month_yr + "-01") - pd.DateOffset(months=5)
+            ).strftime("%Y-%m")
+            gran_6m = gran[
+                (gran["company_key"] == sel_oem) &
+                (gran["segment"] == sel_seg) &
+                (gran["filing_month_year"] >= cutoff_6m) &
+                (gran["filing_month_year"] <= latest_month_yr)
+            ].copy()
+            gran_6m["units"] = pd.to_numeric(gran_6m["units"], errors="coerce").fillna(0)
+
+            if not gran_6m.empty:
+                pivot = (
+                    gran_6m.groupby(["filing_month_year", "normalized_category"])["units"]
+                    .sum().reset_index()
                 )
-                fig.update_traces(textinfo="label+percent", textfont_size=11)
-                fig.update_layout(**plotly_layout(height=320))
-                fig.update_layout(showlegend=False)
-                st.plotly_chart(fig, use_container_width=True)
-            with c2:
-                show = gsub[["raw_category", "normalized_category", "units", "share"]].copy()
-                show["units"] = show["units"].apply(C.fmt_units)
-                show["share"] = show["share"].apply(lambda v: f"{v*100:.1f}%")
-                show.columns = ["Reported line", "Normalized", "Units", "Share"]
-                st.dataframe(show, use_container_width=True, hide_index=True)
+                pivot["month_label"] = pd.to_datetime(
+                    pivot["filing_month_year"] + "-01"
+                ).dt.strftime("%b %y")
+
+                all_cats = pivot["normalized_category"].unique().tolist()
+                fig_trend = go.Figure()
+                colors = px.colors.qualitative.Set2
+                for i, cat in enumerate(all_cats):
+                    sub = pivot[pivot["normalized_category"] == cat].sort_values("filing_month_year")
+                    fig_trend.add_bar(
+                        x=sub["month_label"], y=sub["units"],
+                        name=cat,
+                        marker_color=colors[i % len(colors)],
+                    )
+                fig_trend.update_layout(
+                    barmode="stack",
+                    **plotly_layout(height=260),
+                )
+                fig_trend.update_layout(
+                    legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="left", x=0),
+                    bargap=0.25,
+                )
+                fig_trend.update_xaxes(title_text="")
+                fig_trend.update_yaxes(title_text="Units")
+                st.plotly_chart(fig_trend, use_container_width=True)
+
+            # ── Static mix table ───────────────────────────────────────────
+            # Model names mapped from sub-segment taxonomy
+            _MODEL_MAP: dict[str, str] = {
+                # PV sub-segments
+                "Mini":              "Alto, S-Presso",
+                "Compact":           "Swift, Baleno, WagonR, Dzire",
+                "Utility Vehicles":  "Brezza, Ertiga, Grand Vitara, Jimny",
+                "Sedan":             "Ciaz",
+                "Van":               "Eeco",
+                "EV":                "e6, Nexon EV, Tigor EV",
+                # CV sub-segments
+                "LCV":               "Ace, Tata Yodha, Bolero Pick-up",
+                "MHCV":              "Prima, Signa, T-Series",
+                "SCV":               "Ace EV, Super Ace, T7",
+                "Bus":               "Starbus, Winger",
+                "ICV":               "Tata 1109, 407",
+                # 2W sub-segments
+                "Motorcycles":       "Splendor, HF Deluxe, Passion",
+                "Scooters":          "Activa, Jupiter, Ntorq",
+                "Mopeds":            "TV XL100",
+                "Electric 2W":       "iQube, Ather 450, Ola S1",
+                # Tractor sub-segments
+                "Below 30 HP":       "Mahindra Jivo, TAFE 28",
+                "31-40 HP":          "Bolero, Arjun 605",
+                "41-50 HP":          "Arjun 605, TAFE 45",
+                "Above 50 HP":       "Arjun 755, 6065",
+            }
+
+            show = gsub[["raw_category", "normalized_category", "units", "share"]].copy()
+            show["models"] = show["normalized_category"].map(
+                lambda c: _MODEL_MAP.get(c, c)  # fallback to category name
+            )
+            show["units"] = show["units"].apply(C.fmt_units)
+            show["share"] = show["share"].apply(lambda v: f"{v*100:.1f}%")
+            show = show[["raw_category", "normalized_category", "models", "units", "share"]]
+            show.columns = ["Reported line", "Normalized", "Key Models", "Units", "Share %"]
+            st.dataframe(show, use_container_width=True, hide_index=True)
 
     # ── Lineage ────────────────────────────────────────────────────────────
     C.section_header("Filing lineage", "audit trail for the latest print")

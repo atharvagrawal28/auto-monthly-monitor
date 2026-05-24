@@ -19,6 +19,9 @@ from analytics.benchmarks import ev_penetration
 
 
 def render():
+    # ── Data separation notice (no retail/VAHAN data on this page) ───────────
+    # This page uses ONLY OEM wholesale data (segment == "EV" from normalized.csv).
+    # FADA retail / VAHAN registration data is on the Retail Pulse page exclusively.
     norm, _, _, _ = load_all()
     if norm.empty:
         C.empty_state("No data", "Generate sample data first.")

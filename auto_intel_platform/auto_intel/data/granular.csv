@@ -1,1297 +1,1243 @@
 company_key,segment,filing_month_year,raw_category,normalized_category,units,is_export,notes
-ASHOKLEY,CV,2024-05,LCV,LCV,5006,False,sample
-ASHOKLEY,CV,2024-05,MHCV,MHCV,7104,False,sample
-ASHOKLEY,CV,2024-05,Bus,Bus,3054,False,sample
-ASHOKLEY,CV,2024-06,LCV,LCV,4589,False,sample
-ASHOKLEY,CV,2024-06,MHCV,MHCV,6276,False,sample
-ASHOKLEY,CV,2024-06,Bus,Bus,2711,False,sample
-ASHOKLEY,CV,2024-07,LCV,LCV,4681,False,sample
-ASHOKLEY,CV,2024-07,MHCV,MHCV,6398,False,sample
-ASHOKLEY,CV,2024-07,Bus,Bus,2683,False,sample
-ASHOKLEY,CV,2024-08,LCV,LCV,4656,False,sample
-ASHOKLEY,CV,2024-08,MHCV,MHCV,6561,False,sample
-ASHOKLEY,CV,2024-08,Bus,Bus,2879,False,sample
-ASHOKLEY,CV,2024-09,LCV,LCV,5684,False,sample
-ASHOKLEY,CV,2024-09,MHCV,MHCV,7923,False,sample
-ASHOKLEY,CV,2024-09,Bus,Bus,3515,False,sample
-ASHOKLEY,CV,2024-10,LCV,LCV,6677,False,sample
-ASHOKLEY,CV,2024-10,MHCV,MHCV,9397,False,sample
-ASHOKLEY,CV,2024-10,Bus,Bus,3922,False,sample
-ASHOKLEY,CV,2024-11,LCV,LCV,5390,False,sample
-ASHOKLEY,CV,2024-11,MHCV,MHCV,7268,False,sample
-ASHOKLEY,CV,2024-11,Bus,Bus,3177,False,sample
-ASHOKLEY,CV,2024-12,LCV,LCV,5496,False,sample
-ASHOKLEY,CV,2024-12,MHCV,MHCV,7545,False,sample
-ASHOKLEY,CV,2024-12,Bus,Bus,3331,False,sample
-ASHOKLEY,CV,2025-01,LCV,LCV,5009,False,sample
-ASHOKLEY,CV,2025-01,MHCV,MHCV,6826,False,sample
-ASHOKLEY,CV,2025-01,Bus,Bus,3060,False,sample
-ASHOKLEY,CV,2025-02,LCV,LCV,4878,False,sample
-ASHOKLEY,CV,2025-02,MHCV,MHCV,6829,False,sample
-ASHOKLEY,CV,2025-02,Bus,Bus,3040,False,sample
-ASHOKLEY,CV,2025-03,LCV,LCV,6547,False,sample
-ASHOKLEY,CV,2025-03,MHCV,MHCV,8900,False,sample
-ASHOKLEY,CV,2025-03,Bus,Bus,3852,False,sample
-ASHOKLEY,CV,2025-04,LCV,LCV,4979,False,sample
-ASHOKLEY,CV,2025-04,MHCV,MHCV,6962,False,sample
-ASHOKLEY,CV,2025-04,Bus,Bus,3110,False,sample
-ASHOKLEY,CV,2025-05,LCV,LCV,5801,False,sample
-ASHOKLEY,CV,2025-05,MHCV,MHCV,7646,False,sample
-ASHOKLEY,CV,2025-05,Bus,Bus,3437,False,sample
-ASHOKLEY,CV,2025-06,LCV,LCV,5125,False,sample
-ASHOKLEY,CV,2025-06,MHCV,MHCV,6842,False,sample
-ASHOKLEY,CV,2025-06,Bus,Bus,2849,False,sample
-ASHOKLEY,CV,2025-07,LCV,LCV,4825,False,sample
-ASHOKLEY,CV,2025-07,MHCV,MHCV,6379,False,sample
-ASHOKLEY,CV,2025-07,Bus,Bus,2987,False,sample
-ASHOKLEY,CV,2025-08,LCV,LCV,5610,False,sample
-ASHOKLEY,CV,2025-08,MHCV,MHCV,7083,False,sample
-ASHOKLEY,CV,2025-08,Bus,Bus,3300,False,sample
-ASHOKLEY,CV,2025-09,LCV,LCV,5894,False,sample
-ASHOKLEY,CV,2025-09,MHCV,MHCV,8224,False,sample
-ASHOKLEY,CV,2025-09,Bus,Bus,3679,False,sample
-ASHOKLEY,CV,2025-10,LCV,LCV,7479,False,sample
-ASHOKLEY,CV,2025-10,MHCV,MHCV,10288,False,sample
-ASHOKLEY,CV,2025-10,Bus,Bus,4358,False,sample
-ASHOKLEY,CV,2025-11,LCV,LCV,5393,False,sample
-ASHOKLEY,CV,2025-11,MHCV,MHCV,7633,False,sample
-ASHOKLEY,CV,2025-11,Bus,Bus,3162,False,sample
-ASHOKLEY,CV,2025-12,LCV,LCV,6065,False,sample
-ASHOKLEY,CV,2025-12,MHCV,MHCV,8229,False,sample
-ASHOKLEY,CV,2025-12,Bus,Bus,3430,False,sample
-ASHOKLEY,CV,2026-01,LCV,LCV,5258,False,sample
-ASHOKLEY,CV,2026-01,MHCV,MHCV,7103,False,sample
-ASHOKLEY,CV,2026-01,Bus,Bus,3058,False,sample
-ASHOKLEY,CV,2026-01,LCV,LCV,5527,False,sample
-ASHOKLEY,CV,2026-01,MHCV,MHCV,7297,False,sample
-ASHOKLEY,CV,2026-01,Bus,Bus,3129,False,sample
-ASHOKLEY,CV,2026-03,LCV,LCV,6929,False,sample
-ASHOKLEY,CV,2026-03,MHCV,MHCV,9369,False,sample
-ASHOKLEY,CV,2026-03,Bus,Bus,4138,False,sample
-ASHOKLEY,CV,2026-04,LCV,LCV,5441,False,sample
-ASHOKLEY,CV,2026-04,MHCV,MHCV,7230,False,sample
-ASHOKLEY,CV,2026-04,Bus,Bus,3148,False,sample
-BAJAJ,2W,2024-05,Motorcycle,Motorcycle,279732,False,sample
-BAJAJ,2W,2024-05,Scooter,Scooter,15666,False,sample
-BAJAJ,2W,2024-05,EV,EV,9304,False,sample
-BAJAJ,2W,2024-06,Motorcycle,Motorcycle,249298,False,sample
-BAJAJ,2W,2024-06,Scooter,Scooter,13863,False,sample
-BAJAJ,2W,2024-06,EV,EV,7944,False,sample
-BAJAJ,2W,2024-07,Motorcycle,Motorcycle,248829,False,sample
-BAJAJ,2W,2024-07,Scooter,Scooter,13446,False,sample
-BAJAJ,2W,2024-07,EV,EV,8502,False,sample
-BAJAJ,2W,2024-08,Motorcycle,Motorcycle,260425,False,sample
-BAJAJ,2W,2024-08,Scooter,Scooter,13472,False,sample
-BAJAJ,2W,2024-08,EV,EV,8548,False,sample
-BAJAJ,2W,2024-09,Motorcycle,Motorcycle,312727,False,sample
-BAJAJ,2W,2024-09,Scooter,Scooter,17470,False,sample
-BAJAJ,2W,2024-09,EV,EV,10579,False,sample
-BAJAJ,2W,2024-10,Motorcycle,Motorcycle,351195,False,sample
-BAJAJ,2W,2024-10,Scooter,Scooter,19389,False,sample
-BAJAJ,2W,2024-10,EV,EV,11533,False,sample
-BAJAJ,2W,2024-11,Motorcycle,Motorcycle,245377,False,sample
-BAJAJ,2W,2024-11,Scooter,Scooter,13961,False,sample
-BAJAJ,2W,2024-11,EV,EV,8446,False,sample
-BAJAJ,2W,2024-12,Motorcycle,Motorcycle,268792,False,sample
-BAJAJ,2W,2024-12,Scooter,Scooter,15447,False,sample
-BAJAJ,2W,2024-12,EV,EV,9022,False,sample
-BAJAJ,2W,2025-01,Motorcycle,Motorcycle,252815,False,sample
-BAJAJ,2W,2025-01,Scooter,Scooter,13720,False,sample
-BAJAJ,2W,2025-01,EV,EV,8668,False,sample
-BAJAJ,2W,2025-02,Motorcycle,Motorcycle,265131,False,sample
-BAJAJ,2W,2025-02,Scooter,Scooter,14944,False,sample
-BAJAJ,2W,2025-02,EV,EV,8812,False,sample
-BAJAJ,2W,2025-03,Motorcycle,Motorcycle,332233,False,sample
-BAJAJ,2W,2025-03,Scooter,Scooter,17937,False,sample
-BAJAJ,2W,2025-03,EV,EV,10413,False,sample
-BAJAJ,2W,2025-04,Motorcycle,Motorcycle,274699,False,sample
-BAJAJ,2W,2025-04,Scooter,Scooter,15017,False,sample
-BAJAJ,2W,2025-04,EV,EV,8760,False,sample
-BAJAJ,2W,2025-05,Motorcycle,Motorcycle,302116,False,sample
-BAJAJ,2W,2025-05,Scooter,Scooter,16207,False,sample
-BAJAJ,2W,2025-05,EV,EV,10138,False,sample
-BAJAJ,2W,2025-06,Motorcycle,Motorcycle,248878,False,sample
-BAJAJ,2W,2025-06,Scooter,Scooter,13613,False,sample
-BAJAJ,2W,2025-06,EV,EV,8009,False,sample
-BAJAJ,2W,2025-07,Motorcycle,Motorcycle,262248,False,sample
-BAJAJ,2W,2025-07,Scooter,Scooter,14176,False,sample
-BAJAJ,2W,2025-07,EV,EV,8527,False,sample
-BAJAJ,2W,2025-08,Motorcycle,Motorcycle,278641,False,sample
-BAJAJ,2W,2025-08,Scooter,Scooter,14905,False,sample
-BAJAJ,2W,2025-08,EV,EV,8992,False,sample
-BAJAJ,2W,2025-09,Motorcycle,Motorcycle,331850,False,sample
-BAJAJ,2W,2025-09,Scooter,Scooter,17992,False,sample
-BAJAJ,2W,2025-09,EV,EV,10570,False,sample
-BAJAJ,2W,2025-10,Motorcycle,Motorcycle,363755,False,sample
-BAJAJ,2W,2025-10,Scooter,Scooter,19047,False,sample
-BAJAJ,2W,2025-10,EV,EV,11518,False,sample
-BAJAJ,2W,2025-11,Motorcycle,Motorcycle,270221,False,sample
-BAJAJ,2W,2025-11,Scooter,Scooter,14960,False,sample
-BAJAJ,2W,2025-11,EV,EV,9250,False,sample
-BAJAJ,2W,2025-12,Motorcycle,Motorcycle,278868,False,sample
-BAJAJ,2W,2025-12,Scooter,Scooter,15612,False,sample
-BAJAJ,2W,2025-12,EV,EV,8967,False,sample
-BAJAJ,2W,2026-01,Motorcycle,Motorcycle,281886,False,sample
-BAJAJ,2W,2026-01,Scooter,Scooter,15438,False,sample
-BAJAJ,2W,2026-01,EV,EV,9341,False,sample
-BAJAJ,2W,2026-01,Motorcycle,Motorcycle,265261,False,sample
-BAJAJ,2W,2026-01,Scooter,Scooter,14881,False,sample
-BAJAJ,2W,2026-01,EV,EV,8646,False,sample
-BAJAJ,2W,2026-03,Motorcycle,Motorcycle,356977,False,sample
-BAJAJ,2W,2026-03,Scooter,Scooter,19574,False,sample
-BAJAJ,2W,2026-03,EV,EV,11707,False,sample
-BAJAJ,2W,2026-04,Motorcycle,Motorcycle,273920,False,sample
-BAJAJ,2W,2026-04,Scooter,Scooter,15211,False,sample
-BAJAJ,2W,2026-04,EV,EV,9073,False,sample
-BAJAJ,3W,2024-05,Passenger,Passenger,28780,False,sample
-BAJAJ,3W,2024-05,Cargo,Cargo,6489,False,sample
-BAJAJ,3W,2024-05,Electric,Electric,6217,False,sample
-BAJAJ,3W,2024-06,Passenger,Passenger,28622,False,sample
-BAJAJ,3W,2024-06,Cargo,Cargo,6335,False,sample
-BAJAJ,3W,2024-06,Electric,Electric,6300,False,sample
-BAJAJ,3W,2024-07,Passenger,Passenger,29014,False,sample
-BAJAJ,3W,2024-07,Cargo,Cargo,5886,False,sample
-BAJAJ,3W,2024-07,Electric,Electric,6163,False,sample
-BAJAJ,3W,2024-08,Passenger,Passenger,31099,False,sample
-BAJAJ,3W,2024-08,Cargo,Cargo,6577,False,sample
-BAJAJ,3W,2024-08,Electric,Electric,6535,False,sample
-BAJAJ,3W,2024-09,Passenger,Passenger,37645,False,sample
-BAJAJ,3W,2024-09,Cargo,Cargo,7730,False,sample
-BAJAJ,3W,2024-09,Electric,Electric,8121,False,sample
-BAJAJ,3W,2024-10,Passenger,Passenger,41900,False,sample
-BAJAJ,3W,2024-10,Cargo,Cargo,9667,False,sample
-BAJAJ,3W,2024-10,Electric,Electric,9686,False,sample
-BAJAJ,3W,2024-11,Passenger,Passenger,32169,False,sample
-BAJAJ,3W,2024-11,Cargo,Cargo,7395,False,sample
-BAJAJ,3W,2024-11,Electric,Electric,7099,False,sample
-BAJAJ,3W,2024-12,Passenger,Passenger,34074,False,sample
-BAJAJ,3W,2024-12,Cargo,Cargo,7517,False,sample
-BAJAJ,3W,2024-12,Electric,Electric,7278,False,sample
-BAJAJ,3W,2025-01,Passenger,Passenger,31245,False,sample
-BAJAJ,3W,2025-01,Cargo,Cargo,6507,False,sample
-BAJAJ,3W,2025-01,Electric,Electric,6623,False,sample
-BAJAJ,3W,2025-02,Passenger,Passenger,29970,False,sample
-BAJAJ,3W,2025-02,Cargo,Cargo,6501,False,sample
-BAJAJ,3W,2025-02,Electric,Electric,6411,False,sample
-BAJAJ,3W,2025-03,Passenger,Passenger,36611,False,sample
-BAJAJ,3W,2025-03,Cargo,Cargo,8006,False,sample
-BAJAJ,3W,2025-03,Electric,Electric,7996,False,sample
-BAJAJ,3W,2025-04,Passenger,Passenger,34586,False,sample
-BAJAJ,3W,2025-04,Cargo,Cargo,7952,False,sample
-BAJAJ,3W,2025-04,Electric,Electric,7638,False,sample
-BAJAJ,3W,2025-05,Passenger,Passenger,33405,False,sample
-BAJAJ,3W,2025-05,Cargo,Cargo,7199,False,sample
-BAJAJ,3W,2025-05,Electric,Electric,6896,False,sample
-BAJAJ,3W,2025-06,Passenger,Passenger,31724,False,sample
-BAJAJ,3W,2025-06,Cargo,Cargo,6879,False,sample
-BAJAJ,3W,2025-06,Electric,Electric,6692,False,sample
-BAJAJ,3W,2025-07,Passenger,Passenger,31229,False,sample
-BAJAJ,3W,2025-07,Cargo,Cargo,6755,False,sample
-BAJAJ,3W,2025-07,Electric,Electric,7126,False,sample
-BAJAJ,3W,2025-08,Passenger,Passenger,32371,False,sample
-BAJAJ,3W,2025-08,Cargo,Cargo,6847,False,sample
-BAJAJ,3W,2025-08,Electric,Electric,6701,False,sample
-BAJAJ,3W,2025-09,Passenger,Passenger,38930,False,sample
-BAJAJ,3W,2025-09,Cargo,Cargo,8376,False,sample
-BAJAJ,3W,2025-09,Electric,Electric,8683,False,sample
-BAJAJ,3W,2025-10,Passenger,Passenger,47409,False,sample
-BAJAJ,3W,2025-10,Cargo,Cargo,10285,False,sample
-BAJAJ,3W,2025-10,Electric,Electric,10310,False,sample
-BAJAJ,3W,2025-11,Passenger,Passenger,33691,False,sample
-BAJAJ,3W,2025-11,Cargo,Cargo,7551,False,sample
-BAJAJ,3W,2025-11,Electric,Electric,7637,False,sample
-BAJAJ,3W,2025-12,Passenger,Passenger,34879,False,sample
-BAJAJ,3W,2025-12,Cargo,Cargo,7384,False,sample
-BAJAJ,3W,2025-12,Electric,Electric,7194,False,sample
-BAJAJ,3W,2026-01,Passenger,Passenger,33785,False,sample
-BAJAJ,3W,2026-01,Cargo,Cargo,6885,False,sample
-BAJAJ,3W,2026-01,Electric,Electric,7197,False,sample
-BAJAJ,3W,2026-01,Passenger,Passenger,30750,False,sample
-BAJAJ,3W,2026-01,Cargo,Cargo,6815,False,sample
-BAJAJ,3W,2026-01,Electric,Electric,6617,False,sample
-BAJAJ,3W,2026-03,Passenger,Passenger,43097,False,sample
-BAJAJ,3W,2026-03,Cargo,Cargo,8809,False,sample
-BAJAJ,3W,2026-03,Electric,Electric,8790,False,sample
-BAJAJ,3W,2026-04,Passenger,Passenger,33582,False,sample
-BAJAJ,3W,2026-04,Cargo,Cargo,7251,False,sample
-BAJAJ,3W,2026-04,Electric,Electric,7096,False,sample
-EICHER,2W,2024-05,Motorcycle,Motorcycle,75638,False,sample
-EICHER,2W,2024-06,Motorcycle,Motorcycle,70370,False,sample
-EICHER,2W,2024-07,Motorcycle,Motorcycle,71300,False,sample
-EICHER,2W,2024-08,Motorcycle,Motorcycle,65374,False,sample
-EICHER,2W,2024-09,Motorcycle,Motorcycle,84340,False,sample
-EICHER,2W,2024-10,Motorcycle,Motorcycle,94774,False,sample
-EICHER,2W,2024-11,Motorcycle,Motorcycle,78497,False,sample
-EICHER,2W,2024-12,Motorcycle,Motorcycle,78474,False,sample
-EICHER,2W,2025-01,Motorcycle,Motorcycle,70132,False,sample
-EICHER,2W,2025-02,Motorcycle,Motorcycle,72767,False,sample
-EICHER,2W,2025-03,Motorcycle,Motorcycle,94628,False,sample
-EICHER,2W,2025-04,Motorcycle,Motorcycle,73908,False,sample
-EICHER,2W,2025-05,Motorcycle,Motorcycle,75620,False,sample
-EICHER,2W,2025-06,Motorcycle,Motorcycle,69094,False,sample
-EICHER,2W,2025-07,Motorcycle,Motorcycle,71442,False,sample
-EICHER,2W,2025-08,Motorcycle,Motorcycle,68570,False,sample
-EICHER,2W,2025-09,Motorcycle,Motorcycle,89243,False,sample
-EICHER,2W,2025-10,Motorcycle,Motorcycle,100793,False,sample
-EICHER,2W,2025-11,Motorcycle,Motorcycle,83829,False,sample
-EICHER,2W,2025-12,Motorcycle,Motorcycle,78999,False,sample
-EICHER,2W,2026-01,Motorcycle,Motorcycle,75374,False,sample
-EICHER,2W,2026-01,Motorcycle,Motorcycle,73382,False,sample
-EICHER,2W,2026-03,Motorcycle,Motorcycle,99987,False,sample
-EICHER,2W,2026-04,Motorcycle,Motorcycle,87292,False,sample
-ESCORTS,Tractor,2024-05,Sub30HP,Sub30HP,1889,False,sample
-ESCORTS,Tractor,2024-05,30-40HP,30-40HP,4291,False,sample
-ESCORTS,Tractor,2024-05,Above40HP,Above40HP,2413,False,sample
-ESCORTS,Tractor,2024-06,Sub30HP,Sub30HP,2182,False,sample
-ESCORTS,Tractor,2024-06,30-40HP,30-40HP,5096,False,sample
-ESCORTS,Tractor,2024-06,Above40HP,Above40HP,2919,False,sample
-ESCORTS,Tractor,2024-07,Sub30HP,Sub30HP,2012,False,sample
-ESCORTS,Tractor,2024-07,30-40HP,30-40HP,4621,False,sample
-ESCORTS,Tractor,2024-07,Above40HP,Above40HP,2582,False,sample
-ESCORTS,Tractor,2024-08,Sub30HP,Sub30HP,1729,False,sample
-ESCORTS,Tractor,2024-08,30-40HP,30-40HP,3981,False,sample
-ESCORTS,Tractor,2024-08,Above40HP,Above40HP,2304,False,sample
-ESCORTS,Tractor,2024-09,Sub30HP,Sub30HP,2046,False,sample
-ESCORTS,Tractor,2024-09,30-40HP,30-40HP,4825,False,sample
-ESCORTS,Tractor,2024-09,Above40HP,Above40HP,2737,False,sample
-ESCORTS,Tractor,2024-10,Sub30HP,Sub30HP,2017,False,sample
-ESCORTS,Tractor,2024-10,30-40HP,30-40HP,4659,False,sample
-ESCORTS,Tractor,2024-10,Above40HP,Above40HP,2589,False,sample
-ESCORTS,Tractor,2024-11,Sub30HP,Sub30HP,1587,False,sample
-ESCORTS,Tractor,2024-11,30-40HP,30-40HP,3693,False,sample
-ESCORTS,Tractor,2024-11,Above40HP,Above40HP,2097,False,sample
-ESCORTS,Tractor,2024-12,Sub30HP,Sub30HP,1488,False,sample
-ESCORTS,Tractor,2024-12,30-40HP,30-40HP,3370,False,sample
-ESCORTS,Tractor,2024-12,Above40HP,Above40HP,1913,False,sample
-ESCORTS,Tractor,2025-01,Sub30HP,Sub30HP,1600,False,sample
-ESCORTS,Tractor,2025-01,30-40HP,30-40HP,3617,False,sample
-ESCORTS,Tractor,2025-01,Above40HP,Above40HP,2082,False,sample
-ESCORTS,Tractor,2025-02,Sub30HP,Sub30HP,1791,False,sample
-ESCORTS,Tractor,2025-02,30-40HP,30-40HP,4166,False,sample
-ESCORTS,Tractor,2025-02,Above40HP,Above40HP,2194,False,sample
-ESCORTS,Tractor,2025-03,Sub30HP,Sub30HP,2309,False,sample
-ESCORTS,Tractor,2025-03,30-40HP,30-40HP,5045,False,sample
-ESCORTS,Tractor,2025-03,Above40HP,Above40HP,2865,False,sample
-ESCORTS,Tractor,2025-04,Sub30HP,Sub30HP,2359,False,sample
-ESCORTS,Tractor,2025-04,30-40HP,30-40HP,5370,False,sample
-ESCORTS,Tractor,2025-04,Above40HP,Above40HP,2911,False,sample
-ESCORTS,Tractor,2025-05,Sub30HP,Sub30HP,1964,False,sample
-ESCORTS,Tractor,2025-05,30-40HP,30-40HP,4475,False,sample
-ESCORTS,Tractor,2025-05,Above40HP,Above40HP,2682,False,sample
-ESCORTS,Tractor,2025-06,Sub30HP,Sub30HP,2511,False,sample
-ESCORTS,Tractor,2025-06,30-40HP,30-40HP,5559,False,sample
-ESCORTS,Tractor,2025-06,Above40HP,Above40HP,2981,False,sample
-ESCORTS,Tractor,2025-07,Sub30HP,Sub30HP,2223,False,sample
-ESCORTS,Tractor,2025-07,30-40HP,30-40HP,4812,False,sample
-ESCORTS,Tractor,2025-07,Above40HP,Above40HP,2836,False,sample
-ESCORTS,Tractor,2025-08,Sub30HP,Sub30HP,2014,False,sample
-ESCORTS,Tractor,2025-08,30-40HP,30-40HP,4638,False,sample
-ESCORTS,Tractor,2025-08,Above40HP,Above40HP,2589,False,sample
-ESCORTS,Tractor,2025-09,Sub30HP,Sub30HP,2314,False,sample
-ESCORTS,Tractor,2025-09,30-40HP,30-40HP,5124,False,sample
-ESCORTS,Tractor,2025-09,Above40HP,Above40HP,2890,False,sample
-ESCORTS,Tractor,2025-10,Sub30HP,Sub30HP,2152,False,sample
-ESCORTS,Tractor,2025-10,30-40HP,30-40HP,5130,False,sample
-ESCORTS,Tractor,2025-10,Above40HP,Above40HP,2773,False,sample
-ESCORTS,Tractor,2025-11,Sub30HP,Sub30HP,1862,False,sample
-ESCORTS,Tractor,2025-11,30-40HP,30-40HP,4047,False,sample
-ESCORTS,Tractor,2025-11,Above40HP,Above40HP,2344,False,sample
-ESCORTS,Tractor,2025-12,Sub30HP,Sub30HP,1669,False,sample
-ESCORTS,Tractor,2025-12,30-40HP,30-40HP,4059,False,sample
-ESCORTS,Tractor,2025-12,Above40HP,Above40HP,2226,False,sample
-ESCORTS,Tractor,2026-01,Sub30HP,Sub30HP,1800,False,sample
-ESCORTS,Tractor,2026-01,30-40HP,30-40HP,4246,False,sample
-ESCORTS,Tractor,2026-01,Above40HP,Above40HP,2209,False,sample
-ESCORTS,Tractor,2026-01,Sub30HP,Sub30HP,1847,False,sample
-ESCORTS,Tractor,2026-01,30-40HP,30-40HP,4335,False,sample
-ESCORTS,Tractor,2026-01,Above40HP,Above40HP,2333,False,sample
-ESCORTS,Tractor,2026-03,Sub30HP,Sub30HP,2611,False,sample
-ESCORTS,Tractor,2026-03,30-40HP,30-40HP,6020,False,sample
-ESCORTS,Tractor,2026-03,Above40HP,Above40HP,3226,False,sample
-ESCORTS,Tractor,2026-04,Sub30HP,Sub30HP,2371,False,sample
-ESCORTS,Tractor,2026-04,30-40HP,30-40HP,5076,False,sample
-ESCORTS,Tractor,2026-04,Above40HP,Above40HP,2900,False,sample
-HEROMOTOCO,2W,2024-05,Motorcycle,Motorcycle,383294,False,sample
-HEROMOTOCO,2W,2024-05,Scooter,Scooter,71033,False,sample
-HEROMOTOCO,2W,2024-05,EV,EV,4391,False,sample
-HEROMOTOCO,2W,2024-06,Motorcycle,Motorcycle,336454,False,sample
-HEROMOTOCO,2W,2024-06,Scooter,Scooter,62306,False,sample
-HEROMOTOCO,2W,2024-06,EV,EV,3971,False,sample
-HEROMOTOCO,2W,2024-07,Motorcycle,Motorcycle,342339,False,sample
-HEROMOTOCO,2W,2024-07,Scooter,Scooter,62996,False,sample
-HEROMOTOCO,2W,2024-07,EV,EV,4110,False,sample
-HEROMOTOCO,2W,2024-08,Motorcycle,Motorcycle,322161,False,sample
-HEROMOTOCO,2W,2024-08,Scooter,Scooter,61691,False,sample
-HEROMOTOCO,2W,2024-08,EV,EV,3664,False,sample
-HEROMOTOCO,2W,2024-09,Motorcycle,Motorcycle,374458,False,sample
-HEROMOTOCO,2W,2024-09,Scooter,Scooter,75495,False,sample
-HEROMOTOCO,2W,2024-09,EV,EV,4689,False,sample
-HEROMOTOCO,2W,2024-10,Motorcycle,Motorcycle,481008,False,sample
-HEROMOTOCO,2W,2024-10,Scooter,Scooter,89645,False,sample
-HEROMOTOCO,2W,2024-10,EV,EV,5507,False,sample
-HEROMOTOCO,2W,2024-11,Motorcycle,Motorcycle,323078,False,sample
-HEROMOTOCO,2W,2024-11,Scooter,Scooter,63852,False,sample
-HEROMOTOCO,2W,2024-11,EV,EV,4007,False,sample
-HEROMOTOCO,2W,2024-12,Motorcycle,Motorcycle,347344,False,sample
-HEROMOTOCO,2W,2024-12,Scooter,Scooter,66208,False,sample
-HEROMOTOCO,2W,2024-12,EV,EV,4156,False,sample
-HEROMOTOCO,2W,2025-01,Motorcycle,Motorcycle,341367,False,sample
-HEROMOTOCO,2W,2025-01,Scooter,Scooter,66365,False,sample
-HEROMOTOCO,2W,2025-01,EV,EV,4099,False,sample
-HEROMOTOCO,2W,2025-02,Motorcycle,Motorcycle,321997,False,sample
-HEROMOTOCO,2W,2025-02,Scooter,Scooter,63762,False,sample
-HEROMOTOCO,2W,2025-02,EV,EV,3901,False,sample
-HEROMOTOCO,2W,2025-03,Motorcycle,Motorcycle,409476,False,sample
-HEROMOTOCO,2W,2025-03,Scooter,Scooter,77220,False,sample
-HEROMOTOCO,2W,2025-03,EV,EV,4850,False,sample
-HEROMOTOCO,2W,2025-04,Motorcycle,Motorcycle,371038,False,sample
-HEROMOTOCO,2W,2025-04,Scooter,Scooter,72083,False,sample
-HEROMOTOCO,2W,2025-04,EV,EV,4395,False,sample
-HEROMOTOCO,2W,2025-05,Motorcycle,Motorcycle,406267,False,sample
-HEROMOTOCO,2W,2025-05,Scooter,Scooter,78341,False,sample
-HEROMOTOCO,2W,2025-05,EV,EV,4924,False,sample
-HEROMOTOCO,2W,2025-06,Motorcycle,Motorcycle,349929,False,sample
-HEROMOTOCO,2W,2025-06,Scooter,Scooter,65297,False,sample
-HEROMOTOCO,2W,2025-06,EV,EV,4151,False,sample
-HEROMOTOCO,2W,2025-07,Motorcycle,Motorcycle,337385,False,sample
-HEROMOTOCO,2W,2025-07,Scooter,Scooter,65907,False,sample
-HEROMOTOCO,2W,2025-07,EV,EV,4183,False,sample
-HEROMOTOCO,2W,2025-08,Motorcycle,Motorcycle,353858,False,sample
-HEROMOTOCO,2W,2025-08,Scooter,Scooter,70313,False,sample
-HEROMOTOCO,2W,2025-08,EV,EV,4389,False,sample
-HEROMOTOCO,2W,2025-09,Motorcycle,Motorcycle,411233,False,sample
-HEROMOTOCO,2W,2025-09,Scooter,Scooter,76687,False,sample
-HEROMOTOCO,2W,2025-09,EV,EV,4862,False,sample
-HEROMOTOCO,2W,2025-10,Motorcycle,Motorcycle,446445,False,sample
-HEROMOTOCO,2W,2025-10,Scooter,Scooter,88721,False,sample
-HEROMOTOCO,2W,2025-10,EV,EV,5531,False,sample
-HEROMOTOCO,2W,2025-11,Motorcycle,Motorcycle,351184,False,sample
-HEROMOTOCO,2W,2025-11,Scooter,Scooter,67206,False,sample
-HEROMOTOCO,2W,2025-11,EV,EV,4268,False,sample
-HEROMOTOCO,2W,2025-12,Motorcycle,Motorcycle,419044,False,sample
-HEROMOTOCO,2W,2025-12,Scooter,Scooter,76932,False,sample
-HEROMOTOCO,2W,2025-12,EV,EV,4920,False,sample
-HEROMOTOCO,2W,2026-01,Motorcycle,Motorcycle,361069,False,sample
-HEROMOTOCO,2W,2026-01,Scooter,Scooter,67024,False,sample
-HEROMOTOCO,2W,2026-01,EV,EV,4190,False,sample
-HEROMOTOCO,2W,2026-01,Motorcycle,Motorcycle,382925,False,sample
-HEROMOTOCO,2W,2026-01,Scooter,Scooter,74070,False,sample
-HEROMOTOCO,2W,2026-01,EV,EV,4670,False,sample
-HEROMOTOCO,2W,2026-03,Motorcycle,Motorcycle,453525,False,sample
-HEROMOTOCO,2W,2026-03,Scooter,Scooter,88755,False,sample
-HEROMOTOCO,2W,2026-03,EV,EV,5829,False,sample
-HEROMOTOCO,2W,2026-04,Motorcycle,Motorcycle,363995,False,sample
-HEROMOTOCO,2W,2026-04,Scooter,Scooter,70819,False,sample
-HEROMOTOCO,2W,2026-04,EV,EV,4659,False,sample
-MAHINDRA_AUTO,CV,2024-05,SCV,SCV,14479,False,sample
-MAHINDRA_AUTO,CV,2024-05,ICV,ICV,3800,False,sample
-MAHINDRA_AUTO,CV,2024-05,MHCV,MHCV,2180,False,sample
-MAHINDRA_AUTO,CV,2024-05,Bus,Bus,1501,False,sample
-MAHINDRA_AUTO,CV,2024-06,SCV,SCV,14160,False,sample
-MAHINDRA_AUTO,CV,2024-06,ICV,ICV,3817,False,sample
-MAHINDRA_AUTO,CV,2024-06,MHCV,MHCV,2143,False,sample
-MAHINDRA_AUTO,CV,2024-06,Bus,Bus,1554,False,sample
-MAHINDRA_AUTO,CV,2024-07,SCV,SCV,12860,False,sample
-MAHINDRA_AUTO,CV,2024-07,ICV,ICV,3481,False,sample
-MAHINDRA_AUTO,CV,2024-07,MHCV,MHCV,2005,False,sample
-MAHINDRA_AUTO,CV,2024-07,Bus,Bus,1407,False,sample
-MAHINDRA_AUTO,CV,2024-08,SCV,SCV,14247,False,sample
-MAHINDRA_AUTO,CV,2024-08,ICV,ICV,3988,False,sample
-MAHINDRA_AUTO,CV,2024-08,MHCV,MHCV,2192,False,sample
-MAHINDRA_AUTO,CV,2024-08,Bus,Bus,1584,False,sample
-MAHINDRA_AUTO,CV,2024-09,SCV,SCV,15832,False,sample
-MAHINDRA_AUTO,CV,2024-09,ICV,ICV,4471,False,sample
-MAHINDRA_AUTO,CV,2024-09,MHCV,MHCV,2431,False,sample
-MAHINDRA_AUTO,CV,2024-09,Bus,Bus,1681,False,sample
-MAHINDRA_AUTO,CV,2024-10,SCV,SCV,18047,False,sample
-MAHINDRA_AUTO,CV,2024-10,ICV,ICV,5047,False,sample
-MAHINDRA_AUTO,CV,2024-10,MHCV,MHCV,2798,False,sample
-MAHINDRA_AUTO,CV,2024-10,Bus,Bus,1900,False,sample
-MAHINDRA_AUTO,CV,2024-11,SCV,SCV,14434,False,sample
-MAHINDRA_AUTO,CV,2024-11,ICV,ICV,4040,False,sample
-MAHINDRA_AUTO,CV,2024-11,MHCV,MHCV,2174,False,sample
-MAHINDRA_AUTO,CV,2024-11,Bus,Bus,1574,False,sample
-MAHINDRA_AUTO,CV,2024-12,SCV,SCV,15856,False,sample
-MAHINDRA_AUTO,CV,2024-12,ICV,ICV,4416,False,sample
-MAHINDRA_AUTO,CV,2024-12,MHCV,MHCV,2316,False,sample
-MAHINDRA_AUTO,CV,2024-12,Bus,Bus,1744,False,sample
-MAHINDRA_AUTO,CV,2025-01,SCV,SCV,14503,False,sample
-MAHINDRA_AUTO,CV,2025-01,ICV,ICV,3991,False,sample
-MAHINDRA_AUTO,CV,2025-01,MHCV,MHCV,2236,False,sample
-MAHINDRA_AUTO,CV,2025-01,Bus,Bus,1617,False,sample
-MAHINDRA_AUTO,CV,2025-02,SCV,SCV,14694,False,sample
-MAHINDRA_AUTO,CV,2025-02,ICV,ICV,4021,False,sample
-MAHINDRA_AUTO,CV,2025-02,MHCV,MHCV,2278,False,sample
-MAHINDRA_AUTO,CV,2025-02,Bus,Bus,1541,False,sample
-MAHINDRA_AUTO,CV,2025-03,SCV,SCV,18121,False,sample
-MAHINDRA_AUTO,CV,2025-03,ICV,ICV,4878,False,sample
-MAHINDRA_AUTO,CV,2025-03,MHCV,MHCV,2732,False,sample
-MAHINDRA_AUTO,CV,2025-03,Bus,Bus,1828,False,sample
-MAHINDRA_AUTO,CV,2025-04,SCV,SCV,16161,False,sample
-MAHINDRA_AUTO,CV,2025-04,ICV,ICV,4436,False,sample
-MAHINDRA_AUTO,CV,2025-04,MHCV,MHCV,2405,False,sample
-MAHINDRA_AUTO,CV,2025-04,Bus,Bus,1723,False,sample
-MAHINDRA_AUTO,CV,2025-05,SCV,SCV,15072,False,sample
-MAHINDRA_AUTO,CV,2025-05,ICV,ICV,4499,False,sample
-MAHINDRA_AUTO,CV,2025-05,MHCV,MHCV,2440,False,sample
-MAHINDRA_AUTO,CV,2025-05,Bus,Bus,1671,False,sample
-MAHINDRA_AUTO,CV,2025-06,SCV,SCV,13675,False,sample
-MAHINDRA_AUTO,CV,2025-06,ICV,ICV,3850,False,sample
-MAHINDRA_AUTO,CV,2025-06,MHCV,MHCV,2050,False,sample
-MAHINDRA_AUTO,CV,2025-06,Bus,Bus,1387,False,sample
-MAHINDRA_AUTO,CV,2025-07,SCV,SCV,13842,False,sample
-MAHINDRA_AUTO,CV,2025-07,ICV,ICV,3912,False,sample
-MAHINDRA_AUTO,CV,2025-07,MHCV,MHCV,2174,False,sample
-MAHINDRA_AUTO,CV,2025-07,Bus,Bus,1529,False,sample
-MAHINDRA_AUTO,CV,2025-08,SCV,SCV,14722,False,sample
-MAHINDRA_AUTO,CV,2025-08,ICV,ICV,4035,False,sample
-MAHINDRA_AUTO,CV,2025-08,MHCV,MHCV,2231,False,sample
-MAHINDRA_AUTO,CV,2025-08,Bus,Bus,1610,False,sample
-MAHINDRA_AUTO,CV,2025-09,SCV,SCV,17879,False,sample
-MAHINDRA_AUTO,CV,2025-09,ICV,ICV,4916,False,sample
-MAHINDRA_AUTO,CV,2025-09,MHCV,MHCV,2697,False,sample
-MAHINDRA_AUTO,CV,2025-09,Bus,Bus,1839,False,sample
-MAHINDRA_AUTO,CV,2025-10,SCV,SCV,18959,False,sample
-MAHINDRA_AUTO,CV,2025-10,ICV,ICV,5385,False,sample
-MAHINDRA_AUTO,CV,2025-10,MHCV,MHCV,3123,False,sample
-MAHINDRA_AUTO,CV,2025-10,Bus,Bus,2043,False,sample
-MAHINDRA_AUTO,CV,2025-11,SCV,SCV,16530,False,sample
-MAHINDRA_AUTO,CV,2025-11,ICV,ICV,4294,False,sample
-MAHINDRA_AUTO,CV,2025-11,MHCV,MHCV,2419,False,sample
-MAHINDRA_AUTO,CV,2025-11,Bus,Bus,1713,False,sample
-MAHINDRA_AUTO,CV,2025-12,SCV,SCV,16035,False,sample
-MAHINDRA_AUTO,CV,2025-12,ICV,ICV,4541,False,sample
-MAHINDRA_AUTO,CV,2025-12,MHCV,MHCV,2521,False,sample
-MAHINDRA_AUTO,CV,2025-12,Bus,Bus,1759,False,sample
-MAHINDRA_AUTO,CV,2026-01,SCV,SCV,15094,False,sample
-MAHINDRA_AUTO,CV,2026-01,ICV,ICV,4055,False,sample
-MAHINDRA_AUTO,CV,2026-01,MHCV,MHCV,2249,False,sample
-MAHINDRA_AUTO,CV,2026-01,Bus,Bus,1640,False,sample
-MAHINDRA_AUTO,CV,2026-01,SCV,SCV,13940,False,sample
-MAHINDRA_AUTO,CV,2026-01,ICV,ICV,4094,False,sample
-MAHINDRA_AUTO,CV,2026-01,MHCV,MHCV,2238,False,sample
-MAHINDRA_AUTO,CV,2026-01,Bus,Bus,1570,False,sample
-MAHINDRA_AUTO,CV,2026-03,SCV,SCV,19108,False,sample
-MAHINDRA_AUTO,CV,2026-03,ICV,ICV,5648,False,sample
-MAHINDRA_AUTO,CV,2026-03,MHCV,MHCV,2959,False,sample
-MAHINDRA_AUTO,CV,2026-03,Bus,Bus,2059,False,sample
-MAHINDRA_AUTO,CV,2026-04,SCV,SCV,16236,False,sample
-MAHINDRA_AUTO,CV,2026-04,ICV,ICV,4644,False,sample
-MAHINDRA_AUTO,CV,2026-04,MHCV,MHCV,2661,False,sample
-MAHINDRA_AUTO,CV,2026-04,Bus,Bus,1758,False,sample
-MAHINDRA_AUTO,EV,2024-05,BE 6,BE 6,590,False,sample
-MAHINDRA_AUTO,EV,2024-05,XEV 9e,XEV 9e,316,False,sample
-MAHINDRA_AUTO,EV,2024-05,XUV400 EV,XUV400 EV,163,False,sample
-MAHINDRA_AUTO,EV,2024-06,BE 6,BE 6,565,False,sample
-MAHINDRA_AUTO,EV,2024-06,XEV 9e,XEV 9e,298,False,sample
-MAHINDRA_AUTO,EV,2024-06,XUV400 EV,XUV400 EV,156,False,sample
-MAHINDRA_AUTO,EV,2024-07,BE 6,BE 6,590,False,sample
-MAHINDRA_AUTO,EV,2024-07,XEV 9e,XEV 9e,332,False,sample
-MAHINDRA_AUTO,EV,2024-07,XUV400 EV,XUV400 EV,163,False,sample
-MAHINDRA_AUTO,EV,2024-08,BE 6,BE 6,623,False,sample
-MAHINDRA_AUTO,EV,2024-08,XEV 9e,XEV 9e,326,False,sample
-MAHINDRA_AUTO,EV,2024-08,XUV400 EV,XUV400 EV,170,False,sample
-MAHINDRA_AUTO,EV,2024-09,BE 6,BE 6,749,False,sample
-MAHINDRA_AUTO,EV,2024-09,XEV 9e,XEV 9e,385,False,sample
-MAHINDRA_AUTO,EV,2024-09,XUV400 EV,XUV400 EV,193,False,sample
-MAHINDRA_AUTO,EV,2024-10,BE 6,BE 6,826,False,sample
-MAHINDRA_AUTO,EV,2024-10,XEV 9e,XEV 9e,427,False,sample
-MAHINDRA_AUTO,EV,2024-10,XUV400 EV,XUV400 EV,215,False,sample
-MAHINDRA_AUTO,EV,2024-11,BE 6,BE 6,673,False,sample
-MAHINDRA_AUTO,EV,2024-11,XEV 9e,XEV 9e,361,False,sample
-MAHINDRA_AUTO,EV,2024-11,XUV400 EV,XUV400 EV,189,False,sample
-MAHINDRA_AUTO,EV,2024-12,BE 6,BE 6,690,False,sample
-MAHINDRA_AUTO,EV,2024-12,XEV 9e,XEV 9e,379,False,sample
-MAHINDRA_AUTO,EV,2024-12,XUV400 EV,XUV400 EV,189,False,sample
-MAHINDRA_AUTO,EV,2025-01,BE 6,BE 6,652,False,sample
-MAHINDRA_AUTO,EV,2025-01,XEV 9e,XEV 9e,354,False,sample
-MAHINDRA_AUTO,EV,2025-01,XUV400 EV,XUV400 EV,174,False,sample
-MAHINDRA_AUTO,EV,2025-02,BE 6,BE 6,696,False,sample
-MAHINDRA_AUTO,EV,2025-02,XEV 9e,XEV 9e,373,False,sample
-MAHINDRA_AUTO,EV,2025-02,XUV400 EV,XUV400 EV,189,False,sample
-MAHINDRA_AUTO,EV,2025-03,BE 6,BE 6,786,False,sample
-MAHINDRA_AUTO,EV,2025-03,XEV 9e,XEV 9e,415,False,sample
-MAHINDRA_AUTO,EV,2025-03,XUV400 EV,XUV400 EV,212,False,sample
-MAHINDRA_AUTO,EV,2025-04,BE 6,BE 6,690,False,sample
-MAHINDRA_AUTO,EV,2025-04,XEV 9e,XEV 9e,378,False,sample
-MAHINDRA_AUTO,EV,2025-04,XUV400 EV,XUV400 EV,188,False,sample
-MAHINDRA_AUTO,EV,2025-05,BE 6,BE 6,715,False,sample
-MAHINDRA_AUTO,EV,2025-05,XEV 9e,XEV 9e,386,False,sample
-MAHINDRA_AUTO,EV,2025-05,XUV400 EV,XUV400 EV,201,False,sample
-MAHINDRA_AUTO,EV,2025-06,BE 6,BE 6,749,False,sample
-MAHINDRA_AUTO,EV,2025-06,XEV 9e,XEV 9e,405,False,sample
-MAHINDRA_AUTO,EV,2025-06,XUV400 EV,XUV400 EV,198,False,sample
-MAHINDRA_AUTO,EV,2025-07,BE 6,BE 6,699,False,sample
-MAHINDRA_AUTO,EV,2025-07,XEV 9e,XEV 9e,375,False,sample
-MAHINDRA_AUTO,EV,2025-07,XUV400 EV,XUV400 EV,194,False,sample
-MAHINDRA_AUTO,EV,2025-08,BE 6,BE 6,767,False,sample
-MAHINDRA_AUTO,EV,2025-08,XEV 9e,XEV 9e,416,False,sample
-MAHINDRA_AUTO,EV,2025-08,XUV400 EV,XUV400 EV,214,False,sample
-MAHINDRA_AUTO,EV,2025-09,BE 6,BE 6,853,False,sample
-MAHINDRA_AUTO,EV,2025-09,XEV 9e,XEV 9e,463,False,sample
-MAHINDRA_AUTO,EV,2025-09,XUV400 EV,XUV400 EV,225,False,sample
-MAHINDRA_AUTO,EV,2025-10,BE 6,BE 6,962,False,sample
-MAHINDRA_AUTO,EV,2025-10,XEV 9e,XEV 9e,531,False,sample
+ASHOKLEY,CV,2024-05,LCV,LCV,5197,False,sample
+ASHOKLEY,CV,2024-05,MHCV,MHCV,7095,False,sample
+ASHOKLEY,CV,2024-05,Bus,Bus,3188,False,sample
+ASHOKLEY,CV,2024-06,LCV,LCV,4711,False,sample
+ASHOKLEY,CV,2024-06,MHCV,MHCV,6677,False,sample
+ASHOKLEY,CV,2024-06,Bus,Bus,2697,False,sample
+ASHOKLEY,CV,2024-07,LCV,LCV,4374,False,sample
+ASHOKLEY,CV,2024-07,MHCV,MHCV,6063,False,sample
+ASHOKLEY,CV,2024-07,Bus,Bus,2619,False,sample
+ASHOKLEY,CV,2024-08,LCV,LCV,4613,False,sample
+ASHOKLEY,CV,2024-08,MHCV,MHCV,6058,False,sample
+ASHOKLEY,CV,2024-08,Bus,Bus,2647,False,sample
+ASHOKLEY,CV,2024-09,LCV,LCV,5951,False,sample
+ASHOKLEY,CV,2024-09,MHCV,MHCV,8017,False,sample
+ASHOKLEY,CV,2024-09,Bus,Bus,3475,False,sample
+ASHOKLEY,CV,2024-10,LCV,LCV,6546,False,sample
+ASHOKLEY,CV,2024-10,MHCV,MHCV,8218,False,sample
+ASHOKLEY,CV,2024-10,Bus,Bus,3620,False,sample
+ASHOKLEY,CV,2024-11,LCV,LCV,5576,False,sample
+ASHOKLEY,CV,2024-11,MHCV,MHCV,7783,False,sample
+ASHOKLEY,CV,2024-11,Bus,Bus,3175,False,sample
+ASHOKLEY,CV,2024-12,LCV,LCV,5524,False,sample
+ASHOKLEY,CV,2024-12,MHCV,MHCV,7432,False,sample
+ASHOKLEY,CV,2024-12,Bus,Bus,3106,False,sample
+ASHOKLEY,CV,2025-01,LCV,LCV,5031,False,sample
+ASHOKLEY,CV,2025-01,MHCV,MHCV,6851,False,sample
+ASHOKLEY,CV,2025-01,Bus,Bus,3050,False,sample
+ASHOKLEY,CV,2025-02,LCV,LCV,5114,False,sample
+ASHOKLEY,CV,2025-02,MHCV,MHCV,6883,False,sample
+ASHOKLEY,CV,2025-02,Bus,Bus,2977,False,sample
+ASHOKLEY,CV,2025-03,LCV,LCV,5985,False,sample
+ASHOKLEY,CV,2025-03,MHCV,MHCV,8457,False,sample
+ASHOKLEY,CV,2025-03,Bus,Bus,3759,False,sample
+ASHOKLEY,CV,2025-04,LCV,LCV,5695,False,sample
+ASHOKLEY,CV,2025-04,MHCV,MHCV,7800,False,sample
+ASHOKLEY,CV,2025-04,Bus,Bus,3396,False,sample
+ASHOKLEY,CV,2025-05,LCV,LCV,5486,False,sample
+ASHOKLEY,CV,2025-05,MHCV,MHCV,7447,False,sample
+ASHOKLEY,CV,2025-05,Bus,Bus,3197,False,sample
+ASHOKLEY,CV,2025-06,LCV,LCV,4777,False,sample
+ASHOKLEY,CV,2025-06,MHCV,MHCV,6468,False,sample
+ASHOKLEY,CV,2025-06,Bus,Bus,2779,False,sample
+ASHOKLEY,CV,2025-07,LCV,LCV,4956,False,sample
+ASHOKLEY,CV,2025-07,MHCV,MHCV,6701,False,sample
+ASHOKLEY,CV,2025-07,Bus,Bus,2793,False,sample
+ASHOKLEY,CV,2025-08,LCV,LCV,5309,False,sample
+ASHOKLEY,CV,2025-08,MHCV,MHCV,7103,False,sample
+ASHOKLEY,CV,2025-08,Bus,Bus,3280,False,sample
+ASHOKLEY,CV,2025-09,LCV,LCV,6500,False,sample
+ASHOKLEY,CV,2025-09,MHCV,MHCV,8412,False,sample
+ASHOKLEY,CV,2025-09,Bus,Bus,3734,False,sample
+ASHOKLEY,CV,2025-10,LCV,LCV,7329,False,sample
+ASHOKLEY,CV,2025-10,MHCV,MHCV,10086,False,sample
+ASHOKLEY,CV,2025-10,Bus,Bus,4348,False,sample
+ASHOKLEY,CV,2025-11,LCV,LCV,5932,False,sample
+ASHOKLEY,CV,2025-11,MHCV,MHCV,7498,False,sample
+ASHOKLEY,CV,2025-11,Bus,Bus,3462,False,sample
+ASHOKLEY,CV,2025-12,LCV,LCV,5382,False,sample
+ASHOKLEY,CV,2025-12,MHCV,MHCV,7482,False,sample
+ASHOKLEY,CV,2025-12,Bus,Bus,3337,False,sample
+ASHOKLEY,CV,2026-01,LCV,LCV,5023,False,sample
+ASHOKLEY,CV,2026-01,MHCV,MHCV,6759,False,sample
+ASHOKLEY,CV,2026-01,Bus,Bus,2938,False,sample
+ASHOKLEY,CV,2026-03,LCV,LCV,6730,False,sample
+ASHOKLEY,CV,2026-03,MHCV,MHCV,9401,False,sample
+ASHOKLEY,CV,2026-03,Bus,Bus,4104,False,sample
+ASHOKLEY,CV,2026-04,LCV,LCV,5509,False,sample
+ASHOKLEY,CV,2026-04,MHCV,MHCV,7884,False,sample
+ASHOKLEY,CV,2026-04,Bus,Bus,3353,False,sample
+BAJAJ,2W,2024-05,Motorcycle,Motorcycle,287874,False,sample
+BAJAJ,2W,2024-05,Scooter,Scooter,15869,False,sample
+BAJAJ,2W,2024-05,EV,EV,9045,False,sample
+BAJAJ,2W,2024-06,Motorcycle,Motorcycle,254872,False,sample
+BAJAJ,2W,2024-06,Scooter,Scooter,14256,False,sample
+BAJAJ,2W,2024-06,EV,EV,8529,False,sample
+BAJAJ,2W,2024-07,Motorcycle,Motorcycle,236402,False,sample
+BAJAJ,2W,2024-07,Scooter,Scooter,12628,False,sample
+BAJAJ,2W,2024-07,EV,EV,7489,False,sample
+BAJAJ,2W,2024-08,Motorcycle,Motorcycle,250718,False,sample
+BAJAJ,2W,2024-08,Scooter,Scooter,12878,False,sample
+BAJAJ,2W,2024-08,EV,EV,8183,False,sample
+BAJAJ,2W,2024-09,Motorcycle,Motorcycle,291454,False,sample
+BAJAJ,2W,2024-09,Scooter,Scooter,15542,False,sample
+BAJAJ,2W,2024-09,EV,EV,9169,False,sample
+BAJAJ,2W,2024-10,Motorcycle,Motorcycle,318652,False,sample
+BAJAJ,2W,2024-10,Scooter,Scooter,18397,False,sample
+BAJAJ,2W,2024-10,EV,EV,10457,False,sample
+BAJAJ,2W,2024-11,Motorcycle,Motorcycle,261133,False,sample
+BAJAJ,2W,2024-11,Scooter,Scooter,14180,False,sample
+BAJAJ,2W,2024-11,EV,EV,8156,False,sample
+BAJAJ,2W,2024-12,Motorcycle,Motorcycle,270192,False,sample
+BAJAJ,2W,2024-12,Scooter,Scooter,14627,False,sample
+BAJAJ,2W,2024-12,EV,EV,8768,False,sample
+BAJAJ,2W,2025-01,Motorcycle,Motorcycle,246516,False,sample
+BAJAJ,2W,2025-01,Scooter,Scooter,13896,False,sample
+BAJAJ,2W,2025-01,EV,EV,8521,False,sample
+BAJAJ,2W,2025-02,Motorcycle,Motorcycle,279808,False,sample
+BAJAJ,2W,2025-02,Scooter,Scooter,15929,False,sample
+BAJAJ,2W,2025-02,EV,EV,8904,False,sample
+BAJAJ,2W,2025-03,Motorcycle,Motorcycle,309863,False,sample
+BAJAJ,2W,2025-03,Scooter,Scooter,15815,False,sample
+BAJAJ,2W,2025-03,EV,EV,10170,False,sample
+BAJAJ,2W,2025-04,Motorcycle,Motorcycle,273880,False,sample
+BAJAJ,2W,2025-04,Scooter,Scooter,14294,False,sample
+BAJAJ,2W,2025-04,EV,EV,8539,False,sample
+BAJAJ,2W,2025-05,Motorcycle,Motorcycle,281929,False,sample
+BAJAJ,2W,2025-05,Scooter,Scooter,15378,False,sample
+BAJAJ,2W,2025-05,EV,EV,8797,False,sample
+BAJAJ,2W,2025-06,Motorcycle,Motorcycle,285969,False,sample
+BAJAJ,2W,2025-06,Scooter,Scooter,15127,False,sample
+BAJAJ,2W,2025-06,EV,EV,9146,False,sample
+BAJAJ,2W,2025-07,Motorcycle,Motorcycle,248049,False,sample
+BAJAJ,2W,2025-07,Scooter,Scooter,13418,False,sample
+BAJAJ,2W,2025-07,EV,EV,8420,False,sample
+BAJAJ,2W,2025-08,Motorcycle,Motorcycle,270964,False,sample
+BAJAJ,2W,2025-08,Scooter,Scooter,14782,False,sample
+BAJAJ,2W,2025-08,EV,EV,9037,False,sample
+BAJAJ,2W,2025-09,Motorcycle,Motorcycle,274756,False,sample
+BAJAJ,2W,2025-09,Scooter,Scooter,15248,False,sample
+BAJAJ,2W,2025-09,EV,EV,9185,False,sample
+BAJAJ,2W,2025-10,Motorcycle,Motorcycle,329146,False,sample
+BAJAJ,2W,2025-10,Scooter,Scooter,17603,False,sample
+BAJAJ,2W,2025-10,EV,EV,11186,False,sample
+BAJAJ,2W,2025-11,Motorcycle,Motorcycle,274732,False,sample
+BAJAJ,2W,2025-11,Scooter,Scooter,15741,False,sample
+BAJAJ,2W,2025-11,EV,EV,8977,False,sample
+BAJAJ,2W,2025-12,Motorcycle,Motorcycle,294581,False,sample
+BAJAJ,2W,2025-12,Scooter,Scooter,16477,False,sample
+BAJAJ,2W,2025-12,EV,EV,9695,False,sample
+BAJAJ,2W,2026-01,Motorcycle,Motorcycle,287184,False,sample
+BAJAJ,2W,2026-01,Scooter,Scooter,15782,False,sample
+BAJAJ,2W,2026-01,EV,EV,9377,False,sample
+BAJAJ,2W,2026-03,Motorcycle,Motorcycle,369808,False,sample
+BAJAJ,2W,2026-03,Scooter,Scooter,19972,False,sample
+BAJAJ,2W,2026-03,EV,EV,11567,False,sample
+BAJAJ,2W,2026-04,Motorcycle,Motorcycle,299287,False,sample
+BAJAJ,2W,2026-04,Scooter,Scooter,16189,False,sample
+BAJAJ,2W,2026-04,EV,EV,9647,False,sample
+BAJAJ,3W,2024-05,Passenger,Passenger,33736,False,sample
+BAJAJ,3W,2024-05,Cargo,Cargo,7110,False,sample
+BAJAJ,3W,2024-05,Electric,Electric,6813,False,sample
+BAJAJ,3W,2024-06,Passenger,Passenger,29153,False,sample
+BAJAJ,3W,2024-06,Cargo,Cargo,6677,False,sample
+BAJAJ,3W,2024-06,Electric,Electric,6405,False,sample
+BAJAJ,3W,2024-07,Passenger,Passenger,29650,False,sample
+BAJAJ,3W,2024-07,Cargo,Cargo,6165,False,sample
+BAJAJ,3W,2024-07,Electric,Electric,5964,False,sample
+BAJAJ,3W,2024-08,Passenger,Passenger,30151,False,sample
+BAJAJ,3W,2024-08,Cargo,Cargo,6494,False,sample
+BAJAJ,3W,2024-08,Electric,Electric,6381,False,sample
+BAJAJ,3W,2024-09,Passenger,Passenger,36086,False,sample
+BAJAJ,3W,2024-09,Cargo,Cargo,7404,False,sample
+BAJAJ,3W,2024-09,Electric,Electric,7547,False,sample
+BAJAJ,3W,2024-10,Passenger,Passenger,41062,False,sample
+BAJAJ,3W,2024-10,Cargo,Cargo,8970,False,sample
+BAJAJ,3W,2024-10,Electric,Electric,8851,False,sample
+BAJAJ,3W,2024-11,Passenger,Passenger,31650,False,sample
+BAJAJ,3W,2024-11,Cargo,Cargo,6628,False,sample
+BAJAJ,3W,2024-11,Electric,Electric,6683,False,sample
+BAJAJ,3W,2024-12,Passenger,Passenger,32283,False,sample
+BAJAJ,3W,2024-12,Cargo,Cargo,6992,False,sample
+BAJAJ,3W,2024-12,Electric,Electric,7049,False,sample
+BAJAJ,3W,2025-01,Passenger,Passenger,31594,False,sample
+BAJAJ,3W,2025-01,Cargo,Cargo,6574,False,sample
+BAJAJ,3W,2025-01,Electric,Electric,6578,False,sample
+BAJAJ,3W,2025-02,Passenger,Passenger,32931,False,sample
+BAJAJ,3W,2025-02,Cargo,Cargo,6944,False,sample
+BAJAJ,3W,2025-02,Electric,Electric,6903,False,sample
+BAJAJ,3W,2025-03,Passenger,Passenger,36361,False,sample
+BAJAJ,3W,2025-03,Cargo,Cargo,7831,False,sample
+BAJAJ,3W,2025-03,Electric,Electric,7894,False,sample
+BAJAJ,3W,2025-04,Passenger,Passenger,35806,False,sample
+BAJAJ,3W,2025-04,Cargo,Cargo,7551,False,sample
+BAJAJ,3W,2025-04,Electric,Electric,7544,False,sample
+BAJAJ,3W,2025-05,Passenger,Passenger,33734,False,sample
+BAJAJ,3W,2025-05,Cargo,Cargo,7209,False,sample
+BAJAJ,3W,2025-05,Electric,Electric,7374,False,sample
+BAJAJ,3W,2025-06,Passenger,Passenger,31712,False,sample
+BAJAJ,3W,2025-06,Cargo,Cargo,6571,False,sample
+BAJAJ,3W,2025-06,Electric,Electric,6470,False,sample
+BAJAJ,3W,2025-07,Passenger,Passenger,32213,False,sample
+BAJAJ,3W,2025-07,Cargo,Cargo,7163,False,sample
+BAJAJ,3W,2025-07,Electric,Electric,7049,False,sample
+BAJAJ,3W,2025-08,Passenger,Passenger,31548,False,sample
+BAJAJ,3W,2025-08,Cargo,Cargo,6759,False,sample
+BAJAJ,3W,2025-08,Electric,Electric,7138,False,sample
+BAJAJ,3W,2025-09,Passenger,Passenger,35641,False,sample
+BAJAJ,3W,2025-09,Cargo,Cargo,7467,False,sample
+BAJAJ,3W,2025-09,Electric,Electric,7246,False,sample
+BAJAJ,3W,2025-10,Passenger,Passenger,45673,False,sample
+BAJAJ,3W,2025-10,Cargo,Cargo,9215,False,sample
+BAJAJ,3W,2025-10,Electric,Electric,9816,False,sample
+BAJAJ,3W,2025-11,Passenger,Passenger,33448,False,sample
+BAJAJ,3W,2025-11,Cargo,Cargo,7210,False,sample
+BAJAJ,3W,2025-11,Electric,Electric,7340,False,sample
+BAJAJ,3W,2025-12,Passenger,Passenger,39067,False,sample
+BAJAJ,3W,2025-12,Cargo,Cargo,8209,False,sample
+BAJAJ,3W,2025-12,Electric,Electric,8153,False,sample
+BAJAJ,3W,2026-01,Passenger,Passenger,32136,False,sample
+BAJAJ,3W,2026-01,Cargo,Cargo,6875,False,sample
+BAJAJ,3W,2026-01,Electric,Electric,6915,False,sample
+BAJAJ,3W,2026-03,Passenger,Passenger,40537,False,sample
+BAJAJ,3W,2026-03,Cargo,Cargo,8906,False,sample
+BAJAJ,3W,2026-03,Electric,Electric,8828,False,sample
+BAJAJ,3W,2026-04,Passenger,Passenger,37410,False,sample
+BAJAJ,3W,2026-04,Cargo,Cargo,7999,False,sample
+BAJAJ,3W,2026-04,Electric,Electric,7848,False,sample
+EICHER,2W,2024-05,Motorcycle,Motorcycle,75353,False,sample
+EICHER,2W,2024-06,Motorcycle,Motorcycle,69267,False,sample
+EICHER,2W,2024-07,Motorcycle,Motorcycle,68226,False,sample
+EICHER,2W,2024-08,Motorcycle,Motorcycle,74065,False,sample
+EICHER,2W,2024-09,Motorcycle,Motorcycle,87149,False,sample
+EICHER,2W,2024-10,Motorcycle,Motorcycle,96736,False,sample
+EICHER,2W,2024-11,Motorcycle,Motorcycle,71196,False,sample
+EICHER,2W,2024-12,Motorcycle,Motorcycle,81885,False,sample
+EICHER,2W,2025-01,Motorcycle,Motorcycle,68890,False,sample
+EICHER,2W,2025-02,Motorcycle,Motorcycle,75174,False,sample
+EICHER,2W,2025-03,Motorcycle,Motorcycle,96308,False,sample
+EICHER,2W,2025-04,Motorcycle,Motorcycle,79802,False,sample
+EICHER,2W,2025-05,Motorcycle,Motorcycle,82481,False,sample
+EICHER,2W,2025-06,Motorcycle,Motorcycle,66517,False,sample
+EICHER,2W,2025-07,Motorcycle,Motorcycle,72041,False,sample
+EICHER,2W,2025-08,Motorcycle,Motorcycle,75259,False,sample
+EICHER,2W,2025-09,Motorcycle,Motorcycle,85256,False,sample
+EICHER,2W,2025-10,Motorcycle,Motorcycle,99128,False,sample
+EICHER,2W,2025-11,Motorcycle,Motorcycle,77959,False,sample
+EICHER,2W,2025-12,Motorcycle,Motorcycle,79418,False,sample
+EICHER,2W,2026-01,Motorcycle,Motorcycle,76260,False,sample
+EICHER,2W,2026-03,Motorcycle,Motorcycle,94854,False,sample
+EICHER,2W,2026-04,Motorcycle,Motorcycle,77843,False,sample
+ESCORTS,Tractor,2024-05,Sub30HP,Sub30HP,2071,False,sample
+ESCORTS,Tractor,2024-05,30-40HP,30-40HP,4663,False,sample
+ESCORTS,Tractor,2024-05,Above40HP,Above40HP,2607,False,sample
+ESCORTS,Tractor,2024-06,Sub30HP,Sub30HP,2259,False,sample
+ESCORTS,Tractor,2024-06,30-40HP,30-40HP,5152,False,sample
+ESCORTS,Tractor,2024-06,Above40HP,Above40HP,2986,False,sample
+ESCORTS,Tractor,2024-07,Sub30HP,Sub30HP,2123,False,sample
+ESCORTS,Tractor,2024-07,30-40HP,30-40HP,4785,False,sample
+ESCORTS,Tractor,2024-07,Above40HP,Above40HP,2805,False,sample
+ESCORTS,Tractor,2024-08,Sub30HP,Sub30HP,1917,False,sample
+ESCORTS,Tractor,2024-08,30-40HP,30-40HP,4384,False,sample
+ESCORTS,Tractor,2024-08,Above40HP,Above40HP,2457,False,sample
+ESCORTS,Tractor,2024-09,Sub30HP,Sub30HP,2049,False,sample
+ESCORTS,Tractor,2024-09,30-40HP,30-40HP,4728,False,sample
+ESCORTS,Tractor,2024-09,Above40HP,Above40HP,2609,False,sample
+ESCORTS,Tractor,2024-10,Sub30HP,Sub30HP,2133,False,sample
+ESCORTS,Tractor,2024-10,30-40HP,30-40HP,4644,False,sample
+ESCORTS,Tractor,2024-10,Above40HP,Above40HP,2647,False,sample
+ESCORTS,Tractor,2024-11,Sub30HP,Sub30HP,1693,False,sample
+ESCORTS,Tractor,2024-11,30-40HP,30-40HP,3647,False,sample
+ESCORTS,Tractor,2024-11,Above40HP,Above40HP,2046,False,sample
+ESCORTS,Tractor,2024-12,Sub30HP,Sub30HP,1710,False,sample
+ESCORTS,Tractor,2024-12,30-40HP,30-40HP,3900,False,sample
+ESCORTS,Tractor,2024-12,Above40HP,Above40HP,2148,False,sample
+ESCORTS,Tractor,2025-01,Sub30HP,Sub30HP,1684,False,sample
+ESCORTS,Tractor,2025-01,30-40HP,30-40HP,3823,False,sample
+ESCORTS,Tractor,2025-01,Above40HP,Above40HP,2107,False,sample
+ESCORTS,Tractor,2025-02,Sub30HP,Sub30HP,1627,False,sample
+ESCORTS,Tractor,2025-02,30-40HP,30-40HP,3722,False,sample
+ESCORTS,Tractor,2025-02,Above40HP,Above40HP,2146,False,sample
+ESCORTS,Tractor,2025-03,Sub30HP,Sub30HP,2293,False,sample
+ESCORTS,Tractor,2025-03,30-40HP,30-40HP,5035,False,sample
+ESCORTS,Tractor,2025-03,Above40HP,Above40HP,2885,False,sample
+ESCORTS,Tractor,2025-04,Sub30HP,Sub30HP,2238,False,sample
+ESCORTS,Tractor,2025-04,30-40HP,30-40HP,5230,False,sample
+ESCORTS,Tractor,2025-04,Above40HP,Above40HP,2815,False,sample
+ESCORTS,Tractor,2025-05,Sub30HP,Sub30HP,2017,False,sample
+ESCORTS,Tractor,2025-05,30-40HP,30-40HP,4743,False,sample
+ESCORTS,Tractor,2025-05,Above40HP,Above40HP,2526,False,sample
+ESCORTS,Tractor,2025-06,Sub30HP,Sub30HP,2221,False,sample
+ESCORTS,Tractor,2025-06,30-40HP,30-40HP,5432,False,sample
+ESCORTS,Tractor,2025-06,Above40HP,Above40HP,2836,False,sample
+ESCORTS,Tractor,2025-07,Sub30HP,Sub30HP,2284,False,sample
+ESCORTS,Tractor,2025-07,30-40HP,30-40HP,5084,False,sample
+ESCORTS,Tractor,2025-07,Above40HP,Above40HP,2867,False,sample
+ESCORTS,Tractor,2025-08,Sub30HP,Sub30HP,1876,False,sample
+ESCORTS,Tractor,2025-08,30-40HP,30-40HP,4479,False,sample
+ESCORTS,Tractor,2025-08,Above40HP,Above40HP,2399,False,sample
+ESCORTS,Tractor,2025-09,Sub30HP,Sub30HP,2366,False,sample
+ESCORTS,Tractor,2025-09,30-40HP,30-40HP,5253,False,sample
+ESCORTS,Tractor,2025-09,Above40HP,Above40HP,2902,False,sample
+ESCORTS,Tractor,2025-10,Sub30HP,Sub30HP,2227,False,sample
+ESCORTS,Tractor,2025-10,30-40HP,30-40HP,4863,False,sample
+ESCORTS,Tractor,2025-10,Above40HP,Above40HP,2681,False,sample
+ESCORTS,Tractor,2025-11,Sub30HP,Sub30HP,1746,False,sample
+ESCORTS,Tractor,2025-11,30-40HP,30-40HP,3761,False,sample
+ESCORTS,Tractor,2025-11,Above40HP,Above40HP,2107,False,sample
+ESCORTS,Tractor,2025-12,Sub30HP,Sub30HP,1694,False,sample
+ESCORTS,Tractor,2025-12,30-40HP,30-40HP,3923,False,sample
+ESCORTS,Tractor,2025-12,Above40HP,Above40HP,2222,False,sample
+ESCORTS,Tractor,2026-01,Sub30HP,Sub30HP,1767,False,sample
+ESCORTS,Tractor,2026-01,30-40HP,30-40HP,3845,False,sample
+ESCORTS,Tractor,2026-01,Above40HP,Above40HP,2300,False,sample
+ESCORTS,Tractor,2026-03,Sub30HP,Sub30HP,2507,False,sample
+ESCORTS,Tractor,2026-03,30-40HP,30-40HP,5520,False,sample
+ESCORTS,Tractor,2026-03,Above40HP,Above40HP,3134,False,sample
+ESCORTS,Tractor,2026-04,Sub30HP,Sub30HP,2424,False,sample
+ESCORTS,Tractor,2026-04,30-40HP,30-40HP,5308,False,sample
+ESCORTS,Tractor,2026-04,Above40HP,Above40HP,2972,False,sample
+HEROMOTOCO,2W,2024-05,Motorcycle,Motorcycle,347780,False,sample
+HEROMOTOCO,2W,2024-05,Scooter,Scooter,70986,False,sample
+HEROMOTOCO,2W,2024-05,EV,EV,4396,False,sample
+HEROMOTOCO,2W,2024-06,Motorcycle,Motorcycle,330635,False,sample
+HEROMOTOCO,2W,2024-06,Scooter,Scooter,66376,False,sample
+HEROMOTOCO,2W,2024-06,EV,EV,4184,False,sample
+HEROMOTOCO,2W,2024-07,Motorcycle,Motorcycle,314126,False,sample
+HEROMOTOCO,2W,2024-07,Scooter,Scooter,65002,False,sample
+HEROMOTOCO,2W,2024-07,EV,EV,3904,False,sample
+HEROMOTOCO,2W,2024-08,Motorcycle,Motorcycle,319705,False,sample
+HEROMOTOCO,2W,2024-08,Scooter,Scooter,62092,False,sample
+HEROMOTOCO,2W,2024-08,EV,EV,3611,False,sample
+HEROMOTOCO,2W,2024-09,Motorcycle,Motorcycle,396605,False,sample
+HEROMOTOCO,2W,2024-09,Scooter,Scooter,76166,False,sample
+HEROMOTOCO,2W,2024-09,EV,EV,4536,False,sample
+HEROMOTOCO,2W,2024-10,Motorcycle,Motorcycle,480319,False,sample
+HEROMOTOCO,2W,2024-10,Scooter,Scooter,93487,False,sample
+HEROMOTOCO,2W,2024-10,EV,EV,5578,False,sample
+HEROMOTOCO,2W,2024-11,Motorcycle,Motorcycle,330947,False,sample
+HEROMOTOCO,2W,2024-11,Scooter,Scooter,65179,False,sample
+HEROMOTOCO,2W,2024-11,EV,EV,4174,False,sample
+HEROMOTOCO,2W,2024-12,Motorcycle,Motorcycle,391492,False,sample
+HEROMOTOCO,2W,2024-12,Scooter,Scooter,72004,False,sample
+HEROMOTOCO,2W,2024-12,EV,EV,4543,False,sample
+HEROMOTOCO,2W,2025-01,Motorcycle,Motorcycle,326516,False,sample
+HEROMOTOCO,2W,2025-01,Scooter,Scooter,62360,False,sample
+HEROMOTOCO,2W,2025-01,EV,EV,4011,False,sample
+HEROMOTOCO,2W,2025-02,Motorcycle,Motorcycle,345036,False,sample
+HEROMOTOCO,2W,2025-02,Scooter,Scooter,68541,False,sample
+HEROMOTOCO,2W,2025-02,EV,EV,4204,False,sample
+HEROMOTOCO,2W,2025-03,Motorcycle,Motorcycle,451447,False,sample
+HEROMOTOCO,2W,2025-03,Scooter,Scooter,83777,False,sample
+HEROMOTOCO,2W,2025-03,EV,EV,5406,False,sample
+HEROMOTOCO,2W,2025-04,Motorcycle,Motorcycle,376312,False,sample
+HEROMOTOCO,2W,2025-04,Scooter,Scooter,72945,False,sample
+HEROMOTOCO,2W,2025-04,EV,EV,4306,False,sample
+HEROMOTOCO,2W,2025-05,Motorcycle,Motorcycle,358974,False,sample
+HEROMOTOCO,2W,2025-05,Scooter,Scooter,68963,False,sample
+HEROMOTOCO,2W,2025-05,EV,EV,4443,False,sample
+HEROMOTOCO,2W,2025-06,Motorcycle,Motorcycle,336589,False,sample
+HEROMOTOCO,2W,2025-06,Scooter,Scooter,67108,False,sample
+HEROMOTOCO,2W,2025-06,EV,EV,4203,False,sample
+HEROMOTOCO,2W,2025-07,Motorcycle,Motorcycle,326923,False,sample
+HEROMOTOCO,2W,2025-07,Scooter,Scooter,63134,False,sample
+HEROMOTOCO,2W,2025-07,EV,EV,3914,False,sample
+HEROMOTOCO,2W,2025-08,Motorcycle,Motorcycle,325020,False,sample
+HEROMOTOCO,2W,2025-08,Scooter,Scooter,61111,False,sample
+HEROMOTOCO,2W,2025-08,EV,EV,4099,False,sample
+HEROMOTOCO,2W,2025-09,Motorcycle,Motorcycle,415788,False,sample
+HEROMOTOCO,2W,2025-09,Scooter,Scooter,83096,False,sample
+HEROMOTOCO,2W,2025-09,EV,EV,4820,False,sample
+HEROMOTOCO,2W,2025-10,Motorcycle,Motorcycle,473488,False,sample
+HEROMOTOCO,2W,2025-10,Scooter,Scooter,91740,False,sample
+HEROMOTOCO,2W,2025-10,EV,EV,5650,False,sample
+HEROMOTOCO,2W,2025-11,Motorcycle,Motorcycle,374470,False,sample
+HEROMOTOCO,2W,2025-11,Scooter,Scooter,73667,False,sample
+HEROMOTOCO,2W,2025-11,EV,EV,4600,False,sample
+HEROMOTOCO,2W,2025-12,Motorcycle,Motorcycle,406450,False,sample
+HEROMOTOCO,2W,2025-12,Scooter,Scooter,78978,False,sample
+HEROMOTOCO,2W,2025-12,EV,EV,4886,False,sample
+HEROMOTOCO,2W,2026-01,Motorcycle,Motorcycle,353997,False,sample
+HEROMOTOCO,2W,2026-01,Scooter,Scooter,67150,False,sample
+HEROMOTOCO,2W,2026-01,EV,EV,4093,False,sample
+HEROMOTOCO,2W,2026-03,Motorcycle,Motorcycle,451454,False,sample
+HEROMOTOCO,2W,2026-03,Scooter,Scooter,86485,False,sample
+HEROMOTOCO,2W,2026-03,EV,EV,5383,False,sample
+HEROMOTOCO,2W,2026-04,Motorcycle,Motorcycle,399077,False,sample
+HEROMOTOCO,2W,2026-04,Scooter,Scooter,73523,False,sample
+HEROMOTOCO,2W,2026-04,EV,EV,4540,False,sample
+MAHINDRA_AUTO,CV,2024-05,SCV,SCV,14672,False,sample
+MAHINDRA_AUTO,CV,2024-05,ICV,ICV,3913,False,sample
+MAHINDRA_AUTO,CV,2024-05,MHCV,MHCV,2169,False,sample
+MAHINDRA_AUTO,CV,2024-05,Bus,Bus,1584,False,sample
+MAHINDRA_AUTO,CV,2024-06,SCV,SCV,13580,False,sample
+MAHINDRA_AUTO,CV,2024-06,ICV,ICV,3860,False,sample
+MAHINDRA_AUTO,CV,2024-06,MHCV,MHCV,2180,False,sample
+MAHINDRA_AUTO,CV,2024-06,Bus,Bus,1507,False,sample
+MAHINDRA_AUTO,CV,2024-07,SCV,SCV,13476,False,sample
+MAHINDRA_AUTO,CV,2024-07,ICV,ICV,3738,False,sample
+MAHINDRA_AUTO,CV,2024-07,MHCV,MHCV,2066,False,sample
+MAHINDRA_AUTO,CV,2024-07,Bus,Bus,1437,False,sample
+MAHINDRA_AUTO,CV,2024-08,SCV,SCV,13603,False,sample
+MAHINDRA_AUTO,CV,2024-08,ICV,ICV,3824,False,sample
+MAHINDRA_AUTO,CV,2024-08,MHCV,MHCV,2081,False,sample
+MAHINDRA_AUTO,CV,2024-08,Bus,Bus,1457,False,sample
+MAHINDRA_AUTO,CV,2024-09,SCV,SCV,16148,False,sample
+MAHINDRA_AUTO,CV,2024-09,ICV,ICV,4672,False,sample
+MAHINDRA_AUTO,CV,2024-09,MHCV,MHCV,2434,False,sample
+MAHINDRA_AUTO,CV,2024-09,Bus,Bus,1804,False,sample
+MAHINDRA_AUTO,CV,2024-10,SCV,SCV,19579,False,sample
+MAHINDRA_AUTO,CV,2024-10,ICV,ICV,5127,False,sample
+MAHINDRA_AUTO,CV,2024-10,MHCV,MHCV,2926,False,sample
+MAHINDRA_AUTO,CV,2024-10,Bus,Bus,1987,False,sample
+MAHINDRA_AUTO,CV,2024-11,SCV,SCV,14543,False,sample
+MAHINDRA_AUTO,CV,2024-11,ICV,ICV,3898,False,sample
+MAHINDRA_AUTO,CV,2024-11,MHCV,MHCV,2207,False,sample
+MAHINDRA_AUTO,CV,2024-11,Bus,Bus,1549,False,sample
+MAHINDRA_AUTO,CV,2024-12,SCV,SCV,14792,False,sample
+MAHINDRA_AUTO,CV,2024-12,ICV,ICV,4230,False,sample
+MAHINDRA_AUTO,CV,2024-12,MHCV,MHCV,2267,False,sample
+MAHINDRA_AUTO,CV,2024-12,Bus,Bus,1537,False,sample
+MAHINDRA_AUTO,CV,2025-01,SCV,SCV,12773,False,sample
+MAHINDRA_AUTO,CV,2025-01,ICV,ICV,3619,False,sample
+MAHINDRA_AUTO,CV,2025-01,MHCV,MHCV,2035,False,sample
+MAHINDRA_AUTO,CV,2025-01,Bus,Bus,1423,False,sample
+MAHINDRA_AUTO,CV,2025-02,SCV,SCV,14655,False,sample
+MAHINDRA_AUTO,CV,2025-02,ICV,ICV,3941,False,sample
+MAHINDRA_AUTO,CV,2025-02,MHCV,MHCV,2138,False,sample
+MAHINDRA_AUTO,CV,2025-02,Bus,Bus,1526,False,sample
+MAHINDRA_AUTO,CV,2025-03,SCV,SCV,15988,False,sample
+MAHINDRA_AUTO,CV,2025-03,ICV,ICV,4506,False,sample
+MAHINDRA_AUTO,CV,2025-03,MHCV,MHCV,2474,False,sample
+MAHINDRA_AUTO,CV,2025-03,Bus,Bus,1782,False,sample
+MAHINDRA_AUTO,CV,2025-04,SCV,SCV,15949,False,sample
+MAHINDRA_AUTO,CV,2025-04,ICV,ICV,4361,False,sample
+MAHINDRA_AUTO,CV,2025-04,MHCV,MHCV,2330,False,sample
+MAHINDRA_AUTO,CV,2025-04,Bus,Bus,1743,False,sample
+MAHINDRA_AUTO,CV,2025-05,SCV,SCV,16869,False,sample
+MAHINDRA_AUTO,CV,2025-05,ICV,ICV,4486,False,sample
+MAHINDRA_AUTO,CV,2025-05,MHCV,MHCV,2455,False,sample
+MAHINDRA_AUTO,CV,2025-05,Bus,Bus,1703,False,sample
+MAHINDRA_AUTO,CV,2025-06,SCV,SCV,13626,False,sample
+MAHINDRA_AUTO,CV,2025-06,ICV,ICV,3930,False,sample
+MAHINDRA_AUTO,CV,2025-06,MHCV,MHCV,2198,False,sample
+MAHINDRA_AUTO,CV,2025-06,Bus,Bus,1567,False,sample
+MAHINDRA_AUTO,CV,2025-07,SCV,SCV,13631,False,sample
+MAHINDRA_AUTO,CV,2025-07,ICV,ICV,3932,False,sample
+MAHINDRA_AUTO,CV,2025-07,MHCV,MHCV,2109,False,sample
+MAHINDRA_AUTO,CV,2025-07,Bus,Bus,1532,False,sample
+MAHINDRA_AUTO,CV,2025-08,SCV,SCV,13945,False,sample
+MAHINDRA_AUTO,CV,2025-08,ICV,ICV,3769,False,sample
+MAHINDRA_AUTO,CV,2025-08,MHCV,MHCV,2247,False,sample
+MAHINDRA_AUTO,CV,2025-08,Bus,Bus,1562,False,sample
+MAHINDRA_AUTO,CV,2025-09,SCV,SCV,17132,False,sample
+MAHINDRA_AUTO,CV,2025-09,ICV,ICV,5028,False,sample
+MAHINDRA_AUTO,CV,2025-09,MHCV,MHCV,2632,False,sample
+MAHINDRA_AUTO,CV,2025-09,Bus,Bus,1975,False,sample
+MAHINDRA_AUTO,CV,2025-10,SCV,SCV,19334,False,sample
+MAHINDRA_AUTO,CV,2025-10,ICV,ICV,5239,False,sample
+MAHINDRA_AUTO,CV,2025-10,MHCV,MHCV,3115,False,sample
+MAHINDRA_AUTO,CV,2025-10,Bus,Bus,2156,False,sample
+MAHINDRA_AUTO,CV,2025-11,SCV,SCV,14857,False,sample
+MAHINDRA_AUTO,CV,2025-11,ICV,ICV,4185,False,sample
+MAHINDRA_AUTO,CV,2025-11,MHCV,MHCV,2233,False,sample
+MAHINDRA_AUTO,CV,2025-11,Bus,Bus,1595,False,sample
+MAHINDRA_AUTO,CV,2025-12,SCV,SCV,16080,False,sample
+MAHINDRA_AUTO,CV,2025-12,ICV,ICV,4437,False,sample
+MAHINDRA_AUTO,CV,2025-12,MHCV,MHCV,2435,False,sample
+MAHINDRA_AUTO,CV,2025-12,Bus,Bus,1736,False,sample
+MAHINDRA_AUTO,CV,2026-01,SCV,SCV,14885,False,sample
+MAHINDRA_AUTO,CV,2026-01,ICV,ICV,4133,False,sample
+MAHINDRA_AUTO,CV,2026-01,MHCV,MHCV,2425,False,sample
+MAHINDRA_AUTO,CV,2026-01,Bus,Bus,1683,False,sample
+MAHINDRA_AUTO,CV,2026-03,SCV,SCV,19218,False,sample
+MAHINDRA_AUTO,CV,2026-03,ICV,ICV,5054,False,sample
+MAHINDRA_AUTO,CV,2026-03,MHCV,MHCV,2768,False,sample
+MAHINDRA_AUTO,CV,2026-03,Bus,Bus,2022,False,sample
+MAHINDRA_AUTO,CV,2026-04,SCV,SCV,15971,False,sample
+MAHINDRA_AUTO,CV,2026-04,ICV,ICV,4503,False,sample
+MAHINDRA_AUTO,CV,2026-04,MHCV,MHCV,2541,False,sample
+MAHINDRA_AUTO,CV,2026-04,Bus,Bus,1692,False,sample
+MAHINDRA_AUTO,EV,2024-05,BE 6,BE 6,571,False,sample
+MAHINDRA_AUTO,EV,2024-05,XEV 9e,XEV 9e,321,False,sample
+MAHINDRA_AUTO,EV,2024-05,XUV400 EV,XUV400 EV,162,False,sample
+MAHINDRA_AUTO,EV,2024-06,BE 6,BE 6,576,False,sample
+MAHINDRA_AUTO,EV,2024-06,XEV 9e,XEV 9e,314,False,sample
+MAHINDRA_AUTO,EV,2024-06,XUV400 EV,XUV400 EV,149,False,sample
+MAHINDRA_AUTO,EV,2024-07,BE 6,BE 6,637,False,sample
+MAHINDRA_AUTO,EV,2024-07,XEV 9e,XEV 9e,327,False,sample
+MAHINDRA_AUTO,EV,2024-07,XUV400 EV,XUV400 EV,172,False,sample
+MAHINDRA_AUTO,EV,2024-08,BE 6,BE 6,590,False,sample
+MAHINDRA_AUTO,EV,2024-08,XEV 9e,XEV 9e,322,False,sample
+MAHINDRA_AUTO,EV,2024-08,XUV400 EV,XUV400 EV,163,False,sample
+MAHINDRA_AUTO,EV,2024-09,BE 6,BE 6,750,False,sample
+MAHINDRA_AUTO,EV,2024-09,XEV 9e,XEV 9e,390,False,sample
+MAHINDRA_AUTO,EV,2024-09,XUV400 EV,XUV400 EV,205,False,sample
+MAHINDRA_AUTO,EV,2024-10,BE 6,BE 6,781,False,sample
+MAHINDRA_AUTO,EV,2024-10,XEV 9e,XEV 9e,410,False,sample
+MAHINDRA_AUTO,EV,2024-10,XUV400 EV,XUV400 EV,203,False,sample
+MAHINDRA_AUTO,EV,2024-11,BE 6,BE 6,629,False,sample
+MAHINDRA_AUTO,EV,2024-11,XEV 9e,XEV 9e,351,False,sample
+MAHINDRA_AUTO,EV,2024-11,XUV400 EV,XUV400 EV,176,False,sample
+MAHINDRA_AUTO,EV,2024-12,BE 6,BE 6,674,False,sample
+MAHINDRA_AUTO,EV,2024-12,XEV 9e,XEV 9e,351,False,sample
+MAHINDRA_AUTO,EV,2024-12,XUV400 EV,XUV400 EV,183,False,sample
+MAHINDRA_AUTO,EV,2025-01,BE 6,BE 6,673,False,sample
+MAHINDRA_AUTO,EV,2025-01,XEV 9e,XEV 9e,352,False,sample
+MAHINDRA_AUTO,EV,2025-01,XUV400 EV,XUV400 EV,180,False,sample
+MAHINDRA_AUTO,EV,2025-02,BE 6,BE 6,665,False,sample
+MAHINDRA_AUTO,EV,2025-02,XEV 9e,XEV 9e,355,False,sample
+MAHINDRA_AUTO,EV,2025-02,XUV400 EV,XUV400 EV,179,False,sample
+MAHINDRA_AUTO,EV,2025-03,BE 6,BE 6,767,False,sample
+MAHINDRA_AUTO,EV,2025-03,XEV 9e,XEV 9e,408,False,sample
+MAHINDRA_AUTO,EV,2025-03,XUV400 EV,XUV400 EV,202,False,sample
+MAHINDRA_AUTO,EV,2025-04,BE 6,BE 6,723,False,sample
+MAHINDRA_AUTO,EV,2025-04,XEV 9e,XEV 9e,405,False,sample
+MAHINDRA_AUTO,EV,2025-04,XUV400 EV,XUV400 EV,198,False,sample
+MAHINDRA_AUTO,EV,2025-05,BE 6,BE 6,703,False,sample
+MAHINDRA_AUTO,EV,2025-05,XEV 9e,XEV 9e,403,False,sample
+MAHINDRA_AUTO,EV,2025-05,XUV400 EV,XUV400 EV,190,False,sample
+MAHINDRA_AUTO,EV,2025-06,BE 6,BE 6,676,False,sample
+MAHINDRA_AUTO,EV,2025-06,XEV 9e,XEV 9e,357,False,sample
+MAHINDRA_AUTO,EV,2025-06,XUV400 EV,XUV400 EV,183,False,sample
+MAHINDRA_AUTO,EV,2025-07,BE 6,BE 6,680,False,sample
+MAHINDRA_AUTO,EV,2025-07,XEV 9e,XEV 9e,374,False,sample
+MAHINDRA_AUTO,EV,2025-07,XUV400 EV,XUV400 EV,185,False,sample
+MAHINDRA_AUTO,EV,2025-08,BE 6,BE 6,766,False,sample
+MAHINDRA_AUTO,EV,2025-08,XEV 9e,XEV 9e,420,False,sample
+MAHINDRA_AUTO,EV,2025-08,XUV400 EV,XUV400 EV,206,False,sample
+MAHINDRA_AUTO,EV,2025-09,BE 6,BE 6,847,False,sample
+MAHINDRA_AUTO,EV,2025-09,XEV 9e,XEV 9e,459,False,sample
+MAHINDRA_AUTO,EV,2025-09,XUV400 EV,XUV400 EV,232,False,sample
+MAHINDRA_AUTO,EV,2025-10,BE 6,BE 6,978,False,sample
+MAHINDRA_AUTO,EV,2025-10,XEV 9e,XEV 9e,501,False,sample
 MAHINDRA_AUTO,EV,2025-10,XUV400 EV,XUV400 EV,257,False,sample
-MAHINDRA_AUTO,EV,2025-11,BE 6,BE 6,772,False,sample
-MAHINDRA_AUTO,EV,2025-11,XEV 9e,XEV 9e,409,False,sample
-MAHINDRA_AUTO,EV,2025-11,XUV400 EV,XUV400 EV,206,False,sample
-MAHINDRA_AUTO,EV,2025-12,BE 6,BE 6,833,False,sample
-MAHINDRA_AUTO,EV,2025-12,XEV 9e,XEV 9e,460,False,sample
-MAHINDRA_AUTO,EV,2025-12,XUV400 EV,XUV400 EV,221,False,sample
-MAHINDRA_AUTO,EV,2026-01,BE 6,BE 6,776,False,sample
-MAHINDRA_AUTO,EV,2026-01,XEV 9e,XEV 9e,429,False,sample
-MAHINDRA_AUTO,EV,2026-01,XUV400 EV,XUV400 EV,210,False,sample
-MAHINDRA_AUTO,EV,2026-01,BE 6,BE 6,766,False,sample
-MAHINDRA_AUTO,EV,2026-01,XEV 9e,XEV 9e,406,False,sample
-MAHINDRA_AUTO,EV,2026-01,XUV400 EV,XUV400 EV,196,False,sample
-MAHINDRA_AUTO,EV,2026-03,BE 6,BE 6,913,False,sample
-MAHINDRA_AUTO,EV,2026-03,XEV 9e,XEV 9e,528,False,sample
-MAHINDRA_AUTO,EV,2026-03,XUV400 EV,XUV400 EV,254,False,sample
-MAHINDRA_AUTO,EV,2026-04,BE 6,BE 6,883,False,sample
-MAHINDRA_AUTO,EV,2026-04,XEV 9e,XEV 9e,491,False,sample
-MAHINDRA_AUTO,EV,2026-04,XUV400 EV,XUV400 EV,238,False,sample
-MAHINDRA_AUTO,PV,2024-05,UV,UV,41582,False,sample
-MAHINDRA_AUTO,PV,2024-05,Sedan,Sedan,1315,False,sample
-MAHINDRA_AUTO,PV,2024-06,UV,UV,37826,False,sample
-MAHINDRA_AUTO,PV,2024-06,Sedan,Sedan,1150,False,sample
-MAHINDRA_AUTO,PV,2024-07,UV,UV,35355,False,sample
-MAHINDRA_AUTO,PV,2024-07,Sedan,Sedan,1093,False,sample
-MAHINDRA_AUTO,PV,2024-08,UV,UV,40743,False,sample
-MAHINDRA_AUTO,PV,2024-08,Sedan,Sedan,1264,False,sample
-MAHINDRA_AUTO,PV,2024-09,UV,UV,43213,False,sample
-MAHINDRA_AUTO,PV,2024-09,Sedan,Sedan,1385,False,sample
-MAHINDRA_AUTO,PV,2024-10,UV,UV,49221,False,sample
-MAHINDRA_AUTO,PV,2024-10,Sedan,Sedan,1607,False,sample
-MAHINDRA_AUTO,PV,2024-11,UV,UV,41352,False,sample
-MAHINDRA_AUTO,PV,2024-11,Sedan,Sedan,1324,False,sample
-MAHINDRA_AUTO,PV,2024-12,UV,UV,42428,False,sample
-MAHINDRA_AUTO,PV,2024-12,Sedan,Sedan,1391,False,sample
-MAHINDRA_AUTO,PV,2025-01,UV,UV,38362,False,sample
-MAHINDRA_AUTO,PV,2025-01,Sedan,Sedan,1144,False,sample
-MAHINDRA_AUTO,PV,2025-02,UV,UV,43719,False,sample
-MAHINDRA_AUTO,PV,2025-02,Sedan,Sedan,1294,False,sample
-MAHINDRA_AUTO,PV,2025-03,UV,UV,46977,False,sample
-MAHINDRA_AUTO,PV,2025-03,Sedan,Sedan,1507,False,sample
-MAHINDRA_AUTO,PV,2025-04,UV,UV,39898,False,sample
-MAHINDRA_AUTO,PV,2025-04,Sedan,Sedan,1289,False,sample
-MAHINDRA_AUTO,PV,2025-05,UV,UV,41601,False,sample
-MAHINDRA_AUTO,PV,2025-05,Sedan,Sedan,1232,False,sample
-MAHINDRA_AUTO,PV,2025-06,UV,UV,39908,False,sample
-MAHINDRA_AUTO,PV,2025-06,Sedan,Sedan,1212,False,sample
-MAHINDRA_AUTO,PV,2025-07,UV,UV,38962,False,sample
-MAHINDRA_AUTO,PV,2025-07,Sedan,Sedan,1240,False,sample
-MAHINDRA_AUTO,PV,2025-08,UV,UV,39145,False,sample
-MAHINDRA_AUTO,PV,2025-08,Sedan,Sedan,1165,False,sample
-MAHINDRA_AUTO,PV,2025-09,UV,UV,43383,False,sample
-MAHINDRA_AUTO,PV,2025-09,Sedan,Sedan,1349,False,sample
-MAHINDRA_AUTO,PV,2025-10,UV,UV,54839,False,sample
-MAHINDRA_AUTO,PV,2025-10,Sedan,Sedan,1675,False,sample
-MAHINDRA_AUTO,PV,2025-11,UV,UV,43289,False,sample
-MAHINDRA_AUTO,PV,2025-11,Sedan,Sedan,1331,False,sample
-MAHINDRA_AUTO,PV,2025-12,UV,UV,44850,False,sample
-MAHINDRA_AUTO,PV,2025-12,Sedan,Sedan,1363,False,sample
-MAHINDRA_AUTO,PV,2026-01,UV,UV,41547,False,sample
-MAHINDRA_AUTO,PV,2026-01,Sedan,Sedan,1243,False,sample
-MAHINDRA_AUTO,PV,2026-01,UV,UV,41463,False,sample
-MAHINDRA_AUTO,PV,2026-01,Sedan,Sedan,1344,False,sample
-MAHINDRA_AUTO,PV,2026-03,UV,UV,57732,False,sample
-MAHINDRA_AUTO,PV,2026-03,Sedan,Sedan,1743,False,sample
-MAHINDRA_AUTO,PV,2026-04,UV,UV,44694,False,sample
-MAHINDRA_AUTO,PV,2026-04,Sedan,Sedan,1481,False,sample
-MAHINDRA_FARM,Tractor,2024-05,Sub30HP,Sub30HP,6148,False,sample
-MAHINDRA_FARM,Tractor,2024-05,30-40HP,30-40HP,18983,False,sample
-MAHINDRA_FARM,Tractor,2024-05,Above40HP,Above40HP,9372,False,sample
-MAHINDRA_FARM,Tractor,2024-06,Sub30HP,Sub30HP,6359,False,sample
-MAHINDRA_FARM,Tractor,2024-06,30-40HP,30-40HP,18313,False,sample
-MAHINDRA_FARM,Tractor,2024-06,Above40HP,Above40HP,9538,False,sample
-MAHINDRA_FARM,Tractor,2024-07,Sub30HP,Sub30HP,5965,False,sample
-MAHINDRA_FARM,Tractor,2024-07,30-40HP,30-40HP,18915,False,sample
-MAHINDRA_FARM,Tractor,2024-07,Above40HP,Above40HP,9371,False,sample
-MAHINDRA_FARM,Tractor,2024-08,Sub30HP,Sub30HP,5818,False,sample
-MAHINDRA_FARM,Tractor,2024-08,30-40HP,30-40HP,17660,False,sample
-MAHINDRA_FARM,Tractor,2024-08,Above40HP,Above40HP,8541,False,sample
-MAHINDRA_FARM,Tractor,2024-09,Sub30HP,Sub30HP,6716,False,sample
-MAHINDRA_FARM,Tractor,2024-09,30-40HP,30-40HP,20018,False,sample
-MAHINDRA_FARM,Tractor,2024-09,Above40HP,Above40HP,9943,False,sample
-MAHINDRA_FARM,Tractor,2024-10,Sub30HP,Sub30HP,5987,False,sample
-MAHINDRA_FARM,Tractor,2024-10,30-40HP,30-40HP,18560,False,sample
-MAHINDRA_FARM,Tractor,2024-10,Above40HP,Above40HP,9289,False,sample
-MAHINDRA_FARM,Tractor,2024-11,Sub30HP,Sub30HP,4813,False,sample
-MAHINDRA_FARM,Tractor,2024-11,30-40HP,30-40HP,15220,False,sample
-MAHINDRA_FARM,Tractor,2024-11,Above40HP,Above40HP,7330,False,sample
-MAHINDRA_FARM,Tractor,2024-12,Sub30HP,Sub30HP,5066,False,sample
-MAHINDRA_FARM,Tractor,2024-12,30-40HP,30-40HP,14801,False,sample
-MAHINDRA_FARM,Tractor,2024-12,Above40HP,Above40HP,7607,False,sample
-MAHINDRA_FARM,Tractor,2025-01,Sub30HP,Sub30HP,4683,False,sample
-MAHINDRA_FARM,Tractor,2025-01,30-40HP,30-40HP,13932,False,sample
-MAHINDRA_FARM,Tractor,2025-01,Above40HP,Above40HP,7279,False,sample
-MAHINDRA_FARM,Tractor,2025-02,Sub30HP,Sub30HP,4997,False,sample
-MAHINDRA_FARM,Tractor,2025-02,30-40HP,30-40HP,15267,False,sample
-MAHINDRA_FARM,Tractor,2025-02,Above40HP,Above40HP,7334,False,sample
-MAHINDRA_FARM,Tractor,2025-03,Sub30HP,Sub30HP,7442,False,sample
-MAHINDRA_FARM,Tractor,2025-03,30-40HP,30-40HP,22191,False,sample
-MAHINDRA_FARM,Tractor,2025-03,Above40HP,Above40HP,10634,False,sample
-MAHINDRA_FARM,Tractor,2025-04,Sub30HP,Sub30HP,6451,False,sample
-MAHINDRA_FARM,Tractor,2025-04,30-40HP,30-40HP,19213,False,sample
-MAHINDRA_FARM,Tractor,2025-04,Above40HP,Above40HP,9595,False,sample
-MAHINDRA_FARM,Tractor,2025-05,Sub30HP,Sub30HP,5893,False,sample
-MAHINDRA_FARM,Tractor,2025-05,30-40HP,30-40HP,18090,False,sample
-MAHINDRA_FARM,Tractor,2025-05,Above40HP,Above40HP,9285,False,sample
-MAHINDRA_FARM,Tractor,2025-06,Sub30HP,Sub30HP,6547,False,sample
-MAHINDRA_FARM,Tractor,2025-06,30-40HP,30-40HP,20394,False,sample
-MAHINDRA_FARM,Tractor,2025-06,Above40HP,Above40HP,10002,False,sample
-MAHINDRA_FARM,Tractor,2025-07,Sub30HP,Sub30HP,6388,False,sample
-MAHINDRA_FARM,Tractor,2025-07,30-40HP,30-40HP,19299,False,sample
-MAHINDRA_FARM,Tractor,2025-07,Above40HP,Above40HP,9734,False,sample
-MAHINDRA_FARM,Tractor,2025-08,Sub30HP,Sub30HP,5655,False,sample
-MAHINDRA_FARM,Tractor,2025-08,30-40HP,30-40HP,17354,False,sample
-MAHINDRA_FARM,Tractor,2025-08,Above40HP,Above40HP,9001,False,sample
-MAHINDRA_FARM,Tractor,2025-09,Sub30HP,Sub30HP,6815,False,sample
-MAHINDRA_FARM,Tractor,2025-09,30-40HP,30-40HP,20264,False,sample
-MAHINDRA_FARM,Tractor,2025-09,Above40HP,Above40HP,10549,False,sample
-MAHINDRA_FARM,Tractor,2025-10,Sub30HP,Sub30HP,6702,False,sample
-MAHINDRA_FARM,Tractor,2025-10,30-40HP,30-40HP,19755,False,sample
-MAHINDRA_FARM,Tractor,2025-10,Above40HP,Above40HP,10471,False,sample
-MAHINDRA_FARM,Tractor,2025-11,Sub30HP,Sub30HP,4826,False,sample
-MAHINDRA_FARM,Tractor,2025-11,30-40HP,30-40HP,15335,False,sample
-MAHINDRA_FARM,Tractor,2025-11,Above40HP,Above40HP,7197,False,sample
-MAHINDRA_FARM,Tractor,2025-12,Sub30HP,Sub30HP,5022,False,sample
-MAHINDRA_FARM,Tractor,2025-12,30-40HP,30-40HP,14750,False,sample
-MAHINDRA_FARM,Tractor,2025-12,Above40HP,Above40HP,7701,False,sample
-MAHINDRA_FARM,Tractor,2026-01,Sub30HP,Sub30HP,4969,False,sample
-MAHINDRA_FARM,Tractor,2026-01,30-40HP,30-40HP,15654,False,sample
-MAHINDRA_FARM,Tractor,2026-01,Above40HP,Above40HP,7439,False,sample
-MAHINDRA_FARM,Tractor,2026-01,Sub30HP,Sub30HP,5008,False,sample
-MAHINDRA_FARM,Tractor,2026-01,30-40HP,30-40HP,15961,False,sample
-MAHINDRA_FARM,Tractor,2026-01,Above40HP,Above40HP,7387,False,sample
-MAHINDRA_FARM,Tractor,2026-03,Sub30HP,Sub30HP,7266,False,sample
-MAHINDRA_FARM,Tractor,2026-03,30-40HP,30-40HP,22041,False,sample
-MAHINDRA_FARM,Tractor,2026-03,Above40HP,Above40HP,11166,False,sample
-MAHINDRA_FARM,Tractor,2026-04,Sub30HP,Sub30HP,6835,False,sample
-MAHINDRA_FARM,Tractor,2026-04,30-40HP,30-40HP,21604,False,sample
-MAHINDRA_FARM,Tractor,2026-04,Above40HP,Above40HP,10646,False,sample
-MARUTI,PV,2024-05,Mini,Mini,9348,False,sample
-MARUTI,PV,2024-05,Compact,Compact,55073,False,sample
-MARUTI,PV,2024-05,Mid,Mid,20476,False,sample
-MARUTI,PV,2024-05,UV,UV,61904,False,sample
-MARUTI,PV,2024-05,MPV,MPV,9877,False,sample
-MARUTI,PV,2024-05,Van,Van,3118,False,sample
-MARUTI,PV,2024-06,Mini,Mini,8990,False,sample
-MARUTI,PV,2024-06,Compact,Compact,51433,False,sample
-MARUTI,PV,2024-06,Mid,Mid,19928,False,sample
-MARUTI,PV,2024-06,UV,UV,57179,False,sample
-MARUTI,PV,2024-06,MPV,MPV,8591,False,sample
-MARUTI,PV,2024-06,Van,Van,2849,False,sample
-MARUTI,PV,2024-07,Mini,Mini,8133,False,sample
-MARUTI,PV,2024-07,Compact,Compact,47384,False,sample
-MARUTI,PV,2024-07,Mid,Mid,17223,False,sample
-MARUTI,PV,2024-07,UV,UV,52571,False,sample
-MARUTI,PV,2024-07,MPV,MPV,8460,False,sample
-MARUTI,PV,2024-07,Van,Van,2657,False,sample
-MARUTI,PV,2024-08,Mini,Mini,8883,False,sample
-MARUTI,PV,2024-08,Compact,Compact,50259,False,sample
-MARUTI,PV,2024-08,Mid,Mid,18282,False,sample
-MARUTI,PV,2024-08,UV,UV,58735,False,sample
-MARUTI,PV,2024-08,MPV,MPV,8444,False,sample
-MARUTI,PV,2024-08,Van,Van,2904,False,sample
-MARUTI,PV,2024-09,Mini,Mini,9887,False,sample
-MARUTI,PV,2024-09,Compact,Compact,59020,False,sample
-MARUTI,PV,2024-09,Mid,Mid,22192,False,sample
-MARUTI,PV,2024-09,UV,UV,68087,False,sample
-MARUTI,PV,2024-09,MPV,MPV,10397,False,sample
-MARUTI,PV,2024-09,Van,Van,3334,False,sample
-MARUTI,PV,2024-10,Mini,Mini,12470,False,sample
-MARUTI,PV,2024-10,Compact,Compact,72231,False,sample
-MARUTI,PV,2024-10,Mid,Mid,27995,False,sample
-MARUTI,PV,2024-10,UV,UV,78935,False,sample
-MARUTI,PV,2024-10,MPV,MPV,12157,False,sample
-MARUTI,PV,2024-10,Van,Van,4270,False,sample
-MARUTI,PV,2024-11,Mini,Mini,9792,False,sample
-MARUTI,PV,2024-11,Compact,Compact,54584,False,sample
-MARUTI,PV,2024-11,Mid,Mid,21846,False,sample
-MARUTI,PV,2024-11,UV,UV,62260,False,sample
-MARUTI,PV,2024-11,MPV,MPV,9442,False,sample
-MARUTI,PV,2024-11,Van,Van,3183,False,sample
-MARUTI,PV,2024-12,Mini,Mini,9957,False,sample
-MARUTI,PV,2024-12,Compact,Compact,58617,False,sample
-MARUTI,PV,2024-12,Mid,Mid,22495,False,sample
-MARUTI,PV,2024-12,UV,UV,67528,False,sample
-MARUTI,PV,2024-12,MPV,MPV,10530,False,sample
-MARUTI,PV,2024-12,Van,Van,3485,False,sample
-MARUTI,PV,2025-01,Mini,Mini,9726,False,sample
-MARUTI,PV,2025-01,Compact,Compact,54303,False,sample
-MARUTI,PV,2025-01,Mid,Mid,20177,False,sample
-MARUTI,PV,2025-01,UV,UV,61596,False,sample
-MARUTI,PV,2025-01,MPV,MPV,9470,False,sample
-MARUTI,PV,2025-01,Van,Van,3216,False,sample
-MARUTI,PV,2025-02,Mini,Mini,10052,False,sample
-MARUTI,PV,2025-02,Compact,Compact,55849,False,sample
-MARUTI,PV,2025-02,Mid,Mid,22848,False,sample
-MARUTI,PV,2025-02,UV,UV,68846,False,sample
-MARUTI,PV,2025-02,MPV,MPV,10215,False,sample
-MARUTI,PV,2025-02,Van,Van,3301,False,sample
-MARUTI,PV,2025-03,Mini,Mini,12501,False,sample
-MARUTI,PV,2025-03,Compact,Compact,71374,False,sample
-MARUTI,PV,2025-03,Mid,Mid,27148,False,sample
-MARUTI,PV,2025-03,UV,UV,84365,False,sample
-MARUTI,PV,2025-03,MPV,MPV,12988,False,sample
-MARUTI,PV,2025-03,Van,Van,4311,False,sample
-MARUTI,PV,2025-04,Mini,Mini,9354,False,sample
-MARUTI,PV,2025-04,Compact,Compact,56193,False,sample
-MARUTI,PV,2025-04,Mid,Mid,20997,False,sample
-MARUTI,PV,2025-04,UV,UV,61974,False,sample
-MARUTI,PV,2025-04,MPV,MPV,9779,False,sample
-MARUTI,PV,2025-04,Van,Van,3280,False,sample
-MARUTI,PV,2025-05,Mini,Mini,11430,False,sample
-MARUTI,PV,2025-05,Compact,Compact,63853,False,sample
-MARUTI,PV,2025-05,Mid,Mid,22973,False,sample
-MARUTI,PV,2025-05,UV,UV,69212,False,sample
-MARUTI,PV,2025-05,MPV,MPV,10819,False,sample
-MARUTI,PV,2025-05,Van,Van,3541,False,sample
-MARUTI,PV,2025-06,Mini,Mini,9446,False,sample
-MARUTI,PV,2025-06,Compact,Compact,56767,False,sample
-MARUTI,PV,2025-06,Mid,Mid,21225,False,sample
-MARUTI,PV,2025-06,UV,UV,64297,False,sample
-MARUTI,PV,2025-06,MPV,MPV,9791,False,sample
-MARUTI,PV,2025-06,Van,Van,3241,False,sample
-MARUTI,PV,2025-07,Mini,Mini,9888,False,sample
-MARUTI,PV,2025-07,Compact,Compact,53303,False,sample
-MARUTI,PV,2025-07,Mid,Mid,21146,False,sample
-MARUTI,PV,2025-07,UV,UV,63842,False,sample
-MARUTI,PV,2025-07,MPV,MPV,9558,False,sample
-MARUTI,PV,2025-07,Van,Van,3194,False,sample
-MARUTI,PV,2025-08,Mini,Mini,9861,False,sample
-MARUTI,PV,2025-08,Compact,Compact,54506,False,sample
-MARUTI,PV,2025-08,Mid,Mid,21873,False,sample
-MARUTI,PV,2025-08,UV,UV,64228,False,sample
-MARUTI,PV,2025-08,MPV,MPV,9766,False,sample
-MARUTI,PV,2025-08,Van,Van,3319,False,sample
-MARUTI,PV,2025-09,Mini,Mini,12315,False,sample
-MARUTI,PV,2025-09,Compact,Compact,68953,False,sample
-MARUTI,PV,2025-09,Mid,Mid,25085,False,sample
-MARUTI,PV,2025-09,UV,UV,79203,False,sample
-MARUTI,PV,2025-09,MPV,MPV,12215,False,sample
-MARUTI,PV,2025-09,Van,Van,4108,False,sample
-MARUTI,PV,2025-10,Mini,Mini,12671,False,sample
-MARUTI,PV,2025-10,Compact,Compact,71975,False,sample
-MARUTI,PV,2025-10,Mid,Mid,28313,False,sample
-MARUTI,PV,2025-10,UV,UV,85068,False,sample
-MARUTI,PV,2025-10,MPV,MPV,13250,False,sample
-MARUTI,PV,2025-10,Van,Van,4312,False,sample
-MARUTI,PV,2025-11,Mini,Mini,10812,False,sample
-MARUTI,PV,2025-11,Compact,Compact,61266,False,sample
-MARUTI,PV,2025-11,Mid,Mid,22283,False,sample
-MARUTI,PV,2025-11,UV,UV,70096,False,sample
-MARUTI,PV,2025-11,MPV,MPV,10778,False,sample
-MARUTI,PV,2025-11,Van,Van,3440,False,sample
-MARUTI,PV,2025-12,Mini,Mini,10750,False,sample
-MARUTI,PV,2025-12,Compact,Compact,58897,False,sample
-MARUTI,PV,2025-12,Mid,Mid,22987,False,sample
-MARUTI,PV,2025-12,UV,UV,68626,False,sample
-MARUTI,PV,2025-12,MPV,MPV,10098,False,sample
-MARUTI,PV,2025-12,Van,Van,3355,False,sample
-MARUTI,PV,2026-01,Mini,Mini,9929,False,sample
-MARUTI,PV,2026-01,Compact,Compact,54012,False,sample
-MARUTI,PV,2026-01,Mid,Mid,21691,False,sample
-MARUTI,PV,2026-01,UV,UV,64494,False,sample
-MARUTI,PV,2026-01,MPV,MPV,9345,False,sample
-MARUTI,PV,2026-01,Van,Van,3316,False,sample
-MARUTI,PV,2026-01,Mini,Mini,9615,False,sample
-MARUTI,PV,2026-01,Compact,Compact,53564,False,sample
-MARUTI,PV,2026-01,Mid,Mid,21581,False,sample
-MARUTI,PV,2026-01,UV,UV,64053,False,sample
-MARUTI,PV,2026-01,MPV,MPV,9462,False,sample
-MARUTI,PV,2026-01,Van,Van,3253,False,sample
-MARUTI,PV,2026-03,Mini,Mini,12420,False,sample
-MARUTI,PV,2026-03,Compact,Compact,71176,False,sample
-MARUTI,PV,2026-03,Mid,Mid,27361,False,sample
-MARUTI,PV,2026-03,UV,UV,80782,False,sample
-MARUTI,PV,2026-03,MPV,MPV,12314,False,sample
-MARUTI,PV,2026-03,Van,Van,4053,False,sample
-MARUTI,PV,2026-04,Mini,Mini,11027,False,sample
-MARUTI,PV,2026-04,Compact,Compact,63231,False,sample
-MARUTI,PV,2026-04,Mid,Mid,23237,False,sample
-MARUTI,PV,2026-04,UV,UV,71310,False,sample
-MARUTI,PV,2026-04,MPV,MPV,10563,False,sample
-MARUTI,PV,2026-04,Van,Van,3760,False,sample
-OLA_ELECTRIC,EV,2024-05,S1 Pro,S1 Pro,16585,False,sample
-OLA_ELECTRIC,EV,2024-05,S1 Air,S1 Air,9214,False,sample
-OLA_ELECTRIC,EV,2024-05,S1 X,S1 X,4574,False,sample
-OLA_ELECTRIC,EV,2024-06,S1 Pro,S1 Pro,15829,False,sample
-OLA_ELECTRIC,EV,2024-06,S1 Air,S1 Air,9189,False,sample
-OLA_ELECTRIC,EV,2024-06,S1 X,S1 X,4568,False,sample
-OLA_ELECTRIC,EV,2024-07,S1 Pro,S1 Pro,15637,False,sample
-OLA_ELECTRIC,EV,2024-07,S1 Air,S1 Air,8774,False,sample
-OLA_ELECTRIC,EV,2024-07,S1 X,S1 X,4328,False,sample
-OLA_ELECTRIC,EV,2024-08,S1 Pro,S1 Pro,16176,False,sample
-OLA_ELECTRIC,EV,2024-08,S1 Air,S1 Air,8753,False,sample
-OLA_ELECTRIC,EV,2024-08,S1 X,S1 X,4410,False,sample
-OLA_ELECTRIC,EV,2024-09,S1 Pro,S1 Pro,18720,False,sample
-OLA_ELECTRIC,EV,2024-09,S1 Air,S1 Air,9850,False,sample
-OLA_ELECTRIC,EV,2024-09,S1 X,S1 X,4847,False,sample
-OLA_ELECTRIC,EV,2024-10,S1 Pro,S1 Pro,20126,False,sample
-OLA_ELECTRIC,EV,2024-10,S1 Air,S1 Air,11092,False,sample
-OLA_ELECTRIC,EV,2024-10,S1 X,S1 X,5723,False,sample
-OLA_ELECTRIC,EV,2024-11,S1 Pro,S1 Pro,16844,False,sample
-OLA_ELECTRIC,EV,2024-11,S1 Air,S1 Air,9659,False,sample
-OLA_ELECTRIC,EV,2024-11,S1 X,S1 X,4896,False,sample
-OLA_ELECTRIC,EV,2024-12,S1 Pro,S1 Pro,19859,False,sample
-OLA_ELECTRIC,EV,2024-12,S1 Air,S1 Air,10092,False,sample
-OLA_ELECTRIC,EV,2024-12,S1 X,S1 X,5211,False,sample
-OLA_ELECTRIC,EV,2025-01,S1 Pro,S1 Pro,16185,False,sample
-OLA_ELECTRIC,EV,2025-01,S1 Air,S1 Air,9232,False,sample
-OLA_ELECTRIC,EV,2025-01,S1 X,S1 X,4430,False,sample
-OLA_ELECTRIC,EV,2025-02,S1 Pro,S1 Pro,19241,False,sample
-OLA_ELECTRIC,EV,2025-02,S1 Air,S1 Air,10039,False,sample
-OLA_ELECTRIC,EV,2025-02,S1 X,S1 X,5100,False,sample
-OLA_ELECTRIC,EV,2025-03,S1 Pro,S1 Pro,22568,False,sample
-OLA_ELECTRIC,EV,2025-03,S1 Air,S1 Air,12055,False,sample
-OLA_ELECTRIC,EV,2025-03,S1 X,S1 X,6183,False,sample
-OLA_ELECTRIC,EV,2025-04,S1 Pro,S1 Pro,20585,False,sample
-OLA_ELECTRIC,EV,2025-04,S1 Air,S1 Air,11343,False,sample
-OLA_ELECTRIC,EV,2025-04,S1 X,S1 X,5627,False,sample
-OLA_ELECTRIC,EV,2025-05,S1 Pro,S1 Pro,20714,False,sample
-OLA_ELECTRIC,EV,2025-05,S1 Air,S1 Air,10787,False,sample
-OLA_ELECTRIC,EV,2025-05,S1 X,S1 X,5705,False,sample
-OLA_ELECTRIC,EV,2025-06,S1 Pro,S1 Pro,19892,False,sample
-OLA_ELECTRIC,EV,2025-06,S1 Air,S1 Air,10411,False,sample
-OLA_ELECTRIC,EV,2025-06,S1 X,S1 X,5104,False,sample
-OLA_ELECTRIC,EV,2025-07,S1 Pro,S1 Pro,19960,False,sample
-OLA_ELECTRIC,EV,2025-07,S1 Air,S1 Air,10731,False,sample
-OLA_ELECTRIC,EV,2025-07,S1 X,S1 X,5415,False,sample
-OLA_ELECTRIC,EV,2025-08,S1 Pro,S1 Pro,21877,False,sample
-OLA_ELECTRIC,EV,2025-08,S1 Air,S1 Air,11968,False,sample
-OLA_ELECTRIC,EV,2025-08,S1 X,S1 X,6018,False,sample
-OLA_ELECTRIC,EV,2025-09,S1 Pro,S1 Pro,22616,False,sample
-OLA_ELECTRIC,EV,2025-09,S1 Air,S1 Air,13010,False,sample
-OLA_ELECTRIC,EV,2025-09,S1 X,S1 X,6603,False,sample
-OLA_ELECTRIC,EV,2025-10,S1 Pro,S1 Pro,25669,False,sample
-OLA_ELECTRIC,EV,2025-10,S1 Air,S1 Air,13315,False,sample
-OLA_ELECTRIC,EV,2025-10,S1 X,S1 X,6892,False,sample
-OLA_ELECTRIC,EV,2025-11,S1 Pro,S1 Pro,20815,False,sample
-OLA_ELECTRIC,EV,2025-11,S1 Air,S1 Air,11589,False,sample
-OLA_ELECTRIC,EV,2025-11,S1 X,S1 X,5594,False,sample
-OLA_ELECTRIC,EV,2025-12,S1 Pro,S1 Pro,21845,False,sample
-OLA_ELECTRIC,EV,2025-12,S1 Air,S1 Air,11654,False,sample
-OLA_ELECTRIC,EV,2025-12,S1 X,S1 X,5543,False,sample
-OLA_ELECTRIC,EV,2026-01,S1 Pro,S1 Pro,21906,False,sample
-OLA_ELECTRIC,EV,2026-01,S1 Air,S1 Air,11926,False,sample
-OLA_ELECTRIC,EV,2026-01,S1 X,S1 X,5788,False,sample
-OLA_ELECTRIC,EV,2026-01,S1 Pro,S1 Pro,21466,False,sample
-OLA_ELECTRIC,EV,2026-01,S1 Air,S1 Air,11406,False,sample
-OLA_ELECTRIC,EV,2026-01,S1 X,S1 X,5980,False,sample
-OLA_ELECTRIC,EV,2026-03,S1 Pro,S1 Pro,25028,False,sample
-OLA_ELECTRIC,EV,2026-03,S1 Air,S1 Air,13663,False,sample
-OLA_ELECTRIC,EV,2026-03,S1 X,S1 X,6853,False,sample
-OLA_ELECTRIC,EV,2026-04,S1 Pro,S1 Pro,24326,False,sample
-OLA_ELECTRIC,EV,2026-04,S1 Air,S1 Air,12497,False,sample
-OLA_ELECTRIC,EV,2026-04,S1 X,S1 X,6503,False,sample
-TATAMOTORS_CV,CV,2024-05,SCV,SCV,15613,False,sample
-TATAMOTORS_CV,CV,2024-05,ICV,ICV,4600,False,sample
-TATAMOTORS_CV,CV,2024-05,MHCV,MHCV,10020,False,sample
-TATAMOTORS_CV,CV,2024-05,Bus,Bus,3681,False,sample
-TATAMOTORS_CV,CV,2024-06,SCV,SCV,13157,False,sample
-TATAMOTORS_CV,CV,2024-06,ICV,ICV,3865,False,sample
-TATAMOTORS_CV,CV,2024-06,MHCV,MHCV,8849,False,sample
-TATAMOTORS_CV,CV,2024-06,Bus,Bus,3253,False,sample
-TATAMOTORS_CV,CV,2024-07,SCV,SCV,13102,False,sample
-TATAMOTORS_CV,CV,2024-07,ICV,ICV,3688,False,sample
-TATAMOTORS_CV,CV,2024-07,MHCV,MHCV,8376,False,sample
-TATAMOTORS_CV,CV,2024-07,Bus,Bus,3103,False,sample
-TATAMOTORS_CV,CV,2024-08,SCV,SCV,14006,False,sample
-TATAMOTORS_CV,CV,2024-08,ICV,ICV,3898,False,sample
-TATAMOTORS_CV,CV,2024-08,MHCV,MHCV,8688,False,sample
-TATAMOTORS_CV,CV,2024-08,Bus,Bus,3188,False,sample
-TATAMOTORS_CV,CV,2024-09,SCV,SCV,17325,False,sample
-TATAMOTORS_CV,CV,2024-09,ICV,ICV,4872,False,sample
-TATAMOTORS_CV,CV,2024-09,MHCV,MHCV,11362,False,sample
-TATAMOTORS_CV,CV,2024-09,Bus,Bus,4308,False,sample
-TATAMOTORS_CV,CV,2024-10,SCV,SCV,19668,False,sample
-TATAMOTORS_CV,CV,2024-10,ICV,ICV,5604,False,sample
-TATAMOTORS_CV,CV,2024-10,MHCV,MHCV,12887,False,sample
-TATAMOTORS_CV,CV,2024-10,Bus,Bus,4669,False,sample
-TATAMOTORS_CV,CV,2024-11,SCV,SCV,15756,False,sample
-TATAMOTORS_CV,CV,2024-11,ICV,ICV,4646,False,sample
-TATAMOTORS_CV,CV,2024-11,MHCV,MHCV,10840,False,sample
-TATAMOTORS_CV,CV,2024-11,Bus,Bus,3934,False,sample
-TATAMOTORS_CV,CV,2024-12,SCV,SCV,15464,False,sample
-TATAMOTORS_CV,CV,2024-12,ICV,ICV,4659,False,sample
-TATAMOTORS_CV,CV,2024-12,MHCV,MHCV,10326,False,sample
-TATAMOTORS_CV,CV,2024-12,Bus,Bus,3713,False,sample
-TATAMOTORS_CV,CV,2025-01,SCV,SCV,13697,False,sample
-TATAMOTORS_CV,CV,2025-01,ICV,ICV,3904,False,sample
-TATAMOTORS_CV,CV,2025-01,MHCV,MHCV,9126,False,sample
-TATAMOTORS_CV,CV,2025-01,Bus,Bus,3390,False,sample
-TATAMOTORS_CV,CV,2025-02,SCV,SCV,15904,False,sample
-TATAMOTORS_CV,CV,2025-02,ICV,ICV,4762,False,sample
-TATAMOTORS_CV,CV,2025-02,MHCV,MHCV,10178,False,sample
-TATAMOTORS_CV,CV,2025-02,Bus,Bus,3847,False,sample
-TATAMOTORS_CV,CV,2025-03,SCV,SCV,19230,False,sample
-TATAMOTORS_CV,CV,2025-03,ICV,ICV,5563,False,sample
-TATAMOTORS_CV,CV,2025-03,MHCV,MHCV,12337,False,sample
-TATAMOTORS_CV,CV,2025-03,Bus,Bus,4602,False,sample
-TATAMOTORS_CV,CV,2025-04,SCV,SCV,16580,False,sample
-TATAMOTORS_CV,CV,2025-04,ICV,ICV,4442,False,sample
-TATAMOTORS_CV,CV,2025-04,MHCV,MHCV,10144,False,sample
-TATAMOTORS_CV,CV,2025-04,Bus,Bus,3972,False,sample
-TATAMOTORS_CV,CV,2025-05,SCV,SCV,16580,False,sample
-TATAMOTORS_CV,CV,2025-05,ICV,ICV,4378,False,sample
-TATAMOTORS_CV,CV,2025-05,MHCV,MHCV,10681,False,sample
-TATAMOTORS_CV,CV,2025-05,Bus,Bus,3778,False,sample
-TATAMOTORS_CV,CV,2025-06,SCV,SCV,15472,False,sample
-TATAMOTORS_CV,CV,2025-06,ICV,ICV,4377,False,sample
-TATAMOTORS_CV,CV,2025-06,MHCV,MHCV,10052,False,sample
-TATAMOTORS_CV,CV,2025-06,Bus,Bus,3591,False,sample
-TATAMOTORS_CV,CV,2025-07,SCV,SCV,15198,False,sample
-TATAMOTORS_CV,CV,2025-07,ICV,ICV,4030,False,sample
-TATAMOTORS_CV,CV,2025-07,MHCV,MHCV,9333,False,sample
-TATAMOTORS_CV,CV,2025-07,Bus,Bus,3659,False,sample
-TATAMOTORS_CV,CV,2025-08,SCV,SCV,14931,False,sample
-TATAMOTORS_CV,CV,2025-08,ICV,ICV,4113,False,sample
-TATAMOTORS_CV,CV,2025-08,MHCV,MHCV,10099,False,sample
-TATAMOTORS_CV,CV,2025-08,Bus,Bus,3681,False,sample
-TATAMOTORS_CV,CV,2025-09,SCV,SCV,18231,False,sample
-TATAMOTORS_CV,CV,2025-09,ICV,ICV,5031,False,sample
-TATAMOTORS_CV,CV,2025-09,MHCV,MHCV,12015,False,sample
-TATAMOTORS_CV,CV,2025-09,Bus,Bus,4301,False,sample
-TATAMOTORS_CV,CV,2025-10,SCV,SCV,19816,False,sample
-TATAMOTORS_CV,CV,2025-10,ICV,ICV,5710,False,sample
-TATAMOTORS_CV,CV,2025-10,MHCV,MHCV,12739,False,sample
-TATAMOTORS_CV,CV,2025-10,Bus,Bus,4533,False,sample
-TATAMOTORS_CV,CV,2025-11,SCV,SCV,17014,False,sample
-TATAMOTORS_CV,CV,2025-11,ICV,ICV,4614,False,sample
-TATAMOTORS_CV,CV,2025-11,MHCV,MHCV,10686,False,sample
-TATAMOTORS_CV,CV,2025-11,Bus,Bus,3909,False,sample
-TATAMOTORS_CV,CV,2025-12,SCV,SCV,16901,False,sample
-TATAMOTORS_CV,CV,2025-12,ICV,ICV,5011,False,sample
-TATAMOTORS_CV,CV,2025-12,MHCV,MHCV,10802,False,sample
-TATAMOTORS_CV,CV,2025-12,Bus,Bus,4153,False,sample
-TATAMOTORS_CV,CV,2026-01,SCV,SCV,15015,False,sample
-TATAMOTORS_CV,CV,2026-01,ICV,ICV,4260,False,sample
-TATAMOTORS_CV,CV,2026-01,MHCV,MHCV,9925,False,sample
-TATAMOTORS_CV,CV,2026-01,Bus,Bus,3680,False,sample
-TATAMOTORS_CV,CV,2026-01,SCV,SCV,13895,False,sample
-TATAMOTORS_CV,CV,2026-01,ICV,ICV,3998,False,sample
-TATAMOTORS_CV,CV,2026-01,MHCV,MHCV,9119,False,sample
-TATAMOTORS_CV,CV,2026-01,Bus,Bus,3361,False,sample
-TATAMOTORS_CV,CV,2026-03,SCV,SCV,20721,False,sample
-TATAMOTORS_CV,CV,2026-03,ICV,ICV,5692,False,sample
-TATAMOTORS_CV,CV,2026-03,MHCV,MHCV,13247,False,sample
-TATAMOTORS_CV,CV,2026-03,Bus,Bus,4923,False,sample
-TATAMOTORS_CV,CV,2026-04,SCV,SCV,17748,False,sample
-TATAMOTORS_CV,CV,2026-04,ICV,ICV,5092,False,sample
-TATAMOTORS_CV,CV,2026-04,MHCV,MHCV,11563,False,sample
-TATAMOTORS_CV,CV,2026-04,Bus,Bus,4099,False,sample
-TATAMOTORS_PV,EV,2024-05,Nexon EV,Nexon EV,3067,False,sample
-TATAMOTORS_PV,EV,2024-05,Tiago EV,Tiago EV,1272,False,sample
-TATAMOTORS_PV,EV,2024-05,Punch EV,Punch EV,526,False,sample
-TATAMOTORS_PV,EV,2024-05,Tigor EV,Tigor EV,254,False,sample
-TATAMOTORS_PV,EV,2024-06,Nexon EV,Nexon EV,3290,False,sample
-TATAMOTORS_PV,EV,2024-06,Tiago EV,Tiago EV,1348,False,sample
-TATAMOTORS_PV,EV,2024-06,Punch EV,Punch EV,545,False,sample
-TATAMOTORS_PV,EV,2024-06,Tigor EV,Tigor EV,270,False,sample
-TATAMOTORS_PV,EV,2024-07,Nexon EV,Nexon EV,3222,False,sample
-TATAMOTORS_PV,EV,2024-07,Tiago EV,Tiago EV,1330,False,sample
-TATAMOTORS_PV,EV,2024-07,Punch EV,Punch EV,502,False,sample
-TATAMOTORS_PV,EV,2024-07,Tigor EV,Tigor EV,270,False,sample
-TATAMOTORS_PV,EV,2024-08,Nexon EV,Nexon EV,3380,False,sample
-TATAMOTORS_PV,EV,2024-08,Tiago EV,Tiago EV,1435,False,sample
-TATAMOTORS_PV,EV,2024-08,Punch EV,Punch EV,584,False,sample
-TATAMOTORS_PV,EV,2024-08,Tigor EV,Tigor EV,291,False,sample
-TATAMOTORS_PV,EV,2024-09,Nexon EV,Nexon EV,3766,False,sample
-TATAMOTORS_PV,EV,2024-09,Tiago EV,Tiago EV,1641,False,sample
-TATAMOTORS_PV,EV,2024-09,Punch EV,Punch EV,636,False,sample
-TATAMOTORS_PV,EV,2024-09,Tigor EV,Tigor EV,332,False,sample
-TATAMOTORS_PV,EV,2024-10,Nexon EV,Nexon EV,4276,False,sample
-TATAMOTORS_PV,EV,2024-10,Tiago EV,Tiago EV,1662,False,sample
-TATAMOTORS_PV,EV,2024-10,Punch EV,Punch EV,717,False,sample
-TATAMOTORS_PV,EV,2024-10,Tigor EV,Tigor EV,337,False,sample
-TATAMOTORS_PV,EV,2024-11,Nexon EV,Nexon EV,3574,False,sample
-TATAMOTORS_PV,EV,2024-11,Tiago EV,Tiago EV,1483,False,sample
-TATAMOTORS_PV,EV,2024-11,Punch EV,Punch EV,572,False,sample
-TATAMOTORS_PV,EV,2024-11,Tigor EV,Tigor EV,297,False,sample
-TATAMOTORS_PV,EV,2024-12,Nexon EV,Nexon EV,3690,False,sample
-TATAMOTORS_PV,EV,2024-12,Tiago EV,Tiago EV,1457,False,sample
-TATAMOTORS_PV,EV,2024-12,Punch EV,Punch EV,602,False,sample
-TATAMOTORS_PV,EV,2024-12,Tigor EV,Tigor EV,306,False,sample
-TATAMOTORS_PV,EV,2025-01,Nexon EV,Nexon EV,3308,False,sample
-TATAMOTORS_PV,EV,2025-01,Tiago EV,Tiago EV,1401,False,sample
-TATAMOTORS_PV,EV,2025-01,Punch EV,Punch EV,522,False,sample
-TATAMOTORS_PV,EV,2025-01,Tigor EV,Tigor EV,275,False,sample
-TATAMOTORS_PV,EV,2025-02,Nexon EV,Nexon EV,3877,False,sample
-TATAMOTORS_PV,EV,2025-02,Tiago EV,Tiago EV,1567,False,sample
-TATAMOTORS_PV,EV,2025-02,Punch EV,Punch EV,627,False,sample
-TATAMOTORS_PV,EV,2025-02,Tigor EV,Tigor EV,304,False,sample
-TATAMOTORS_PV,EV,2025-03,Nexon EV,Nexon EV,4521,False,sample
-TATAMOTORS_PV,EV,2025-03,Tiago EV,Tiago EV,1868,False,sample
-TATAMOTORS_PV,EV,2025-03,Punch EV,Punch EV,724,False,sample
-TATAMOTORS_PV,EV,2025-03,Tigor EV,Tigor EV,357,False,sample
-TATAMOTORS_PV,EV,2025-04,Nexon EV,Nexon EV,4070,False,sample
-TATAMOTORS_PV,EV,2025-04,Tiago EV,Tiago EV,1641,False,sample
-TATAMOTORS_PV,EV,2025-04,Punch EV,Punch EV,664,False,sample
-TATAMOTORS_PV,EV,2025-04,Tigor EV,Tigor EV,331,False,sample
-TATAMOTORS_PV,EV,2025-05,Nexon EV,Nexon EV,3965,False,sample
-TATAMOTORS_PV,EV,2025-05,Tiago EV,Tiago EV,1582,False,sample
-TATAMOTORS_PV,EV,2025-05,Punch EV,Punch EV,681,False,sample
-TATAMOTORS_PV,EV,2025-05,Tigor EV,Tigor EV,321,False,sample
-TATAMOTORS_PV,EV,2025-06,Nexon EV,Nexon EV,3813,False,sample
-TATAMOTORS_PV,EV,2025-06,Tiago EV,Tiago EV,1665,False,sample
-TATAMOTORS_PV,EV,2025-06,Punch EV,Punch EV,676,False,sample
-TATAMOTORS_PV,EV,2025-06,Tigor EV,Tigor EV,336,False,sample
-TATAMOTORS_PV,EV,2025-07,Nexon EV,Nexon EV,3673,False,sample
-TATAMOTORS_PV,EV,2025-07,Tiago EV,Tiago EV,1493,False,sample
-TATAMOTORS_PV,EV,2025-07,Punch EV,Punch EV,625,False,sample
-TATAMOTORS_PV,EV,2025-07,Tigor EV,Tigor EV,320,False,sample
-TATAMOTORS_PV,EV,2025-08,Nexon EV,Nexon EV,3930,False,sample
-TATAMOTORS_PV,EV,2025-08,Tiago EV,Tiago EV,1646,False,sample
-TATAMOTORS_PV,EV,2025-08,Punch EV,Punch EV,659,False,sample
-TATAMOTORS_PV,EV,2025-08,Tigor EV,Tigor EV,332,False,sample
-TATAMOTORS_PV,EV,2025-09,Nexon EV,Nexon EV,4473,False,sample
-TATAMOTORS_PV,EV,2025-09,Tiago EV,Tiago EV,1949,False,sample
-TATAMOTORS_PV,EV,2025-09,Punch EV,Punch EV,746,False,sample
-TATAMOTORS_PV,EV,2025-09,Tigor EV,Tigor EV,364,False,sample
-TATAMOTORS_PV,EV,2025-10,Nexon EV,Nexon EV,4890,False,sample
-TATAMOTORS_PV,EV,2025-10,Tiago EV,Tiago EV,2010,False,sample
-TATAMOTORS_PV,EV,2025-10,Punch EV,Punch EV,805,False,sample
-TATAMOTORS_PV,EV,2025-10,Tigor EV,Tigor EV,429,False,sample
-TATAMOTORS_PV,EV,2025-11,Nexon EV,Nexon EV,3983,False,sample
-TATAMOTORS_PV,EV,2025-11,Tiago EV,Tiago EV,1681,False,sample
-TATAMOTORS_PV,EV,2025-11,Punch EV,Punch EV,656,False,sample
-TATAMOTORS_PV,EV,2025-11,Tigor EV,Tigor EV,315,False,sample
-TATAMOTORS_PV,EV,2025-12,Nexon EV,Nexon EV,4308,False,sample
-TATAMOTORS_PV,EV,2025-12,Tiago EV,Tiago EV,1757,False,sample
-TATAMOTORS_PV,EV,2025-12,Punch EV,Punch EV,715,False,sample
-TATAMOTORS_PV,EV,2025-12,Tigor EV,Tigor EV,353,False,sample
-TATAMOTORS_PV,EV,2026-01,Nexon EV,Nexon EV,3870,False,sample
-TATAMOTORS_PV,EV,2026-01,Tiago EV,Tiago EV,1660,False,sample
-TATAMOTORS_PV,EV,2026-01,Punch EV,Punch EV,642,False,sample
-TATAMOTORS_PV,EV,2026-01,Tigor EV,Tigor EV,324,False,sample
-TATAMOTORS_PV,EV,2026-01,Nexon EV,Nexon EV,4166,False,sample
-TATAMOTORS_PV,EV,2026-01,Tiago EV,Tiago EV,1659,False,sample
-TATAMOTORS_PV,EV,2026-01,Punch EV,Punch EV,696,False,sample
-TATAMOTORS_PV,EV,2026-01,Tigor EV,Tigor EV,354,False,sample
-TATAMOTORS_PV,EV,2026-03,Nexon EV,Nexon EV,4970,False,sample
-TATAMOTORS_PV,EV,2026-03,Tiago EV,Tiago EV,1981,False,sample
-TATAMOTORS_PV,EV,2026-03,Punch EV,Punch EV,831,False,sample
-TATAMOTORS_PV,EV,2026-03,Tigor EV,Tigor EV,414,False,sample
-TATAMOTORS_PV,EV,2026-04,Nexon EV,Nexon EV,4490,False,sample
-TATAMOTORS_PV,EV,2026-04,Tiago EV,Tiago EV,1959,False,sample
-TATAMOTORS_PV,EV,2026-04,Punch EV,Punch EV,803,False,sample
-TATAMOTORS_PV,EV,2026-04,Tigor EV,Tigor EV,403,False,sample
-TATAMOTORS_PV,PV,2024-05,UV,UV,31173,False,sample
-TATAMOTORS_PV,PV,2024-05,Hatch,Hatch,9348,False,sample
-TATAMOTORS_PV,PV,2024-05,Sedan,Sedan,3208,False,sample
-TATAMOTORS_PV,PV,2024-06,UV,UV,30646,False,sample
-TATAMOTORS_PV,PV,2024-06,Hatch,Hatch,9383,False,sample
-TATAMOTORS_PV,PV,2024-06,Sedan,Sedan,3003,False,sample
-TATAMOTORS_PV,PV,2024-07,UV,UV,29776,False,sample
-TATAMOTORS_PV,PV,2024-07,Hatch,Hatch,8139,False,sample
-TATAMOTORS_PV,PV,2024-07,Sedan,Sedan,2873,False,sample
-TATAMOTORS_PV,PV,2024-08,UV,UV,29121,False,sample
-TATAMOTORS_PV,PV,2024-08,Hatch,Hatch,8929,False,sample
-TATAMOTORS_PV,PV,2024-08,Sedan,Sedan,2960,False,sample
-TATAMOTORS_PV,PV,2024-09,UV,UV,38223,False,sample
-TATAMOTORS_PV,PV,2024-09,Hatch,Hatch,10767,False,sample
-TATAMOTORS_PV,PV,2024-09,Sedan,Sedan,3537,False,sample
-TATAMOTORS_PV,PV,2024-10,UV,UV,40616,False,sample
-TATAMOTORS_PV,PV,2024-10,Hatch,Hatch,11670,False,sample
-TATAMOTORS_PV,PV,2024-10,Sedan,Sedan,3951,False,sample
-TATAMOTORS_PV,PV,2024-11,UV,UV,32295,False,sample
-TATAMOTORS_PV,PV,2024-11,Hatch,Hatch,9336,False,sample
-TATAMOTORS_PV,PV,2024-11,Sedan,Sedan,3211,False,sample
-TATAMOTORS_PV,PV,2024-12,UV,UV,34570,False,sample
-TATAMOTORS_PV,PV,2024-12,Hatch,Hatch,10270,False,sample
-TATAMOTORS_PV,PV,2024-12,Sedan,Sedan,3401,False,sample
-TATAMOTORS_PV,PV,2025-01,UV,UV,30403,False,sample
-TATAMOTORS_PV,PV,2025-01,Hatch,Hatch,8786,False,sample
-TATAMOTORS_PV,PV,2025-01,Sedan,Sedan,2968,False,sample
-TATAMOTORS_PV,PV,2025-02,UV,UV,34015,False,sample
-TATAMOTORS_PV,PV,2025-02,Hatch,Hatch,10231,False,sample
-TATAMOTORS_PV,PV,2025-02,Sedan,Sedan,3515,False,sample
-TATAMOTORS_PV,PV,2025-03,UV,UV,42012,False,sample
-TATAMOTORS_PV,PV,2025-03,Hatch,Hatch,12288,False,sample
-TATAMOTORS_PV,PV,2025-03,Sedan,Sedan,3926,False,sample
-TATAMOTORS_PV,PV,2025-04,UV,UV,32018,False,sample
-TATAMOTORS_PV,PV,2025-04,Hatch,Hatch,9935,False,sample
-TATAMOTORS_PV,PV,2025-04,Sedan,Sedan,3169,False,sample
-TATAMOTORS_PV,PV,2025-05,UV,UV,36289,False,sample
-TATAMOTORS_PV,PV,2025-05,Hatch,Hatch,11128,False,sample
-TATAMOTORS_PV,PV,2025-05,Sedan,Sedan,3458,False,sample
-TATAMOTORS_PV,PV,2025-06,UV,UV,32531,False,sample
-TATAMOTORS_PV,PV,2025-06,Hatch,Hatch,9648,False,sample
-TATAMOTORS_PV,PV,2025-06,Sedan,Sedan,3308,False,sample
-TATAMOTORS_PV,PV,2025-07,UV,UV,31072,False,sample
-TATAMOTORS_PV,PV,2025-07,Hatch,Hatch,9316,False,sample
-TATAMOTORS_PV,PV,2025-07,Sedan,Sedan,2911,False,sample
-TATAMOTORS_PV,PV,2025-08,UV,UV,32286,False,sample
-TATAMOTORS_PV,PV,2025-08,Hatch,Hatch,9431,False,sample
-TATAMOTORS_PV,PV,2025-08,Sedan,Sedan,3111,False,sample
-TATAMOTORS_PV,PV,2025-09,UV,UV,37806,False,sample
-TATAMOTORS_PV,PV,2025-09,Hatch,Hatch,11862,False,sample
-TATAMOTORS_PV,PV,2025-09,Sedan,Sedan,3716,False,sample
-TATAMOTORS_PV,PV,2025-10,UV,UV,48539,False,sample
-TATAMOTORS_PV,PV,2025-10,Hatch,Hatch,13352,False,sample
-TATAMOTORS_PV,PV,2025-10,Sedan,Sedan,4430,False,sample
-TATAMOTORS_PV,PV,2025-11,UV,UV,35104,False,sample
-TATAMOTORS_PV,PV,2025-11,Hatch,Hatch,10225,False,sample
-TATAMOTORS_PV,PV,2025-11,Sedan,Sedan,3550,False,sample
-TATAMOTORS_PV,PV,2025-12,UV,UV,35998,False,sample
-TATAMOTORS_PV,PV,2025-12,Hatch,Hatch,10506,False,sample
-TATAMOTORS_PV,PV,2025-12,Sedan,Sedan,3374,False,sample
-TATAMOTORS_PV,PV,2026-01,UV,UV,34803,False,sample
-TATAMOTORS_PV,PV,2026-01,Hatch,Hatch,10114,False,sample
-TATAMOTORS_PV,PV,2026-01,Sedan,Sedan,3319,False,sample
-TATAMOTORS_PV,PV,2026-01,UV,UV,33582,False,sample
-TATAMOTORS_PV,PV,2026-01,Hatch,Hatch,10003,False,sample
-TATAMOTORS_PV,PV,2026-01,Sedan,Sedan,3156,False,sample
-TATAMOTORS_PV,PV,2026-03,UV,UV,40256,False,sample
-TATAMOTORS_PV,PV,2026-03,Hatch,Hatch,11805,False,sample
-TATAMOTORS_PV,PV,2026-03,Sedan,Sedan,3892,False,sample
-TATAMOTORS_PV,PV,2026-04,UV,UV,38749,False,sample
-TATAMOTORS_PV,PV,2026-04,Hatch,Hatch,11246,False,sample
-TATAMOTORS_PV,PV,2026-04,Sedan,Sedan,3629,False,sample
-TVS,2W,2024-05,Motorcycle,Motorcycle,140667,False,sample
-TVS,2W,2024-05,Scooter,Scooter,176261,False,sample
-TVS,2W,2024-05,Moped,Moped,10270,False,sample
-TVS,2W,2024-05,EV,EV,10094,False,sample
-TVS,2W,2024-06,Motorcycle,Motorcycle,144923,False,sample
-TVS,2W,2024-06,Scooter,Scooter,171949,False,sample
-TVS,2W,2024-06,Moped,Moped,9991,False,sample
-TVS,2W,2024-06,EV,EV,10065,False,sample
-TVS,2W,2024-07,Motorcycle,Motorcycle,148168,False,sample
-TVS,2W,2024-07,Scooter,Scooter,175189,False,sample
-TVS,2W,2024-07,Moped,Moped,10485,False,sample
-TVS,2W,2024-07,EV,EV,10185,False,sample
-TVS,2W,2024-08,Motorcycle,Motorcycle,145238,False,sample
-TVS,2W,2024-08,Scooter,Scooter,172616,False,sample
-TVS,2W,2024-08,Moped,Moped,10020,False,sample
-TVS,2W,2024-08,EV,EV,9873,False,sample
-TVS,2W,2024-09,Motorcycle,Motorcycle,165078,False,sample
-TVS,2W,2024-09,Scooter,Scooter,200467,False,sample
-TVS,2W,2024-09,Moped,Moped,11605,False,sample
-TVS,2W,2024-09,EV,EV,11409,False,sample
-TVS,2W,2024-10,Motorcycle,Motorcycle,205366,False,sample
-TVS,2W,2024-10,Scooter,Scooter,252573,False,sample
-TVS,2W,2024-10,Moped,Moped,13902,False,sample
-TVS,2W,2024-10,EV,EV,14199,False,sample
-TVS,2W,2024-11,Motorcycle,Motorcycle,156881,False,sample
-TVS,2W,2024-11,Scooter,Scooter,200881,False,sample
-TVS,2W,2024-11,Moped,Moped,11248,False,sample
-TVS,2W,2024-11,EV,EV,11216,False,sample
-TVS,2W,2024-12,Motorcycle,Motorcycle,162585,False,sample
-TVS,2W,2024-12,Scooter,Scooter,200945,False,sample
-TVS,2W,2024-12,Moped,Moped,11231,False,sample
-TVS,2W,2024-12,EV,EV,11337,False,sample
-TVS,2W,2025-01,Motorcycle,Motorcycle,138688,False,sample
-TVS,2W,2025-01,Scooter,Scooter,166477,False,sample
-TVS,2W,2025-01,Moped,Moped,9917,False,sample
-TVS,2W,2025-01,EV,EV,9605,False,sample
-TVS,2W,2025-02,Motorcycle,Motorcycle,146136,False,sample
-TVS,2W,2025-02,Scooter,Scooter,193271,False,sample
-TVS,2W,2025-02,Moped,Moped,10987,False,sample
-TVS,2W,2025-02,EV,EV,10804,False,sample
-TVS,2W,2025-03,Motorcycle,Motorcycle,194787,False,sample
-TVS,2W,2025-03,Scooter,Scooter,239296,False,sample
-TVS,2W,2025-03,Moped,Moped,13672,False,sample
-TVS,2W,2025-03,EV,EV,13611,False,sample
-TVS,2W,2025-04,Motorcycle,Motorcycle,156967,False,sample
-TVS,2W,2025-04,Scooter,Scooter,204552,False,sample
-TVS,2W,2025-04,Moped,Moped,11260,False,sample
-TVS,2W,2025-04,EV,EV,12011,False,sample
-TVS,2W,2025-05,Motorcycle,Motorcycle,179107,False,sample
-TVS,2W,2025-05,Scooter,Scooter,218953,False,sample
-TVS,2W,2025-05,Moped,Moped,11959,False,sample
-TVS,2W,2025-05,EV,EV,12252,False,sample
-TVS,2W,2025-06,Motorcycle,Motorcycle,160826,False,sample
-TVS,2W,2025-06,Scooter,Scooter,190642,False,sample
-TVS,2W,2025-06,Moped,Moped,11495,False,sample
-TVS,2W,2025-06,EV,EV,11168,False,sample
-TVS,2W,2025-07,Motorcycle,Motorcycle,148025,False,sample
-TVS,2W,2025-07,Scooter,Scooter,175040,False,sample
-TVS,2W,2025-07,Moped,Moped,10636,False,sample
-TVS,2W,2025-07,EV,EV,10639,False,sample
-TVS,2W,2025-08,Motorcycle,Motorcycle,150264,False,sample
-TVS,2W,2025-08,Scooter,Scooter,190991,False,sample
-TVS,2W,2025-08,Moped,Moped,11026,False,sample
-TVS,2W,2025-08,EV,EV,10963,False,sample
-TVS,2W,2025-09,Motorcycle,Motorcycle,182916,False,sample
-TVS,2W,2025-09,Scooter,Scooter,229824,False,sample
-TVS,2W,2025-09,Moped,Moped,13701,False,sample
-TVS,2W,2025-09,EV,EV,13608,False,sample
-TVS,2W,2025-10,Motorcycle,Motorcycle,211527,False,sample
-TVS,2W,2025-10,Scooter,Scooter,259806,False,sample
-TVS,2W,2025-10,Moped,Moped,14865,False,sample
-TVS,2W,2025-10,EV,EV,14859,False,sample
-TVS,2W,2025-11,Motorcycle,Motorcycle,159154,False,sample
-TVS,2W,2025-11,Scooter,Scooter,204181,False,sample
-TVS,2W,2025-11,Moped,Moped,11939,False,sample
-TVS,2W,2025-11,EV,EV,12108,False,sample
-TVS,2W,2025-12,Motorcycle,Motorcycle,184471,False,sample
-TVS,2W,2025-12,Scooter,Scooter,221992,False,sample
-TVS,2W,2025-12,Moped,Moped,12336,False,sample
-TVS,2W,2025-12,EV,EV,12525,False,sample
-TVS,2W,2026-01,Motorcycle,Motorcycle,149859,False,sample
-TVS,2W,2026-01,Scooter,Scooter,182701,False,sample
-TVS,2W,2026-01,Moped,Moped,10597,False,sample
-TVS,2W,2026-01,EV,EV,10573,False,sample
-TVS,2W,2026-01,Motorcycle,Motorcycle,158345,False,sample
-TVS,2W,2026-01,Scooter,Scooter,197984,False,sample
-TVS,2W,2026-01,Moped,Moped,10904,False,sample
-TVS,2W,2026-01,EV,EV,11120,False,sample
-TVS,2W,2026-03,Motorcycle,Motorcycle,194666,False,sample
-TVS,2W,2026-03,Scooter,Scooter,250240,False,sample
-TVS,2W,2026-03,Moped,Moped,14534,False,sample
-TVS,2W,2026-03,EV,EV,13784,False,sample
-TVS,2W,2026-04,Motorcycle,Motorcycle,163443,False,sample
-TVS,2W,2026-04,Scooter,Scooter,193596,False,sample
-TVS,2W,2026-04,Moped,Moped,11083,False,sample
-TVS,2W,2026-04,EV,EV,11544,False,sample
-TVS,3W,2024-05,Passenger,Passenger,11755,False,sample
-TVS,3W,2024-05,Cargo,Cargo,2070,False,sample
-TVS,3W,2024-06,Passenger,Passenger,10124,False,sample
-TVS,3W,2024-06,Cargo,Cargo,1905,False,sample
-TVS,3W,2024-07,Passenger,Passenger,10528,False,sample
-TVS,3W,2024-07,Cargo,Cargo,1854,False,sample
-TVS,3W,2024-08,Passenger,Passenger,10545,False,sample
-TVS,3W,2024-08,Cargo,Cargo,1891,False,sample
-TVS,3W,2024-09,Passenger,Passenger,13069,False,sample
-TVS,3W,2024-09,Cargo,Cargo,2453,False,sample
-TVS,3W,2024-10,Passenger,Passenger,15207,False,sample
-TVS,3W,2024-10,Cargo,Cargo,2869,False,sample
-TVS,3W,2024-11,Passenger,Passenger,10808,False,sample
-TVS,3W,2024-11,Cargo,Cargo,1966,False,sample
-TVS,3W,2024-12,Passenger,Passenger,12187,False,sample
-TVS,3W,2024-12,Cargo,Cargo,2176,False,sample
-TVS,3W,2025-01,Passenger,Passenger,11447,False,sample
-TVS,3W,2025-01,Cargo,Cargo,1947,False,sample
-TVS,3W,2025-02,Passenger,Passenger,10838,False,sample
-TVS,3W,2025-02,Cargo,Cargo,2008,False,sample
-TVS,3W,2025-03,Passenger,Passenger,15934,False,sample
-TVS,3W,2025-03,Cargo,Cargo,2816,False,sample
-TVS,3W,2025-04,Passenger,Passenger,12559,False,sample
-TVS,3W,2025-04,Cargo,Cargo,2208,False,sample
-TVS,3W,2025-05,Passenger,Passenger,13351,False,sample
-TVS,3W,2025-05,Cargo,Cargo,2288,False,sample
-TVS,3W,2025-06,Passenger,Passenger,11623,False,sample
-TVS,3W,2025-06,Cargo,Cargo,2083,False,sample
-TVS,3W,2025-07,Passenger,Passenger,10387,False,sample
-TVS,3W,2025-07,Cargo,Cargo,1941,False,sample
-TVS,3W,2025-08,Passenger,Passenger,11465,False,sample
-TVS,3W,2025-08,Cargo,Cargo,1889,False,sample
-TVS,3W,2025-09,Passenger,Passenger,13548,False,sample
-TVS,3W,2025-09,Cargo,Cargo,2516,False,sample
-TVS,3W,2025-10,Passenger,Passenger,15362,False,sample
-TVS,3W,2025-10,Cargo,Cargo,2586,False,sample
-TVS,3W,2025-11,Passenger,Passenger,12730,False,sample
-TVS,3W,2025-11,Cargo,Cargo,2329,False,sample
-TVS,3W,2025-12,Passenger,Passenger,12949,False,sample
-TVS,3W,2025-12,Cargo,Cargo,2207,False,sample
-TVS,3W,2026-01,Passenger,Passenger,12553,False,sample
-TVS,3W,2026-01,Cargo,Cargo,2160,False,sample
-TVS,3W,2026-01,Passenger,Passenger,12412,False,sample
-TVS,3W,2026-01,Cargo,Cargo,2101,False,sample
-TVS,3W,2026-03,Passenger,Passenger,15736,False,sample
-TVS,3W,2026-03,Cargo,Cargo,2855,False,sample
-TVS,3W,2026-04,Passenger,Passenger,13024,False,sample
-TVS,3W,2026-04,Cargo,Cargo,2222,False,sample
+MAHINDRA_AUTO,EV,2025-11,BE 6,BE 6,735,False,sample
+MAHINDRA_AUTO,EV,2025-11,XEV 9e,XEV 9e,383,False,sample
+MAHINDRA_AUTO,EV,2025-11,XUV400 EV,XUV400 EV,192,False,sample
+MAHINDRA_AUTO,EV,2025-12,BE 6,BE 6,877,False,sample
+MAHINDRA_AUTO,EV,2025-12,XEV 9e,XEV 9e,470,False,sample
+MAHINDRA_AUTO,EV,2025-12,XUV400 EV,XUV400 EV,236,False,sample
+MAHINDRA_AUTO,EV,2026-01,BE 6,BE 6,699,False,sample
+MAHINDRA_AUTO,EV,2026-01,XEV 9e,XEV 9e,381,False,sample
+MAHINDRA_AUTO,EV,2026-01,XUV400 EV,XUV400 EV,201,False,sample
+MAHINDRA_AUTO,EV,2026-03,BE 6,BE 6,856,False,sample
+MAHINDRA_AUTO,EV,2026-03,XEV 9e,XEV 9e,488,False,sample
+MAHINDRA_AUTO,EV,2026-03,XUV400 EV,XUV400 EV,244,False,sample
+MAHINDRA_AUTO,EV,2026-04,BE 6,BE 6,855,False,sample
+MAHINDRA_AUTO,EV,2026-04,XEV 9e,XEV 9e,472,False,sample
+MAHINDRA_AUTO,EV,2026-04,XUV400 EV,XUV400 EV,232,False,sample
+MAHINDRA_AUTO,PV,2024-05,UV,UV,41932,False,sample
+MAHINDRA_AUTO,PV,2024-05,Sedan,Sedan,1265,False,sample
+MAHINDRA_AUTO,PV,2024-06,UV,UV,35382,False,sample
+MAHINDRA_AUTO,PV,2024-06,Sedan,Sedan,1101,False,sample
+MAHINDRA_AUTO,PV,2024-07,UV,UV,34395,False,sample
+MAHINDRA_AUTO,PV,2024-07,Sedan,Sedan,1079,False,sample
+MAHINDRA_AUTO,PV,2024-08,UV,UV,40279,False,sample
+MAHINDRA_AUTO,PV,2024-08,Sedan,Sedan,1212,False,sample
+MAHINDRA_AUTO,PV,2024-09,UV,UV,44365,False,sample
+MAHINDRA_AUTO,PV,2024-09,Sedan,Sedan,1430,False,sample
+MAHINDRA_AUTO,PV,2024-10,UV,UV,54250,False,sample
+MAHINDRA_AUTO,PV,2024-10,Sedan,Sedan,1723,False,sample
+MAHINDRA_AUTO,PV,2024-11,UV,UV,40612,False,sample
+MAHINDRA_AUTO,PV,2024-11,Sedan,Sedan,1259,False,sample
+MAHINDRA_AUTO,PV,2024-12,UV,UV,40980,False,sample
+MAHINDRA_AUTO,PV,2024-12,Sedan,Sedan,1255,False,sample
+MAHINDRA_AUTO,PV,2025-01,UV,UV,38933,False,sample
+MAHINDRA_AUTO,PV,2025-01,Sedan,Sedan,1177,False,sample
+MAHINDRA_AUTO,PV,2025-02,UV,UV,43707,False,sample
+MAHINDRA_AUTO,PV,2025-02,Sedan,Sedan,1338,False,sample
+MAHINDRA_AUTO,PV,2025-03,UV,UV,48578,False,sample
+MAHINDRA_AUTO,PV,2025-03,Sedan,Sedan,1569,False,sample
+MAHINDRA_AUTO,PV,2025-04,UV,UV,40328,False,sample
+MAHINDRA_AUTO,PV,2025-04,Sedan,Sedan,1260,False,sample
+MAHINDRA_AUTO,PV,2025-05,UV,UV,41374,False,sample
+MAHINDRA_AUTO,PV,2025-05,Sedan,Sedan,1269,False,sample
+MAHINDRA_AUTO,PV,2025-06,UV,UV,40755,False,sample
+MAHINDRA_AUTO,PV,2025-06,Sedan,Sedan,1295,False,sample
+MAHINDRA_AUTO,PV,2025-07,UV,UV,40150,False,sample
+MAHINDRA_AUTO,PV,2025-07,Sedan,Sedan,1272,False,sample
+MAHINDRA_AUTO,PV,2025-08,UV,UV,42485,False,sample
+MAHINDRA_AUTO,PV,2025-08,Sedan,Sedan,1252,False,sample
+MAHINDRA_AUTO,PV,2025-09,UV,UV,50343,False,sample
+MAHINDRA_AUTO,PV,2025-09,Sedan,Sedan,1523,False,sample
+MAHINDRA_AUTO,PV,2025-10,UV,UV,58035,False,sample
+MAHINDRA_AUTO,PV,2025-10,Sedan,Sedan,1797,False,sample
+MAHINDRA_AUTO,PV,2025-11,UV,UV,42445,False,sample
+MAHINDRA_AUTO,PV,2025-11,Sedan,Sedan,1341,False,sample
+MAHINDRA_AUTO,PV,2025-12,UV,UV,43645,False,sample
+MAHINDRA_AUTO,PV,2025-12,Sedan,Sedan,1326,False,sample
+MAHINDRA_AUTO,PV,2026-01,UV,UV,40710,False,sample
+MAHINDRA_AUTO,PV,2026-01,Sedan,Sedan,1222,False,sample
+MAHINDRA_AUTO,PV,2026-03,UV,UV,56598,False,sample
+MAHINDRA_AUTO,PV,2026-03,Sedan,Sedan,1691,False,sample
+MAHINDRA_AUTO,PV,2026-04,UV,UV,48117,False,sample
+MAHINDRA_AUTO,PV,2026-04,Sedan,Sedan,1399,False,sample
+MAHINDRA_FARM,Tractor,2024-05,Sub30HP,Sub30HP,6007,False,sample
+MAHINDRA_FARM,Tractor,2024-05,30-40HP,30-40HP,17253,False,sample
+MAHINDRA_FARM,Tractor,2024-05,Above40HP,Above40HP,8440,False,sample
+MAHINDRA_FARM,Tractor,2024-06,Sub30HP,Sub30HP,6585,False,sample
+MAHINDRA_FARM,Tractor,2024-06,30-40HP,30-40HP,20939,False,sample
+MAHINDRA_FARM,Tractor,2024-06,Above40HP,Above40HP,9821,False,sample
+MAHINDRA_FARM,Tractor,2024-07,Sub30HP,Sub30HP,6498,False,sample
+MAHINDRA_FARM,Tractor,2024-07,30-40HP,30-40HP,19966,False,sample
+MAHINDRA_FARM,Tractor,2024-07,Above40HP,Above40HP,9992,False,sample
+MAHINDRA_FARM,Tractor,2024-08,Sub30HP,Sub30HP,5413,False,sample
+MAHINDRA_FARM,Tractor,2024-08,30-40HP,30-40HP,17332,False,sample
+MAHINDRA_FARM,Tractor,2024-08,Above40HP,Above40HP,8708,False,sample
+MAHINDRA_FARM,Tractor,2024-09,Sub30HP,Sub30HP,6284,False,sample
+MAHINDRA_FARM,Tractor,2024-09,30-40HP,30-40HP,18824,False,sample
+MAHINDRA_FARM,Tractor,2024-09,Above40HP,Above40HP,8771,False,sample
+MAHINDRA_FARM,Tractor,2024-10,Sub30HP,Sub30HP,6380,False,sample
+MAHINDRA_FARM,Tractor,2024-10,30-40HP,30-40HP,19306,False,sample
+MAHINDRA_FARM,Tractor,2024-10,Above40HP,Above40HP,9176,False,sample
+MAHINDRA_FARM,Tractor,2024-11,Sub30HP,Sub30HP,5257,False,sample
+MAHINDRA_FARM,Tractor,2024-11,30-40HP,30-40HP,15829,False,sample
+MAHINDRA_FARM,Tractor,2024-11,Above40HP,Above40HP,7616,False,sample
+MAHINDRA_FARM,Tractor,2024-12,Sub30HP,Sub30HP,4492,False,sample
+MAHINDRA_FARM,Tractor,2024-12,30-40HP,30-40HP,13942,False,sample
+MAHINDRA_FARM,Tractor,2024-12,Above40HP,Above40HP,6700,False,sample
+MAHINDRA_FARM,Tractor,2025-01,Sub30HP,Sub30HP,5024,False,sample
+MAHINDRA_FARM,Tractor,2025-01,30-40HP,30-40HP,14449,False,sample
+MAHINDRA_FARM,Tractor,2025-01,Above40HP,Above40HP,7523,False,sample
+MAHINDRA_FARM,Tractor,2025-02,Sub30HP,Sub30HP,4888,False,sample
+MAHINDRA_FARM,Tractor,2025-02,30-40HP,30-40HP,14598,False,sample
+MAHINDRA_FARM,Tractor,2025-02,Above40HP,Above40HP,7388,False,sample
+MAHINDRA_FARM,Tractor,2025-03,Sub30HP,Sub30HP,6636,False,sample
+MAHINDRA_FARM,Tractor,2025-03,30-40HP,30-40HP,20447,False,sample
+MAHINDRA_FARM,Tractor,2025-03,Above40HP,Above40HP,10395,False,sample
+MAHINDRA_FARM,Tractor,2025-04,Sub30HP,Sub30HP,6317,False,sample
+MAHINDRA_FARM,Tractor,2025-04,30-40HP,30-40HP,20711,False,sample
+MAHINDRA_FARM,Tractor,2025-04,Above40HP,Above40HP,9774,False,sample
+MAHINDRA_FARM,Tractor,2025-05,Sub30HP,Sub30HP,6576,False,sample
+MAHINDRA_FARM,Tractor,2025-05,30-40HP,30-40HP,20841,False,sample
+MAHINDRA_FARM,Tractor,2025-05,Above40HP,Above40HP,9911,False,sample
+MAHINDRA_FARM,Tractor,2025-06,Sub30HP,Sub30HP,7347,False,sample
+MAHINDRA_FARM,Tractor,2025-06,30-40HP,30-40HP,21142,False,sample
+MAHINDRA_FARM,Tractor,2025-06,Above40HP,Above40HP,11161,False,sample
+MAHINDRA_FARM,Tractor,2025-07,Sub30HP,Sub30HP,7135,False,sample
+MAHINDRA_FARM,Tractor,2025-07,30-40HP,30-40HP,20738,False,sample
+MAHINDRA_FARM,Tractor,2025-07,Above40HP,Above40HP,10496,False,sample
+MAHINDRA_FARM,Tractor,2025-08,Sub30HP,Sub30HP,5721,False,sample
+MAHINDRA_FARM,Tractor,2025-08,30-40HP,30-40HP,17622,False,sample
+MAHINDRA_FARM,Tractor,2025-08,Above40HP,Above40HP,8762,False,sample
+MAHINDRA_FARM,Tractor,2025-09,Sub30HP,Sub30HP,6901,False,sample
+MAHINDRA_FARM,Tractor,2025-09,30-40HP,30-40HP,20058,False,sample
+MAHINDRA_FARM,Tractor,2025-09,Above40HP,Above40HP,10468,False,sample
+MAHINDRA_FARM,Tractor,2025-10,Sub30HP,Sub30HP,6186,False,sample
+MAHINDRA_FARM,Tractor,2025-10,30-40HP,30-40HP,18435,False,sample
+MAHINDRA_FARM,Tractor,2025-10,Above40HP,Above40HP,9524,False,sample
+MAHINDRA_FARM,Tractor,2025-11,Sub30HP,Sub30HP,5400,False,sample
+MAHINDRA_FARM,Tractor,2025-11,30-40HP,30-40HP,16399,False,sample
+MAHINDRA_FARM,Tractor,2025-11,Above40HP,Above40HP,8066,False,sample
+MAHINDRA_FARM,Tractor,2025-12,Sub30HP,Sub30HP,4637,False,sample
+MAHINDRA_FARM,Tractor,2025-12,30-40HP,30-40HP,14946,False,sample
+MAHINDRA_FARM,Tractor,2025-12,Above40HP,Above40HP,7218,False,sample
+MAHINDRA_FARM,Tractor,2026-01,Sub30HP,Sub30HP,5080,False,sample
+MAHINDRA_FARM,Tractor,2026-01,30-40HP,30-40HP,15159,False,sample
+MAHINDRA_FARM,Tractor,2026-01,Above40HP,Above40HP,7837,False,sample
+MAHINDRA_FARM,Tractor,2026-03,Sub30HP,Sub30HP,7324,False,sample
+MAHINDRA_FARM,Tractor,2026-03,30-40HP,30-40HP,21533,False,sample
+MAHINDRA_FARM,Tractor,2026-03,Above40HP,Above40HP,11153,False,sample
+MAHINDRA_FARM,Tractor,2026-04,Sub30HP,Sub30HP,6599,False,sample
+MAHINDRA_FARM,Tractor,2026-04,30-40HP,30-40HP,20487,False,sample
+MAHINDRA_FARM,Tractor,2026-04,Above40HP,Above40HP,10005,False,sample
+MARUTI,PV,2024-05,Mini,Mini,9986,False,sample
+MARUTI,PV,2024-05,Compact,Compact,56592,False,sample
+MARUTI,PV,2024-05,Mid,Mid,21820,False,sample
+MARUTI,PV,2024-05,UV,UV,62274,False,sample
+MARUTI,PV,2024-05,MPV,MPV,9786,False,sample
+MARUTI,PV,2024-05,Van,Van,3262,False,sample
+MARUTI,PV,2024-06,Mini,Mini,8854,False,sample
+MARUTI,PV,2024-06,Compact,Compact,49504,False,sample
+MARUTI,PV,2024-06,Mid,Mid,18724,False,sample
+MARUTI,PV,2024-06,UV,UV,55471,False,sample
+MARUTI,PV,2024-06,MPV,MPV,8779,False,sample
+MARUTI,PV,2024-06,Van,Van,2938,False,sample
+MARUTI,PV,2024-07,Mini,Mini,9043,False,sample
+MARUTI,PV,2024-07,Compact,Compact,48779,False,sample
+MARUTI,PV,2024-07,Mid,Mid,19681,False,sample
+MARUTI,PV,2024-07,UV,UV,57192,False,sample
+MARUTI,PV,2024-07,MPV,MPV,8621,False,sample
+MARUTI,PV,2024-07,Van,Van,2905,False,sample
+MARUTI,PV,2024-08,Mini,Mini,8944,False,sample
+MARUTI,PV,2024-08,Compact,Compact,52907,False,sample
+MARUTI,PV,2024-08,Mid,Mid,20243,False,sample
+MARUTI,PV,2024-08,UV,UV,60641,False,sample
+MARUTI,PV,2024-08,MPV,MPV,9606,False,sample
+MARUTI,PV,2024-08,Van,Van,3043,False,sample
+MARUTI,PV,2024-09,Mini,Mini,10723,False,sample
+MARUTI,PV,2024-09,Compact,Compact,61484,False,sample
+MARUTI,PV,2024-09,Mid,Mid,22896,False,sample
+MARUTI,PV,2024-09,UV,UV,67461,False,sample
+MARUTI,PV,2024-09,MPV,MPV,10654,False,sample
+MARUTI,PV,2024-09,Van,Van,3501,False,sample
+MARUTI,PV,2024-10,Mini,Mini,12402,False,sample
+MARUTI,PV,2024-10,Compact,Compact,72587,False,sample
+MARUTI,PV,2024-10,Mid,Mid,27300,False,sample
+MARUTI,PV,2024-10,UV,UV,84494,False,sample
+MARUTI,PV,2024-10,MPV,MPV,12513,False,sample
+MARUTI,PV,2024-10,Van,Van,4154,False,sample
+MARUTI,PV,2024-11,Mini,Mini,9676,False,sample
+MARUTI,PV,2024-11,Compact,Compact,55715,False,sample
+MARUTI,PV,2024-11,Mid,Mid,21497,False,sample
+MARUTI,PV,2024-11,UV,UV,66596,False,sample
+MARUTI,PV,2024-11,MPV,MPV,9740,False,sample
+MARUTI,PV,2024-11,Van,Van,3309,False,sample
+MARUTI,PV,2024-12,Mini,Mini,10598,False,sample
+MARUTI,PV,2024-12,Compact,Compact,58749,False,sample
+MARUTI,PV,2024-12,Mid,Mid,24044,False,sample
+MARUTI,PV,2024-12,UV,UV,69358,False,sample
+MARUTI,PV,2024-12,MPV,MPV,10941,False,sample
+MARUTI,PV,2024-12,Van,Van,3458,False,sample
+MARUTI,PV,2025-01,Mini,Mini,9019,False,sample
+MARUTI,PV,2025-01,Compact,Compact,52563,False,sample
+MARUTI,PV,2025-01,Mid,Mid,20301,False,sample
+MARUTI,PV,2025-01,UV,UV,60688,False,sample
+MARUTI,PV,2025-01,MPV,MPV,9031,False,sample
+MARUTI,PV,2025-01,Van,Van,3007,False,sample
+MARUTI,PV,2025-02,Mini,Mini,9473,False,sample
+MARUTI,PV,2025-02,Compact,Compact,53867,False,sample
+MARUTI,PV,2025-02,Mid,Mid,20903,False,sample
+MARUTI,PV,2025-02,UV,UV,63098,False,sample
+MARUTI,PV,2025-02,MPV,MPV,9064,False,sample
+MARUTI,PV,2025-02,Van,Van,3122,False,sample
+MARUTI,PV,2025-03,Mini,Mini,11769,False,sample
+MARUTI,PV,2025-03,Compact,Compact,66411,False,sample
+MARUTI,PV,2025-03,Mid,Mid,25062,False,sample
+MARUTI,PV,2025-03,UV,UV,77781,False,sample
+MARUTI,PV,2025-03,MPV,MPV,11275,False,sample
+MARUTI,PV,2025-03,Van,Van,3843,False,sample
+MARUTI,PV,2025-04,Mini,Mini,10437,False,sample
+MARUTI,PV,2025-04,Compact,Compact,56738,False,sample
+MARUTI,PV,2025-04,Mid,Mid,21871,False,sample
+MARUTI,PV,2025-04,UV,UV,65611,False,sample
+MARUTI,PV,2025-04,MPV,MPV,9993,False,sample
+MARUTI,PV,2025-04,Van,Van,3336,False,sample
+MARUTI,PV,2025-05,Mini,Mini,9756,False,sample
+MARUTI,PV,2025-05,Compact,Compact,55392,False,sample
+MARUTI,PV,2025-05,Mid,Mid,22010,False,sample
+MARUTI,PV,2025-05,UV,UV,63855,False,sample
+MARUTI,PV,2025-05,MPV,MPV,10287,False,sample
+MARUTI,PV,2025-05,Van,Van,3369,False,sample
+MARUTI,PV,2025-06,Mini,Mini,9958,False,sample
+MARUTI,PV,2025-06,Compact,Compact,56978,False,sample
+MARUTI,PV,2025-06,Mid,Mid,21511,False,sample
+MARUTI,PV,2025-06,UV,UV,62864,False,sample
+MARUTI,PV,2025-06,MPV,MPV,9568,False,sample
+MARUTI,PV,2025-06,Van,Van,3292,False,sample
+MARUTI,PV,2025-07,Mini,Mini,9509,False,sample
+MARUTI,PV,2025-07,Compact,Compact,51950,False,sample
+MARUTI,PV,2025-07,Mid,Mid,20637,False,sample
+MARUTI,PV,2025-07,UV,UV,59880,False,sample
+MARUTI,PV,2025-07,MPV,MPV,9205,False,sample
+MARUTI,PV,2025-07,Van,Van,3165,False,sample
+MARUTI,PV,2025-08,Mini,Mini,9529,False,sample
+MARUTI,PV,2025-08,Compact,Compact,53758,False,sample
+MARUTI,PV,2025-08,Mid,Mid,20074,False,sample
+MARUTI,PV,2025-08,UV,UV,61707,False,sample
+MARUTI,PV,2025-08,MPV,MPV,9562,False,sample
+MARUTI,PV,2025-08,Van,Van,3133,False,sample
+MARUTI,PV,2025-09,Mini,Mini,11119,False,sample
+MARUTI,PV,2025-09,Compact,Compact,64150,False,sample
+MARUTI,PV,2025-09,Mid,Mid,24371,False,sample
+MARUTI,PV,2025-09,UV,UV,75582,False,sample
+MARUTI,PV,2025-09,MPV,MPV,11534,False,sample
+MARUTI,PV,2025-09,Van,Van,3946,False,sample
+MARUTI,PV,2025-10,Mini,Mini,13497,False,sample
+MARUTI,PV,2025-10,Compact,Compact,73756,False,sample
+MARUTI,PV,2025-10,Mid,Mid,28096,False,sample
+MARUTI,PV,2025-10,UV,UV,87760,False,sample
+MARUTI,PV,2025-10,MPV,MPV,13057,False,sample
+MARUTI,PV,2025-10,Van,Van,4551,False,sample
+MARUTI,PV,2025-11,Mini,Mini,10598,False,sample
+MARUTI,PV,2025-11,Compact,Compact,63985,False,sample
+MARUTI,PV,2025-11,Mid,Mid,22926,False,sample
+MARUTI,PV,2025-11,UV,UV,72098,False,sample
+MARUTI,PV,2025-11,MPV,MPV,10448,False,sample
+MARUTI,PV,2025-11,Van,Van,3685,False,sample
+MARUTI,PV,2025-12,Mini,Mini,11315,False,sample
+MARUTI,PV,2025-12,Compact,Compact,60487,False,sample
+MARUTI,PV,2025-12,Mid,Mid,24241,False,sample
+MARUTI,PV,2025-12,UV,UV,72915,False,sample
+MARUTI,PV,2025-12,MPV,MPV,10551,False,sample
+MARUTI,PV,2025-12,Van,Van,3744,False,sample
+MARUTI,PV,2026-01,Mini,Mini,10091,False,sample
+MARUTI,PV,2026-01,Compact,Compact,56642,False,sample
+MARUTI,PV,2026-01,Mid,Mid,20745,False,sample
+MARUTI,PV,2026-01,UV,UV,63074,False,sample
+MARUTI,PV,2026-01,MPV,MPV,9664,False,sample
+MARUTI,PV,2026-01,Van,Van,3195,False,sample
+MARUTI,PV,2026-03,Mini,Mini,12475,False,sample
+MARUTI,PV,2026-03,Compact,Compact,70400,False,sample
+MARUTI,PV,2026-03,Mid,Mid,25973,False,sample
+MARUTI,PV,2026-03,UV,UV,75527,False,sample
+MARUTI,PV,2026-03,MPV,MPV,12519,False,sample
+MARUTI,PV,2026-03,Van,Van,4087,False,sample
+MARUTI,PV,2026-04,Mini,Mini,11244,False,sample
+MARUTI,PV,2026-04,Compact,Compact,62632,False,sample
+MARUTI,PV,2026-04,Mid,Mid,24557,False,sample
+MARUTI,PV,2026-04,UV,UV,69079,False,sample
+MARUTI,PV,2026-04,MPV,MPV,10749,False,sample
+MARUTI,PV,2026-04,Van,Van,3705,False,sample
+OLA_ELECTRIC,EV,2024-05,S1 Pro,S1 Pro,15986,False,sample
+OLA_ELECTRIC,EV,2024-05,S1 Air,S1 Air,9039,False,sample
+OLA_ELECTRIC,EV,2024-05,S1 X,S1 X,4502,False,sample
+OLA_ELECTRIC,EV,2024-06,S1 Pro,S1 Pro,15486,False,sample
+OLA_ELECTRIC,EV,2024-06,S1 Air,S1 Air,8448,False,sample
+OLA_ELECTRIC,EV,2024-06,S1 X,S1 X,4331,False,sample
+OLA_ELECTRIC,EV,2024-07,S1 Pro,S1 Pro,16951,False,sample
+OLA_ELECTRIC,EV,2024-07,S1 Air,S1 Air,9594,False,sample
+OLA_ELECTRIC,EV,2024-07,S1 X,S1 X,4538,False,sample
+OLA_ELECTRIC,EV,2024-08,S1 Pro,S1 Pro,16031,False,sample
+OLA_ELECTRIC,EV,2024-08,S1 Air,S1 Air,8833,False,sample
+OLA_ELECTRIC,EV,2024-08,S1 X,S1 X,4606,False,sample
+OLA_ELECTRIC,EV,2024-09,S1 Pro,S1 Pro,18523,False,sample
+OLA_ELECTRIC,EV,2024-09,S1 Air,S1 Air,10208,False,sample
+OLA_ELECTRIC,EV,2024-09,S1 X,S1 X,4916,False,sample
+OLA_ELECTRIC,EV,2024-10,S1 Pro,S1 Pro,20244,False,sample
+OLA_ELECTRIC,EV,2024-10,S1 Air,S1 Air,11121,False,sample
+OLA_ELECTRIC,EV,2024-10,S1 X,S1 X,5657,False,sample
+OLA_ELECTRIC,EV,2024-11,S1 Pro,S1 Pro,16856,False,sample
+OLA_ELECTRIC,EV,2024-11,S1 Air,S1 Air,8803,False,sample
+OLA_ELECTRIC,EV,2024-11,S1 X,S1 X,4708,False,sample
+OLA_ELECTRIC,EV,2024-12,S1 Pro,S1 Pro,19623,False,sample
+OLA_ELECTRIC,EV,2024-12,S1 Air,S1 Air,10542,False,sample
+OLA_ELECTRIC,EV,2024-12,S1 X,S1 X,5539,False,sample
+OLA_ELECTRIC,EV,2025-01,S1 Pro,S1 Pro,17087,False,sample
+OLA_ELECTRIC,EV,2025-01,S1 Air,S1 Air,9895,False,sample
+OLA_ELECTRIC,EV,2025-01,S1 X,S1 X,4908,False,sample
+OLA_ELECTRIC,EV,2025-02,S1 Pro,S1 Pro,18517,False,sample
+OLA_ELECTRIC,EV,2025-02,S1 Air,S1 Air,10096,False,sample
+OLA_ELECTRIC,EV,2025-02,S1 X,S1 X,5228,False,sample
+OLA_ELECTRIC,EV,2025-03,S1 Pro,S1 Pro,21375,False,sample
+OLA_ELECTRIC,EV,2025-03,S1 Air,S1 Air,11498,False,sample
+OLA_ELECTRIC,EV,2025-03,S1 X,S1 X,5632,False,sample
+OLA_ELECTRIC,EV,2025-04,S1 Pro,S1 Pro,20238,False,sample
+OLA_ELECTRIC,EV,2025-04,S1 Air,S1 Air,10805,False,sample
+OLA_ELECTRIC,EV,2025-04,S1 X,S1 X,5235,False,sample
+OLA_ELECTRIC,EV,2025-05,S1 Pro,S1 Pro,19942,False,sample
+OLA_ELECTRIC,EV,2025-05,S1 Air,S1 Air,11479,False,sample
+OLA_ELECTRIC,EV,2025-05,S1 X,S1 X,5428,False,sample
+OLA_ELECTRIC,EV,2025-06,S1 Pro,S1 Pro,19770,False,sample
+OLA_ELECTRIC,EV,2025-06,S1 Air,S1 Air,10579,False,sample
+OLA_ELECTRIC,EV,2025-06,S1 X,S1 X,5591,False,sample
+OLA_ELECTRIC,EV,2025-07,S1 Pro,S1 Pro,19972,False,sample
+OLA_ELECTRIC,EV,2025-07,S1 Air,S1 Air,10734,False,sample
+OLA_ELECTRIC,EV,2025-07,S1 X,S1 X,5272,False,sample
+OLA_ELECTRIC,EV,2025-08,S1 Pro,S1 Pro,19629,False,sample
+OLA_ELECTRIC,EV,2025-08,S1 Air,S1 Air,10518,False,sample
+OLA_ELECTRIC,EV,2025-08,S1 X,S1 X,5299,False,sample
+OLA_ELECTRIC,EV,2025-09,S1 Pro,S1 Pro,21916,False,sample
+OLA_ELECTRIC,EV,2025-09,S1 Air,S1 Air,12276,False,sample
+OLA_ELECTRIC,EV,2025-09,S1 X,S1 X,6057,False,sample
+OLA_ELECTRIC,EV,2025-10,S1 Pro,S1 Pro,24097,False,sample
+OLA_ELECTRIC,EV,2025-10,S1 Air,S1 Air,13652,False,sample
+OLA_ELECTRIC,EV,2025-10,S1 X,S1 X,6684,False,sample
+OLA_ELECTRIC,EV,2025-11,S1 Pro,S1 Pro,21558,False,sample
+OLA_ELECTRIC,EV,2025-11,S1 Air,S1 Air,11893,False,sample
+OLA_ELECTRIC,EV,2025-11,S1 X,S1 X,5746,False,sample
+OLA_ELECTRIC,EV,2025-12,S1 Pro,S1 Pro,21919,False,sample
+OLA_ELECTRIC,EV,2025-12,S1 Air,S1 Air,11547,False,sample
+OLA_ELECTRIC,EV,2025-12,S1 X,S1 X,5874,False,sample
+OLA_ELECTRIC,EV,2026-01,S1 Pro,S1 Pro,20925,False,sample
+OLA_ELECTRIC,EV,2026-01,S1 Air,S1 Air,11809,False,sample
+OLA_ELECTRIC,EV,2026-01,S1 X,S1 X,5947,False,sample
+OLA_ELECTRIC,EV,2026-03,S1 Pro,S1 Pro,24620,False,sample
+OLA_ELECTRIC,EV,2026-03,S1 Air,S1 Air,13246,False,sample
+OLA_ELECTRIC,EV,2026-03,S1 X,S1 X,6578,False,sample
+OLA_ELECTRIC,EV,2026-04,S1 Pro,S1 Pro,24934,False,sample
+OLA_ELECTRIC,EV,2026-04,S1 Air,S1 Air,13405,False,sample
+OLA_ELECTRIC,EV,2026-04,S1 X,S1 X,6958,False,sample
+TATAMOTORS_CV,CV,2024-05,SCV,SCV,14556,False,sample
+TATAMOTORS_CV,CV,2024-05,ICV,ICV,4138,False,sample
+TATAMOTORS_CV,CV,2024-05,MHCV,MHCV,9554,False,sample
+TATAMOTORS_CV,CV,2024-05,Bus,Bus,3424,False,sample
+TATAMOTORS_CV,CV,2024-06,SCV,SCV,14096,False,sample
+TATAMOTORS_CV,CV,2024-06,ICV,ICV,4017,False,sample
+TATAMOTORS_CV,CV,2024-06,MHCV,MHCV,9059,False,sample
+TATAMOTORS_CV,CV,2024-06,Bus,Bus,3458,False,sample
+TATAMOTORS_CV,CV,2024-07,SCV,SCV,13965,False,sample
+TATAMOTORS_CV,CV,2024-07,ICV,ICV,3983,False,sample
+TATAMOTORS_CV,CV,2024-07,MHCV,MHCV,8957,False,sample
+TATAMOTORS_CV,CV,2024-07,Bus,Bus,3305,False,sample
+TATAMOTORS_CV,CV,2024-08,SCV,SCV,14229,False,sample
+TATAMOTORS_CV,CV,2024-08,ICV,ICV,3997,False,sample
+TATAMOTORS_CV,CV,2024-08,MHCV,MHCV,9132,False,sample
+TATAMOTORS_CV,CV,2024-08,Bus,Bus,3419,False,sample
+TATAMOTORS_CV,CV,2024-09,SCV,SCV,17049,False,sample
+TATAMOTORS_CV,CV,2024-09,ICV,ICV,4916,False,sample
+TATAMOTORS_CV,CV,2024-09,MHCV,MHCV,11536,False,sample
+TATAMOTORS_CV,CV,2024-09,Bus,Bus,4222,False,sample
+TATAMOTORS_CV,CV,2024-10,SCV,SCV,20507,False,sample
+TATAMOTORS_CV,CV,2024-10,ICV,ICV,5825,False,sample
+TATAMOTORS_CV,CV,2024-10,MHCV,MHCV,13497,False,sample
+TATAMOTORS_CV,CV,2024-10,Bus,Bus,5099,False,sample
+TATAMOTORS_CV,CV,2024-11,SCV,SCV,16796,False,sample
+TATAMOTORS_CV,CV,2024-11,ICV,ICV,4468,False,sample
+TATAMOTORS_CV,CV,2024-11,MHCV,MHCV,10306,False,sample
+TATAMOTORS_CV,CV,2024-11,Bus,Bus,3817,False,sample
+TATAMOTORS_CV,CV,2024-12,SCV,SCV,15165,False,sample
+TATAMOTORS_CV,CV,2024-12,ICV,ICV,4516,False,sample
+TATAMOTORS_CV,CV,2024-12,MHCV,MHCV,10241,False,sample
+TATAMOTORS_CV,CV,2024-12,Bus,Bus,3828,False,sample
+TATAMOTORS_CV,CV,2025-01,SCV,SCV,15837,False,sample
+TATAMOTORS_CV,CV,2025-01,ICV,ICV,4314,False,sample
+TATAMOTORS_CV,CV,2025-01,MHCV,MHCV,9725,False,sample
+TATAMOTORS_CV,CV,2025-01,Bus,Bus,3621,False,sample
+TATAMOTORS_CV,CV,2025-02,SCV,SCV,15371,False,sample
+TATAMOTORS_CV,CV,2025-02,ICV,ICV,4375,False,sample
+TATAMOTORS_CV,CV,2025-02,MHCV,MHCV,9903,False,sample
+TATAMOTORS_CV,CV,2025-02,Bus,Bus,3655,False,sample
+TATAMOTORS_CV,CV,2025-03,SCV,SCV,18964,False,sample
+TATAMOTORS_CV,CV,2025-03,ICV,ICV,5247,False,sample
+TATAMOTORS_CV,CV,2025-03,MHCV,MHCV,11839,False,sample
+TATAMOTORS_CV,CV,2025-03,Bus,Bus,4483,False,sample
+TATAMOTORS_CV,CV,2025-04,SCV,SCV,15356,False,sample
+TATAMOTORS_CV,CV,2025-04,ICV,ICV,4144,False,sample
+TATAMOTORS_CV,CV,2025-04,MHCV,MHCV,9417,False,sample
+TATAMOTORS_CV,CV,2025-04,Bus,Bus,3508,False,sample
+TATAMOTORS_CV,CV,2025-05,SCV,SCV,16270,False,sample
+TATAMOTORS_CV,CV,2025-05,ICV,ICV,4782,False,sample
+TATAMOTORS_CV,CV,2025-05,MHCV,MHCV,10850,False,sample
+TATAMOTORS_CV,CV,2025-05,Bus,Bus,4043,False,sample
+TATAMOTORS_CV,CV,2025-06,SCV,SCV,15028,False,sample
+TATAMOTORS_CV,CV,2025-06,ICV,ICV,4252,False,sample
+TATAMOTORS_CV,CV,2025-06,MHCV,MHCV,9861,False,sample
+TATAMOTORS_CV,CV,2025-06,Bus,Bus,3528,False,sample
+TATAMOTORS_CV,CV,2025-07,SCV,SCV,14859,False,sample
+TATAMOTORS_CV,CV,2025-07,ICV,ICV,4349,False,sample
+TATAMOTORS_CV,CV,2025-07,MHCV,MHCV,9690,False,sample
+TATAMOTORS_CV,CV,2025-07,Bus,Bus,3613,False,sample
+TATAMOTORS_CV,CV,2025-08,SCV,SCV,15894,False,sample
+TATAMOTORS_CV,CV,2025-08,ICV,ICV,4379,False,sample
+TATAMOTORS_CV,CV,2025-08,MHCV,MHCV,9926,False,sample
+TATAMOTORS_CV,CV,2025-08,Bus,Bus,3701,False,sample
+TATAMOTORS_CV,CV,2025-09,SCV,SCV,17979,False,sample
+TATAMOTORS_CV,CV,2025-09,ICV,ICV,5048,False,sample
+TATAMOTORS_CV,CV,2025-09,MHCV,MHCV,11276,False,sample
+TATAMOTORS_CV,CV,2025-09,Bus,Bus,4346,False,sample
+TATAMOTORS_CV,CV,2025-10,SCV,SCV,19189,False,sample
+TATAMOTORS_CV,CV,2025-10,ICV,ICV,5527,False,sample
+TATAMOTORS_CV,CV,2025-10,MHCV,MHCV,13378,False,sample
+TATAMOTORS_CV,CV,2025-10,Bus,Bus,4609,False,sample
+TATAMOTORS_CV,CV,2025-11,SCV,SCV,16518,False,sample
+TATAMOTORS_CV,CV,2025-11,ICV,ICV,4396,False,sample
+TATAMOTORS_CV,CV,2025-11,MHCV,MHCV,10728,False,sample
+TATAMOTORS_CV,CV,2025-11,Bus,Bus,3748,False,sample
+TATAMOTORS_CV,CV,2025-12,SCV,SCV,16603,False,sample
+TATAMOTORS_CV,CV,2025-12,ICV,ICV,4674,False,sample
+TATAMOTORS_CV,CV,2025-12,MHCV,MHCV,10933,False,sample
+TATAMOTORS_CV,CV,2025-12,Bus,Bus,3930,False,sample
+TATAMOTORS_CV,CV,2026-01,SCV,SCV,15391,False,sample
+TATAMOTORS_CV,CV,2026-01,ICV,ICV,4415,False,sample
+TATAMOTORS_CV,CV,2026-01,MHCV,MHCV,10326,False,sample
+TATAMOTORS_CV,CV,2026-01,Bus,Bus,3794,False,sample
+TATAMOTORS_CV,CV,2026-03,SCV,SCV,19636,False,sample
+TATAMOTORS_CV,CV,2026-03,ICV,ICV,5919,False,sample
+TATAMOTORS_CV,CV,2026-03,MHCV,MHCV,12937,False,sample
+TATAMOTORS_CV,CV,2026-03,Bus,Bus,4851,False,sample
+TATAMOTORS_CV,CV,2026-04,SCV,SCV,17963,False,sample
+TATAMOTORS_CV,CV,2026-04,ICV,ICV,4904,False,sample
+TATAMOTORS_CV,CV,2026-04,MHCV,MHCV,11668,False,sample
+TATAMOTORS_CV,CV,2026-04,Bus,Bus,4250,False,sample
+TATAMOTORS_PV,EV,2024-05,Nexon EV,Nexon EV,2989,False,sample
+TATAMOTORS_PV,EV,2024-05,Tiago EV,Tiago EV,1308,False,sample
+TATAMOTORS_PV,EV,2024-05,Punch EV,Punch EV,509,False,sample
+TATAMOTORS_PV,EV,2024-05,Tigor EV,Tigor EV,247,False,sample
+TATAMOTORS_PV,EV,2024-06,Nexon EV,Nexon EV,3230,False,sample
+TATAMOTORS_PV,EV,2024-06,Tiago EV,Tiago EV,1387,False,sample
+TATAMOTORS_PV,EV,2024-06,Punch EV,Punch EV,556,False,sample
+TATAMOTORS_PV,EV,2024-06,Tigor EV,Tigor EV,265,False,sample
+TATAMOTORS_PV,EV,2024-07,Nexon EV,Nexon EV,3001,False,sample
+TATAMOTORS_PV,EV,2024-07,Tiago EV,Tiago EV,1268,False,sample
+TATAMOTORS_PV,EV,2024-07,Punch EV,Punch EV,504,False,sample
+TATAMOTORS_PV,EV,2024-07,Tigor EV,Tigor EV,264,False,sample
+TATAMOTORS_PV,EV,2024-08,Nexon EV,Nexon EV,3466,False,sample
+TATAMOTORS_PV,EV,2024-08,Tiago EV,Tiago EV,1415,False,sample
+TATAMOTORS_PV,EV,2024-08,Punch EV,Punch EV,588,False,sample
+TATAMOTORS_PV,EV,2024-08,Tigor EV,Tigor EV,294,False,sample
+TATAMOTORS_PV,EV,2024-09,Nexon EV,Nexon EV,3585,False,sample
+TATAMOTORS_PV,EV,2024-09,Tiago EV,Tiago EV,1457,False,sample
+TATAMOTORS_PV,EV,2024-09,Punch EV,Punch EV,617,False,sample
+TATAMOTORS_PV,EV,2024-09,Tigor EV,Tigor EV,308,False,sample
+TATAMOTORS_PV,EV,2024-10,Nexon EV,Nexon EV,4288,False,sample
+TATAMOTORS_PV,EV,2024-10,Tiago EV,Tiago EV,1836,False,sample
+TATAMOTORS_PV,EV,2024-10,Punch EV,Punch EV,731,False,sample
+TATAMOTORS_PV,EV,2024-10,Tigor EV,Tigor EV,371,False,sample
+TATAMOTORS_PV,EV,2024-11,Nexon EV,Nexon EV,3514,False,sample
+TATAMOTORS_PV,EV,2024-11,Tiago EV,Tiago EV,1468,False,sample
+TATAMOTORS_PV,EV,2024-11,Punch EV,Punch EV,591,False,sample
+TATAMOTORS_PV,EV,2024-11,Tigor EV,Tigor EV,302,False,sample
+TATAMOTORS_PV,EV,2024-12,Nexon EV,Nexon EV,3925,False,sample
+TATAMOTORS_PV,EV,2024-12,Tiago EV,Tiago EV,1539,False,sample
+TATAMOTORS_PV,EV,2024-12,Punch EV,Punch EV,660,False,sample
+TATAMOTORS_PV,EV,2024-12,Tigor EV,Tigor EV,321,False,sample
+TATAMOTORS_PV,EV,2025-01,Nexon EV,Nexon EV,3444,False,sample
+TATAMOTORS_PV,EV,2025-01,Tiago EV,Tiago EV,1452,False,sample
+TATAMOTORS_PV,EV,2025-01,Punch EV,Punch EV,578,False,sample
+TATAMOTORS_PV,EV,2025-01,Tigor EV,Tigor EV,280,False,sample
+TATAMOTORS_PV,EV,2025-02,Nexon EV,Nexon EV,3917,False,sample
+TATAMOTORS_PV,EV,2025-02,Tiago EV,Tiago EV,1614,False,sample
+TATAMOTORS_PV,EV,2025-02,Punch EV,Punch EV,629,False,sample
+TATAMOTORS_PV,EV,2025-02,Tigor EV,Tigor EV,310,False,sample
+TATAMOTORS_PV,EV,2025-03,Nexon EV,Nexon EV,4031,False,sample
+TATAMOTORS_PV,EV,2025-03,Tiago EV,Tiago EV,1715,False,sample
+TATAMOTORS_PV,EV,2025-03,Punch EV,Punch EV,663,False,sample
+TATAMOTORS_PV,EV,2025-03,Tigor EV,Tigor EV,351,False,sample
+TATAMOTORS_PV,EV,2025-04,Nexon EV,Nexon EV,4177,False,sample
+TATAMOTORS_PV,EV,2025-04,Tiago EV,Tiago EV,1754,False,sample
+TATAMOTORS_PV,EV,2025-04,Punch EV,Punch EV,694,False,sample
+TATAMOTORS_PV,EV,2025-04,Tigor EV,Tigor EV,327,False,sample
+TATAMOTORS_PV,EV,2025-05,Nexon EV,Nexon EV,3830,False,sample
+TATAMOTORS_PV,EV,2025-05,Tiago EV,Tiago EV,1622,False,sample
+TATAMOTORS_PV,EV,2025-05,Punch EV,Punch EV,607,False,sample
+TATAMOTORS_PV,EV,2025-05,Tigor EV,Tigor EV,326,False,sample
+TATAMOTORS_PV,EV,2025-06,Nexon EV,Nexon EV,3877,False,sample
+TATAMOTORS_PV,EV,2025-06,Tiago EV,Tiago EV,1655,False,sample
+TATAMOTORS_PV,EV,2025-06,Punch EV,Punch EV,690,False,sample
+TATAMOTORS_PV,EV,2025-06,Tigor EV,Tigor EV,330,False,sample
+TATAMOTORS_PV,EV,2025-07,Nexon EV,Nexon EV,4086,False,sample
+TATAMOTORS_PV,EV,2025-07,Tiago EV,Tiago EV,1691,False,sample
+TATAMOTORS_PV,EV,2025-07,Punch EV,Punch EV,675,False,sample
+TATAMOTORS_PV,EV,2025-07,Tigor EV,Tigor EV,322,False,sample
+TATAMOTORS_PV,EV,2025-08,Nexon EV,Nexon EV,3941,False,sample
+TATAMOTORS_PV,EV,2025-08,Tiago EV,Tiago EV,1642,False,sample
+TATAMOTORS_PV,EV,2025-08,Punch EV,Punch EV,617,False,sample
+TATAMOTORS_PV,EV,2025-08,Tigor EV,Tigor EV,315,False,sample
+TATAMOTORS_PV,EV,2025-09,Nexon EV,Nexon EV,4205,False,sample
+TATAMOTORS_PV,EV,2025-09,Tiago EV,Tiago EV,1836,False,sample
+TATAMOTORS_PV,EV,2025-09,Punch EV,Punch EV,733,False,sample
+TATAMOTORS_PV,EV,2025-09,Tigor EV,Tigor EV,349,False,sample
+TATAMOTORS_PV,EV,2025-10,Nexon EV,Nexon EV,4809,False,sample
+TATAMOTORS_PV,EV,2025-10,Tiago EV,Tiago EV,2019,False,sample
+TATAMOTORS_PV,EV,2025-10,Punch EV,Punch EV,809,False,sample
+TATAMOTORS_PV,EV,2025-10,Tigor EV,Tigor EV,394,False,sample
+TATAMOTORS_PV,EV,2025-11,Nexon EV,Nexon EV,4208,False,sample
+TATAMOTORS_PV,EV,2025-11,Tiago EV,Tiago EV,1754,False,sample
+TATAMOTORS_PV,EV,2025-11,Punch EV,Punch EV,708,False,sample
+TATAMOTORS_PV,EV,2025-11,Tigor EV,Tigor EV,350,False,sample
+TATAMOTORS_PV,EV,2025-12,Nexon EV,Nexon EV,4561,False,sample
+TATAMOTORS_PV,EV,2025-12,Tiago EV,Tiago EV,1889,False,sample
+TATAMOTORS_PV,EV,2025-12,Punch EV,Punch EV,751,False,sample
+TATAMOTORS_PV,EV,2025-12,Tigor EV,Tigor EV,362,False,sample
+TATAMOTORS_PV,EV,2026-01,Nexon EV,Nexon EV,4152,False,sample
+TATAMOTORS_PV,EV,2026-01,Tiago EV,Tiago EV,1698,False,sample
+TATAMOTORS_PV,EV,2026-01,Punch EV,Punch EV,721,False,sample
+TATAMOTORS_PV,EV,2026-01,Tigor EV,Tigor EV,355,False,sample
+TATAMOTORS_PV,EV,2026-03,Nexon EV,Nexon EV,4801,False,sample
+TATAMOTORS_PV,EV,2026-03,Tiago EV,Tiago EV,2044,False,sample
+TATAMOTORS_PV,EV,2026-03,Punch EV,Punch EV,813,False,sample
+TATAMOTORS_PV,EV,2026-03,Tigor EV,Tigor EV,409,False,sample
+TATAMOTORS_PV,EV,2026-04,Nexon EV,Nexon EV,4671,False,sample
+TATAMOTORS_PV,EV,2026-04,Tiago EV,Tiago EV,1955,False,sample
+TATAMOTORS_PV,EV,2026-04,Punch EV,Punch EV,768,False,sample
+TATAMOTORS_PV,EV,2026-04,Tigor EV,Tigor EV,385,False,sample
+TATAMOTORS_PV,PV,2024-05,UV,UV,30517,False,sample
+TATAMOTORS_PV,PV,2024-05,Hatch,Hatch,9265,False,sample
+TATAMOTORS_PV,PV,2024-05,Sedan,Sedan,3100,False,sample
+TATAMOTORS_PV,PV,2024-06,UV,UV,28080,False,sample
+TATAMOTORS_PV,PV,2024-06,Hatch,Hatch,8316,False,sample
+TATAMOTORS_PV,PV,2024-06,Sedan,Sedan,2741,False,sample
+TATAMOTORS_PV,PV,2024-07,UV,UV,32362,False,sample
+TATAMOTORS_PV,PV,2024-07,Hatch,Hatch,9566,False,sample
+TATAMOTORS_PV,PV,2024-07,Sedan,Sedan,3113,False,sample
+TATAMOTORS_PV,PV,2024-08,UV,UV,30613,False,sample
+TATAMOTORS_PV,PV,2024-08,Hatch,Hatch,8767,False,sample
+TATAMOTORS_PV,PV,2024-08,Sedan,Sedan,3084,False,sample
+TATAMOTORS_PV,PV,2024-09,UV,UV,36320,False,sample
+TATAMOTORS_PV,PV,2024-09,Hatch,Hatch,10578,False,sample
+TATAMOTORS_PV,PV,2024-09,Sedan,Sedan,3702,False,sample
+TATAMOTORS_PV,PV,2024-10,UV,UV,44089,False,sample
+TATAMOTORS_PV,PV,2024-10,Hatch,Hatch,12940,False,sample
+TATAMOTORS_PV,PV,2024-10,Sedan,Sedan,4438,False,sample
+TATAMOTORS_PV,PV,2024-11,UV,UV,32005,False,sample
+TATAMOTORS_PV,PV,2024-11,Hatch,Hatch,9637,False,sample
+TATAMOTORS_PV,PV,2024-11,Sedan,Sedan,3111,False,sample
+TATAMOTORS_PV,PV,2024-12,UV,UV,37706,False,sample
+TATAMOTORS_PV,PV,2024-12,Hatch,Hatch,11102,False,sample
+TATAMOTORS_PV,PV,2024-12,Sedan,Sedan,3573,False,sample
+TATAMOTORS_PV,PV,2025-01,UV,UV,32422,False,sample
+TATAMOTORS_PV,PV,2025-01,Hatch,Hatch,8788,False,sample
+TATAMOTORS_PV,PV,2025-01,Sedan,Sedan,3129,False,sample
+TATAMOTORS_PV,PV,2025-02,UV,UV,33952,False,sample
+TATAMOTORS_PV,PV,2025-02,Hatch,Hatch,9387,False,sample
+TATAMOTORS_PV,PV,2025-02,Sedan,Sedan,3232,False,sample
+TATAMOTORS_PV,PV,2025-03,UV,UV,41120,False,sample
+TATAMOTORS_PV,PV,2025-03,Hatch,Hatch,12193,False,sample
+TATAMOTORS_PV,PV,2025-03,Sedan,Sedan,4147,False,sample
+TATAMOTORS_PV,PV,2025-04,UV,UV,34410,False,sample
+TATAMOTORS_PV,PV,2025-04,Hatch,Hatch,10044,False,sample
+TATAMOTORS_PV,PV,2025-04,Sedan,Sedan,3202,False,sample
+TATAMOTORS_PV,PV,2025-05,UV,UV,33151,False,sample
+TATAMOTORS_PV,PV,2025-05,Hatch,Hatch,9556,False,sample
+TATAMOTORS_PV,PV,2025-05,Sedan,Sedan,3288,False,sample
+TATAMOTORS_PV,PV,2025-06,UV,UV,32137,False,sample
+TATAMOTORS_PV,PV,2025-06,Hatch,Hatch,10008,False,sample
+TATAMOTORS_PV,PV,2025-06,Sedan,Sedan,3109,False,sample
+TATAMOTORS_PV,PV,2025-07,UV,UV,30201,False,sample
+TATAMOTORS_PV,PV,2025-07,Hatch,Hatch,8776,False,sample
+TATAMOTORS_PV,PV,2025-07,Sedan,Sedan,2942,False,sample
+TATAMOTORS_PV,PV,2025-08,UV,UV,33145,False,sample
+TATAMOTORS_PV,PV,2025-08,Hatch,Hatch,9352,False,sample
+TATAMOTORS_PV,PV,2025-08,Sedan,Sedan,3149,False,sample
+TATAMOTORS_PV,PV,2025-09,UV,UV,36501,False,sample
+TATAMOTORS_PV,PV,2025-09,Hatch,Hatch,10907,False,sample
+TATAMOTORS_PV,PV,2025-09,Sedan,Sedan,3786,False,sample
+TATAMOTORS_PV,PV,2025-10,UV,UV,43493,False,sample
+TATAMOTORS_PV,PV,2025-10,Hatch,Hatch,13226,False,sample
+TATAMOTORS_PV,PV,2025-10,Sedan,Sedan,4207,False,sample
+TATAMOTORS_PV,PV,2025-11,UV,UV,34952,False,sample
+TATAMOTORS_PV,PV,2025-11,Hatch,Hatch,10784,False,sample
+TATAMOTORS_PV,PV,2025-11,Sedan,Sedan,3602,False,sample
+TATAMOTORS_PV,PV,2025-12,UV,UV,37719,False,sample
+TATAMOTORS_PV,PV,2025-12,Hatch,Hatch,10902,False,sample
+TATAMOTORS_PV,PV,2025-12,Sedan,Sedan,3760,False,sample
+TATAMOTORS_PV,PV,2026-01,UV,UV,34744,False,sample
+TATAMOTORS_PV,PV,2026-01,Hatch,Hatch,9860,False,sample
+TATAMOTORS_PV,PV,2026-01,Sedan,Sedan,3281,False,sample
+TATAMOTORS_PV,PV,2026-03,UV,UV,42836,False,sample
+TATAMOTORS_PV,PV,2026-03,Hatch,Hatch,12489,False,sample
+TATAMOTORS_PV,PV,2026-03,Sedan,Sedan,4453,False,sample
+TATAMOTORS_PV,PV,2026-04,UV,UV,36036,False,sample
+TATAMOTORS_PV,PV,2026-04,Hatch,Hatch,9847,False,sample
+TATAMOTORS_PV,PV,2026-04,Sedan,Sedan,3328,False,sample
+TVS,2W,2024-05,Motorcycle,Motorcycle,145796,False,sample
+TVS,2W,2024-05,Scooter,Scooter,183045,False,sample
+TVS,2W,2024-05,Moped,Moped,10466,False,sample
+TVS,2W,2024-05,EV,EV,10460,False,sample
+TVS,2W,2024-06,Motorcycle,Motorcycle,145700,False,sample
+TVS,2W,2024-06,Scooter,Scooter,182256,False,sample
+TVS,2W,2024-06,Moped,Moped,10950,False,sample
+TVS,2W,2024-06,EV,EV,10346,False,sample
+TVS,2W,2024-07,Motorcycle,Motorcycle,136143,False,sample
+TVS,2W,2024-07,Scooter,Scooter,177921,False,sample
+TVS,2W,2024-07,Moped,Moped,9622,False,sample
+TVS,2W,2024-07,EV,EV,10016,False,sample
+TVS,2W,2024-08,Motorcycle,Motorcycle,139517,False,sample
+TVS,2W,2024-08,Scooter,Scooter,181491,False,sample
+TVS,2W,2024-08,Moped,Moped,10464,False,sample
+TVS,2W,2024-08,EV,EV,10065,False,sample
+TVS,2W,2024-09,Motorcycle,Motorcycle,157924,False,sample
+TVS,2W,2024-09,Scooter,Scooter,197553,False,sample
+TVS,2W,2024-09,Moped,Moped,11279,False,sample
+TVS,2W,2024-09,EV,EV,11734,False,sample
+TVS,2W,2024-10,Motorcycle,Motorcycle,198199,False,sample
+TVS,2W,2024-10,Scooter,Scooter,248778,False,sample
+TVS,2W,2024-10,Moped,Moped,14702,False,sample
+TVS,2W,2024-10,EV,EV,14056,False,sample
+TVS,2W,2024-11,Motorcycle,Motorcycle,160773,False,sample
+TVS,2W,2024-11,Scooter,Scooter,205132,False,sample
+TVS,2W,2024-11,Moped,Moped,11949,False,sample
+TVS,2W,2024-11,EV,EV,11818,False,sample
+TVS,2W,2024-12,Motorcycle,Motorcycle,144374,False,sample
+TVS,2W,2024-12,Scooter,Scooter,190282,False,sample
+TVS,2W,2024-12,Moped,Moped,10497,False,sample
+TVS,2W,2024-12,EV,EV,10577,False,sample
+TVS,2W,2025-01,Motorcycle,Motorcycle,142682,False,sample
+TVS,2W,2025-01,Scooter,Scooter,172973,False,sample
+TVS,2W,2025-01,Moped,Moped,10558,False,sample
+TVS,2W,2025-01,EV,EV,10275,False,sample
+TVS,2W,2025-02,Motorcycle,Motorcycle,153899,False,sample
+TVS,2W,2025-02,Scooter,Scooter,190765,False,sample
+TVS,2W,2025-02,Moped,Moped,10605,False,sample
+TVS,2W,2025-02,EV,EV,11312,False,sample
+TVS,2W,2025-03,Motorcycle,Motorcycle,182109,False,sample
+TVS,2W,2025-03,Scooter,Scooter,225291,False,sample
+TVS,2W,2025-03,Moped,Moped,13656,False,sample
+TVS,2W,2025-03,EV,EV,13785,False,sample
+TVS,2W,2025-04,Motorcycle,Motorcycle,152370,False,sample
+TVS,2W,2025-04,Scooter,Scooter,180331,False,sample
+TVS,2W,2025-04,Moped,Moped,10940,False,sample
+TVS,2W,2025-04,EV,EV,10306,False,sample
+TVS,2W,2025-05,Motorcycle,Motorcycle,169334,False,sample
+TVS,2W,2025-05,Scooter,Scooter,195852,False,sample
+TVS,2W,2025-05,Moped,Moped,11330,False,sample
+TVS,2W,2025-05,EV,EV,11630,False,sample
+TVS,2W,2025-06,Motorcycle,Motorcycle,158938,False,sample
+TVS,2W,2025-06,Scooter,Scooter,185491,False,sample
+TVS,2W,2025-06,Moped,Moped,11388,False,sample
+TVS,2W,2025-06,EV,EV,10575,False,sample
+TVS,2W,2025-07,Motorcycle,Motorcycle,152226,False,sample
+TVS,2W,2025-07,Scooter,Scooter,187159,False,sample
+TVS,2W,2025-07,Moped,Moped,10748,False,sample
+TVS,2W,2025-07,EV,EV,10381,False,sample
+TVS,2W,2025-08,Motorcycle,Motorcycle,141670,False,sample
+TVS,2W,2025-08,Scooter,Scooter,184962,False,sample
+TVS,2W,2025-08,Moped,Moped,10178,False,sample
+TVS,2W,2025-08,EV,EV,10596,False,sample
+TVS,2W,2025-09,Motorcycle,Motorcycle,175967,False,sample
+TVS,2W,2025-09,Scooter,Scooter,210028,False,sample
+TVS,2W,2025-09,Moped,Moped,12670,False,sample
+TVS,2W,2025-09,EV,EV,12050,False,sample
+TVS,2W,2025-10,Motorcycle,Motorcycle,201109,False,sample
+TVS,2W,2025-10,Scooter,Scooter,254952,False,sample
+TVS,2W,2025-10,Moped,Moped,14156,False,sample
+TVS,2W,2025-10,EV,EV,14573,False,sample
+TVS,2W,2025-11,Motorcycle,Motorcycle,174329,False,sample
+TVS,2W,2025-11,Scooter,Scooter,215653,False,sample
+TVS,2W,2025-11,Moped,Moped,12352,False,sample
+TVS,2W,2025-11,EV,EV,11904,False,sample
+TVS,2W,2025-12,Motorcycle,Motorcycle,170726,False,sample
+TVS,2W,2025-12,Scooter,Scooter,217852,False,sample
+TVS,2W,2025-12,Moped,Moped,12479,False,sample
+TVS,2W,2025-12,EV,EV,12401,False,sample
+TVS,2W,2026-01,Motorcycle,Motorcycle,161907,False,sample
+TVS,2W,2026-01,Scooter,Scooter,199752,False,sample
+TVS,2W,2026-01,Moped,Moped,11074,False,sample
+TVS,2W,2026-01,EV,EV,11188,False,sample
+TVS,2W,2026-03,Motorcycle,Motorcycle,186632,False,sample
+TVS,2W,2026-03,Scooter,Scooter,235662,False,sample
+TVS,2W,2026-03,Moped,Moped,12910,False,sample
+TVS,2W,2026-03,EV,EV,13740,False,sample
+TVS,2W,2026-04,Motorcycle,Motorcycle,151414,False,sample
+TVS,2W,2026-04,Scooter,Scooter,195535,False,sample
+TVS,2W,2026-04,Moped,Moped,11365,False,sample
+TVS,2W,2026-04,EV,EV,11417,False,sample
+TVS,3W,2024-05,Passenger,Passenger,12282,False,sample
+TVS,3W,2024-05,Cargo,Cargo,2226,False,sample
+TVS,3W,2024-06,Passenger,Passenger,10481,False,sample
+TVS,3W,2024-06,Cargo,Cargo,1794,False,sample
+TVS,3W,2024-07,Passenger,Passenger,10932,False,sample
+TVS,3W,2024-07,Cargo,Cargo,1863,False,sample
+TVS,3W,2024-08,Passenger,Passenger,10557,False,sample
+TVS,3W,2024-08,Cargo,Cargo,1981,False,sample
+TVS,3W,2024-09,Passenger,Passenger,12976,False,sample
+TVS,3W,2024-09,Cargo,Cargo,2389,False,sample
+TVS,3W,2024-10,Passenger,Passenger,15671,False,sample
+TVS,3W,2024-10,Cargo,Cargo,2588,False,sample
+TVS,3W,2024-11,Passenger,Passenger,12357,False,sample
+TVS,3W,2024-11,Cargo,Cargo,2138,False,sample
+TVS,3W,2024-12,Passenger,Passenger,12793,False,sample
+TVS,3W,2024-12,Cargo,Cargo,2371,False,sample
+TVS,3W,2025-01,Passenger,Passenger,11005,False,sample
+TVS,3W,2025-01,Cargo,Cargo,2017,False,sample
+TVS,3W,2025-02,Passenger,Passenger,11375,False,sample
+TVS,3W,2025-02,Cargo,Cargo,2054,False,sample
+TVS,3W,2025-03,Passenger,Passenger,15145,False,sample
+TVS,3W,2025-03,Cargo,Cargo,2656,False,sample
+TVS,3W,2025-04,Passenger,Passenger,11984,False,sample
+TVS,3W,2025-04,Cargo,Cargo,2074,False,sample
+TVS,3W,2025-05,Passenger,Passenger,12648,False,sample
+TVS,3W,2025-05,Cargo,Cargo,2138,False,sample
+TVS,3W,2025-06,Passenger,Passenger,11145,False,sample
+TVS,3W,2025-06,Cargo,Cargo,1884,False,sample
+TVS,3W,2025-07,Passenger,Passenger,10982,False,sample
+TVS,3W,2025-07,Cargo,Cargo,2026,False,sample
+TVS,3W,2025-08,Passenger,Passenger,12600,False,sample
+TVS,3W,2025-08,Cargo,Cargo,2131,False,sample
+TVS,3W,2025-09,Passenger,Passenger,14290,False,sample
+TVS,3W,2025-09,Cargo,Cargo,2422,False,sample
+TVS,3W,2025-10,Passenger,Passenger,15296,False,sample
+TVS,3W,2025-10,Cargo,Cargo,2651,False,sample
+TVS,3W,2025-11,Passenger,Passenger,12604,False,sample
+TVS,3W,2025-11,Cargo,Cargo,2085,False,sample
+TVS,3W,2025-12,Passenger,Passenger,13154,False,sample
+TVS,3W,2025-12,Cargo,Cargo,2201,False,sample
+TVS,3W,2026-01,Passenger,Passenger,11551,False,sample
+TVS,3W,2026-01,Cargo,Cargo,2096,False,sample
+TVS,3W,2026-03,Passenger,Passenger,14439,False,sample
+TVS,3W,2026-03,Cargo,Cargo,2633,False,sample
+TVS,3W,2026-04,Passenger,Passenger,13060,False,sample
+TVS,3W,2026-04,Cargo,Cargo,2306,False,sample

@@ -36,6 +36,7 @@ from dashboard.views import (
     retail_insights,
     forecast,
 )
+from dashboard.views import filing_tracker as _ft_mod   # for merged page
 
 
 # ── Page config ──────────────────────────────────────────────────────────────
@@ -49,21 +50,34 @@ apply_theme()
 
 
 # ── Navigation map ───────────────────────────────────────────────────────────
+def _filing_and_quality():
+    """Filing Tracker + Data Quality merged into two tabs."""
+    t1, t2 = st.tabs(["📅 Filing Tracker", "🔍 Data Quality"])
+    with t1:
+        filing_tracker.render()
+    with t2:
+        data_quality.render()
+
+
+def _admin():
+    """Review Queue + manual entry (already has its own tabs)."""
+    review_queue.render()
+
+
 NAV = [
     # ── Wholesale section ─────────────────────────────────────────────────────
-    ("Overview",         "Industry headline, segment heat, top movers", overview.render),
-    ("Monitoring",       "This-month change deep-dive & alerts",         monitoring.render),
-    ("Deep Dive",        "Single-OEM analyst profile",                   deep_dive.render),
-    ("Market Share",     "Ranked share, HHI, share migration",           market_share.render),
-    ("Exports",          "Export volume, mix, decoupling check",         exports_view.render),
-    ("EV Penetration",   "Industry EV share + per-OEM exposure",         ev_penetration.render),
-    # ── Retail section (separate data, FADA source) ───────────────────────────
-    ("Retail Pulse",     "FADA retail registrations & dealer inventory",  retail_insights.render),
-    ("Forecast",         "3-month demand forecast · Holt-Winters model",  forecast.render),
+    ("⚡ Overview",       "Industry headline, segment heat, top movers",  overview.render),
+    ("🔍 Monitoring",    "This-month change deep-dive & alerts",          monitoring.render),
+    ("🏢 Deep Dive",     "Single-OEM analyst profile",                    deep_dive.render),
+    ("📊 Market Share",  "Ranked share, HHI, share migration",            market_share.render),
+    ("📤 Exports",       "Export volume, mix, decoupling check",          exports_view.render),
+    ("⚡ EV Penetration","Industry EV share + per-OEM exposure",          ev_penetration.render),
+    # ── Retail section ────────────────────────────────────────────────────────
+    ("📱 Retail Pulse",  "FADA retail registrations & dealer inventory",  retail_insights.render),
+    ("📈 Forecast",      "3-month demand forecast · Holt-Winters / linear trend", forecast.render),
     # ── Data ops ──────────────────────────────────────────────────────────────
-    ("Filing Tracker",   "Filing SLA & data freshness",                  filing_tracker.render),
-    ("Data Quality",     "Reliability scorecard & anomaly feed",         data_quality.render),
-    ("Review Queue",     "Reviewer workflow",                            review_queue.render),
+    ("📅 Filing Tracker","Filing SLA · Data Quality scorecard",           _filing_and_quality),
+    ("🔄 Admin",         "Review queue · Manual data entry",              _admin),
 ]
 
 
@@ -145,19 +159,22 @@ def main():
         return
 
     norm, _, _, _ = load_all()
-    lm = latest_month(norm) if not norm.empty else None
+    lm     = latest_month(norm) if not norm.empty else "—"
     n_oems = norm["company_key"].nunique() if not norm.empty else 0
-    rows = len(norm) if not norm.empty else 0
+    refreshed = datetime.now().strftime("%d %b %Y %H:%M")
 
-    C.hero(
-        title=f"{page[0]}",
-        subtitle=page[1],
-        meta=[
-            ("Latest filing month", lm or "—"),
-            ("OEMs", str(n_oems)),
-            ("Rows", C.fmt_indian(rows)),
-            ("Last refreshed", datetime.now().strftime("%d %b %Y %H:%M")),
-        ],
+    # Compact metadata bar — replaces the tall hero banner
+    st.markdown(
+        f"<div style='background:#1E293B;color:#94A3B8;padding:6px 16px;"
+        f"font-size:0.72rem;border-radius:4px;margin-bottom:12px;"
+        f"display:flex;justify-content:space-between;align-items:center;'>"
+        f"<span><b style='color:#F1F5F9;font-size:0.82rem;'>{page[0]}</b>"
+        f"&nbsp;&nbsp;·&nbsp;&nbsp;{page[1]}</span>"
+        f"<span>Latest:&nbsp;<b style='color:#F1F5F9;'>{lm}</b>"
+        f"&nbsp;&nbsp;·&nbsp;&nbsp;OEMs:&nbsp;<b style='color:#F1F5F9;'>{n_oems}</b>"
+        f"&nbsp;&nbsp;·&nbsp;&nbsp;Refreshed:&nbsp;{refreshed}</span>"
+        f"</div>",
+        unsafe_allow_html=True,
     )
 
     page[2]()

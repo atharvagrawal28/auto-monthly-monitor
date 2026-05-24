@@ -4,3 +4,10 @@ __pycache__/
 .venv311/
 .env
 logs/
+
+# PDF cache — never commit downloaded PDFs (repo bloat)
+data/pdfs/
+*.pdf
+
+# Local audit scripts output
+run_audit.py

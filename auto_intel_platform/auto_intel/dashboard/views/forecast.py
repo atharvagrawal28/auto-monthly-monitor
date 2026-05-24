@@ -114,6 +114,63 @@ def _run_forecast(series: pd.Series) -> dict | None:
     }
 
 
+def _numpy_forecast(series: pd.Series) -> dict | None:
+    """
+    Fallback forecast using numpy linear regression + 12-month seasonal index.
+    Used when statsmodels is not installed. No external deps beyond numpy/pandas.
+    """
+    if len(series) < 6:
+        return None
+    vals = series.values.astype(float)
+    n    = len(vals)
+    x    = np.arange(n)
+
+    # Linear trend via least-squares
+    A = np.vstack([x, np.ones(n)]).T
+    slope, intercept = np.linalg.lstsq(A, vals, rcond=None)[0]
+
+    # Seasonal index from residuals (group by month position mod 12)
+    trend_vals = slope * x + intercept
+    resid      = vals / np.where(trend_vals > 0, trend_vals, 1)
+    months_in  = pd.to_datetime(series.index).month
+    seas = np.ones(12)
+    for m in range(1, 13):
+        mask = months_in == m
+        if mask.any():
+            seas[m - 1] = float(np.mean(resid[mask]))
+
+    # Forecast
+    fc_x      = np.arange(n, n + FORECAST_MONTHS)
+    fc_trend  = slope * fc_x + intercept
+    fc_months_m = [(pd.to_datetime(series.index[-1]) + pd.DateOffset(months=i+1)).month
+                   for i in range(FORECAST_MONTHS)]
+    fc_seas   = np.array([seas[m - 1] for m in fc_months_m])
+    fc_vals   = np.maximum(fc_trend * fc_seas, 0)
+
+    resid_std = float(np.std(vals - trend_vals * np.array([seas[m-1] for m in months_in])))
+    z80       = 1.28
+    lower     = np.maximum(fc_vals - z80 * resid_std * np.sqrt(np.arange(1, FORECAST_MONTHS+1)), 0)
+    upper     = fc_vals + z80 * resid_std * np.sqrt(np.arange(1, FORECAST_MONTHS+1))
+
+    fcast_idx = pd.date_range(
+        start=pd.to_datetime(series.index[-1]) + pd.DateOffset(months=1),
+        periods=FORECAST_MONTHS, freq="MS"
+    )
+
+    return {
+        "historical": series,
+        "fitted":     pd.Series(trend_vals * np.array([seas[m-1] for m in months_in]),
+                                index=series.index),
+        "forecast":   pd.Series(fc_vals, index=fcast_idx),
+        "lower":      pd.Series(lower,   index=fcast_idx),
+        "upper":      pd.Series(upper,   index=fcast_idx),
+        "trend":      pd.Series(trend_vals, index=series.index),
+        "seasonal":   pd.Series([seas[m-1] for m in months_in], index=series.index),
+        "aic":        float("nan"),
+        "_method":    "Linear trend + seasonal index (numpy fallback)",
+    }
+
+
 def _forecast_months_index(last_hist_month: str, n: int) -> list[str]:
     """Generate n future month strings in YYYY-MM format."""
     from datetime import datetime
@@ -182,11 +239,11 @@ def render():
     result = _run_forecast(series)
 
     if result is None:
-        # Graceful fallback — statsmodels not installed
-        st.warning(
-            "Forecasting requires **statsmodels**. "
-            "Run `pip install statsmodels>=0.14.0` then restart the app."
-        )
+        # statsmodels not available — fall back to numpy linear trend
+        result = _numpy_forecast(series)
+
+    if result is None:
+        C.empty_state("Insufficient data", "Need at least 6 months to generate a forecast.")
         return
 
     hist        = result["historical"]
@@ -239,8 +296,8 @@ def render():
         },
         {
             "label": "Model",
-            "value": "Holt-Winters",
-            "foot":  f"AIC: {result['aic']:.0f} · Seasonal period: 12 months",
+            "value": "Holt-Winters" if "_method" not in result else "Linear + Seasonal",
+            "foot":  result.get("_method", f"AIC: {result['aic']:.0f} · Seasonal period: 12 months"),
         },
         {
             "label": "Training data",

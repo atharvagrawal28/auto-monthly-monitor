@@ -55,6 +55,27 @@ def render():
     retail_df = _load_retail()
 
     if retail_df.empty:
+        # ── VAHAN / FADA placeholder ─────────────────────────────────────────
+        st.markdown(
+            "<div style='background:#1E293B;border:1px solid #334155;border-radius:8px;"
+            "padding:1.2rem 1.4rem;margin-bottom:1rem;'>"
+            "<div style='font-size:0.78rem;font-weight:700;color:#F59E0B;letter-spacing:0.07em;"
+            "text-transform:uppercase;margin-bottom:0.5rem;'>Retail / VAHAN Data — Phase 2</div>"
+            "<div style='font-size:0.85rem;color:#CBD5E1;line-height:1.7;'>"
+            "<b style='color:#F8FAFC;'>This page will show FADA retail registrations and VAHAN "
+            "government data once the integration is live.</b><br><br>"
+            "What will be here:<br>"
+            "· FADA monthly retail registrations per segment (consumer demand signal)<br>"
+            "· VAHAN RTO registration data (government database — 100% independent verification)<br>"
+            "· Wholesale vs retail divergence → channel inventory build / drawdown<br>"
+            "· Dealer weeks-of-supply by segment<br><br>"
+            "<span style='color:#94A3B8;font-size:0.78rem;'>"
+            "Data source: FADA (fada.in) + VAHAN (vahan.parivahan.gov.in) — both free public sources. "
+            "Phase 2 implementation ETA: next sprint."
+            "</span>"
+            "</div></div>",
+            unsafe_allow_html=True,
+        )
         C.empty_state(
             "No Retail Data Yet",
             "Run `python data/generate_retail_sample.py` to seed sample data, "
@@ -62,6 +83,9 @@ def render():
             action="python data/generate_retail_sample.py",
         )
         return
+
+    # ── Note: this page shows FADA retail data ONLY — no EV wholesale mixing ──
+    # EV wholesale data lives exclusively on the ⚡ EV Penetration page.
 
     # ── What is this data ────────────────────────────────────────────────────
     C.section_header("About This Data")
