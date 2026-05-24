@@ -359,13 +359,25 @@ def render():
     ))
 
     # Vertical separator between history and forecast
-    fig.add_vline(
+    # Note: add_vline annotation kwargs are broken in Plotly 5.19 on Streamlit Cloud.
+    # Use add_shape + add_annotation separately — fully compatible.
+    fig.add_shape(
+        type="line",
+        x0=last_hist, x1=last_hist,
+        y0=0, y1=1,
+        xref="x", yref="paper",
+        line=dict(color="#64748B", dash="dot", width=1.5),
+    )
+    fig.add_annotation(
         x=last_hist,
-        line_dash="dot",
-        line_color="#64748B",
-        annotation_text="Forecast →",
-        annotation_position="top right",
-        annotation_font_color="#94A3B8",
+        y=1.0,
+        xref="x", yref="paper",
+        text="Forecast",
+        showarrow=False,
+        font=dict(color="#94A3B8", size=11),
+        xanchor="left",
+        yanchor="bottom",
+        xshift=6,
     )
 
     fig.update_layout(

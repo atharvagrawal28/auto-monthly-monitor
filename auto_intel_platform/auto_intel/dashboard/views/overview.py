@@ -297,50 +297,46 @@ def _render_industry_quick_summary(
 
     month_label = pd.to_datetime(cur_month + "-01").strftime("%B %Y") if cur_month else "—"
 
-    st.markdown(
-        f"<div style='background:#0F172A;border:1px solid #1E293B;border-radius:8px;"
-        f"padding:0.9rem 1.1rem 0.7rem;margin-bottom:1.1rem;'>"
-        f"<div style='font-size:0.72rem;color:#64748B;font-weight:600;letter-spacing:0.08em;"
-        f"text-transform:uppercase;margin-bottom:0.55rem;'>Industry Quick Summary — {month_label}</div>",
-        unsafe_allow_html=True,
-    )
-
-    # Build styled table rows
+    # Build table rows HTML first — all in one string so the dark wrapper actually wraps it.
+    # Split st.markdown() calls means each renders independently; outer div won't contain inner table.
     table_rows_html = ""
     for r in rows:
         yoy_color = "#15803D" if (r["_yoy"] or 0) >= 0 else "#B91C1C"
         mom_color = "#15803D" if (r["_mom"] or 0) >= 0 else "#B91C1C"
         table_rows_html += (
             f"<tr>"
-            f"<td style='padding:5px 10px;color:#F1F5F9;font-size:0.82rem;'>{r['Segment']}</td>"
-            f"<td style='padding:5px 10px;color:#F8FAFC;font-weight:600;font-size:0.82rem;"
+            f"<td style='padding:6px 12px;color:#1E293B;font-size:0.83rem;'>{r['Segment']}</td>"
+            f"<td style='padding:6px 12px;color:#0F172A;font-weight:700;font-size:0.83rem;"
             f"font-family:monospace;'>{r['Units']}</td>"
-            f"<td style='padding:5px 10px;color:{yoy_color};font-weight:600;font-size:0.82rem;"
+            f"<td style='padding:6px 12px;color:{yoy_color};font-weight:700;font-size:0.83rem;"
             f"font-family:monospace;'>{r['YoY']}</td>"
-            f"<td style='padding:5px 10px;color:{mom_color};font-weight:600;font-size:0.82rem;"
+            f"<td style='padding:6px 12px;color:{mom_color};font-weight:700;font-size:0.83rem;"
             f"font-family:monospace;'>{r['MoM']}</td>"
-            f"<td style='padding:5px 10px;color:#94A3B8;font-size:0.78rem;'>{r['Coverage']}</td>"
+            f"<td style='padding:6px 12px;color:#475569;font-size:0.79rem;'>{r['Coverage']}</td>"
             f"</tr>"
         )
 
-    st.markdown(
-        f"<table style='width:100%;border-collapse:collapse;'>"
-        f"<thead><tr style='border-bottom:1px solid #1E3A5F;'>"
-        f"<th style='padding:4px 10px;color:#64748B;font-size:0.72rem;font-weight:600;"
-        f"text-align:left;text-transform:uppercase;letter-spacing:0.07em;'>Segment</th>"
-        f"<th style='padding:4px 10px;color:#64748B;font-size:0.72rem;font-weight:600;"
-        f"text-align:left;text-transform:uppercase;letter-spacing:0.07em;'>Units</th>"
-        f"<th style='padding:4px 10px;color:#64748B;font-size:0.72rem;font-weight:600;"
-        f"text-align:left;text-transform:uppercase;letter-spacing:0.07em;'>YoY</th>"
-        f"<th style='padding:4px 10px;color:#64748B;font-size:0.72rem;font-weight:600;"
-        f"text-align:left;text-transform:uppercase;letter-spacing:0.07em;'>MoM</th>"
-        f"<th style='padding:4px 10px;color:#64748B;font-size:0.72rem;font-weight:600;"
-        f"text-align:left;text-transform:uppercase;letter-spacing:0.07em;'>Coverage</th>"
+    th = ("padding:5px 12px;color:#64748B;font-size:0.72rem;font-weight:700;"
+          "text-align:left;text-transform:uppercase;letter-spacing:0.07em;border-bottom:2px solid #E2E8F0;")
+
+    html = (
+        f"<div style='border:1px solid #E2E8F0;border-radius:8px;overflow:hidden;margin-bottom:1rem;'>"
+        f"<div style='background:#F8FAFC;padding:8px 12px 6px;border-bottom:1px solid #E2E8F0;'>"
+        f"<span style='font-size:0.72rem;color:#64748B;font-weight:700;letter-spacing:0.08em;"
+        f"text-transform:uppercase;'>India Auto Sales — {month_label}</span>"
+        f"</div>"
+        f"<table style='width:100%;border-collapse:collapse;background:white;'>"
+        f"<thead><tr>"
+        f"<th style='{th}'>Segment</th>"
+        f"<th style='{th}'>Units</th>"
+        f"<th style='{th}'>YoY</th>"
+        f"<th style='{th}'>MoM</th>"
+        f"<th style='{th}'>Coverage</th>"
         f"</tr></thead>"
         f"<tbody>{table_rows_html}</tbody>"
-        f"</table></div>",
-        unsafe_allow_html=True,
+        f"</table></div>"
     )
+    st.markdown(html, unsafe_allow_html=True)
 
 
 def _render_mover_table(df: pd.DataFrame):
