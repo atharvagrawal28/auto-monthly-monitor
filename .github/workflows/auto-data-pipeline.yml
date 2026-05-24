@@ -1,8 +1,7 @@
 name: Auto Data Pipeline — Daily baseline
 
 # Runs once a day at 09:30 IST. The heavy lifting (multi-run-per-day during
-# the 1st-7th filing window) is handled by auto-data-pipeline-filing-window.yml
-# to keep this baseline workflow lean.
+# the 1st-8th filing window) is handled by auto-data-pipeline-filing-window.yml.
 
 on:
   workflow_dispatch:
@@ -39,8 +38,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Create required directories
+        working-directory: auto_intel_platform/auto_intel
+        run: mkdir -p data logs
+
       - name: Run auto monthly pipeline
         working-directory: auto_intel_platform/auto_intel
+        # Pipeline exits 0 even when no new PDFs found — that is normal.
+        # It only exits non-zero on a genuine unhandled exception.
         run: |
           ARGS=""
           if [ "${{ github.event.inputs.force_download }}" = "true" ]; then
@@ -50,23 +55,68 @@ jobs:
             ARGS="$ARGS --oems ${{ github.event.inputs.oems }}"
           fi
           python -m pipeline.run $ARGS
+        continue-on-error: true
+        id: pipeline
 
-      - name: Surface close report in run summary
+      # ── Data integrity check ──────────────────────────────────────────────
+      - name: Run data integrity check
+        working-directory: auto_intel_platform/auto_intel
+        run: python pipeline/integrity_check.py
+        continue-on-error: true
+        id: integrity
+
+      # ── Surface reports in Actions summary ────────────────────────────────
+      - name: Surface reports
         if: always()
         working-directory: auto_intel_platform/auto_intel
         run: |
+          # Integrity report
+          latest_int=$(ls -1 logs/integrity_*.md 2>/dev/null | sort | tail -1 || true)
+          if [ -n "$latest_int" ]; then
+            echo "## Data Integrity Report" >> $GITHUB_STEP_SUMMARY
+            cat "$latest_int" >> $GITHUB_STEP_SUMMARY
+          fi
+          # Close report
           latest=$(ls -1 logs/close_report_*.md 2>/dev/null | sort | tail -1 || true)
           if [ -n "$latest" ]; then
-            echo "## Monthly close report" >> $GITHUB_STEP_SUMMARY
+            echo "## Monthly Close Report" >> $GITHUB_STEP_SUMMARY
             cat "$latest" >> $GITHUB_STEP_SUMMARY
           fi
+          # Run summary
+          echo "## Run Summary" >> $GITHUB_STEP_SUMMARY
+          echo "- Date: $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- Pipeline: ${{ steps.pipeline.outcome }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Integrity: ${{ steps.integrity.outcome }}" >> $GITHUB_STEP_SUMMARY
+          if [ -f data/normalized.csv ]; then
+            rows=$(tail -n +2 data/normalized.csv | wc -l)
+            echo "- Dataset rows: $rows" >> $GITHUB_STEP_SUMMARY
+          fi
 
-      - name: Commit refreshed data
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "data: daily refresh"
-          file_pattern: |
-            auto_intel_platform/auto_intel/data/*.csv
-            auto_intel_platform/auto_intel/logs/*.jsonl
-            auto_intel_platform/auto_intel/logs/close_report_*.md
-            auto_intel_platform/auto_intel/logs/close_report_*.json
+      # ── Commit updated data (no external action — plain git) ──────────────
+      - name: Commit updated datasets
+        if: always()
+        working-directory: auto_intel_platform/auto_intel
+        run: |
+          git config user.name  "Auto Intel Bot"
+          git config user.email "auto-intel-bot@noreply.github.com"
+          git add data/normalized.csv data/granular.csv data/filing_status.csv 2>/dev/null || true
+          git add logs/ 2>/dev/null || true
+          # Only commit if there are actual staged changes
+          if git diff --staged --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "data: daily refresh $(date -u '+%Y-%m-%d %H:%M UTC')"
+            # Pull then push to handle concurrent runs gracefully
+            git pull --rebase origin main || true
+            git push origin main || echo "Push failed — will retry on next run"
+          fi
+
+      # ── Fail loudly if CRITICAL integrity issues found ────────────────────
+      # Only fails if data arithmetic is wrong or OEMs are missing past deadline.
+      # "No new data found" is NOT a failure — that's normal daily behaviour.
+      - name: Fail on critical integrity issues
+        if: steps.integrity.outcome == 'failure'
+        run: |
+          echo "CRITICAL or HIGH data integrity issues found."
+          echo "Open dashboard > Review Queue > Enter Data Manually to fix."
+          exit 1

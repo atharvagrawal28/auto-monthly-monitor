@@ -101,7 +101,7 @@ def run_pipeline(
     if company_keys:
         active_oems = [o for o in active_oems if o.key in company_keys]
 
-    logger.info(f"Pipeline start: {len(active_oems)} OEMs | {from_date} → {to_date}")
+    logger.info(f"Pipeline start: {len(active_oems)} OEMs | {from_date} -> {to_date}")
 
     # ── STEP 1: Fetch announcements ────────────────────────────────────────────
     logger.info("=" * 60)
