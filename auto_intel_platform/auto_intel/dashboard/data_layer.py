@@ -28,6 +28,7 @@ from analytics.quality import add_row_quality
 # ── Canonical display names ──────────────────────────────────────────────────
 DISPLAY_NAMES = {
     "MARUTI":        "Maruti Suzuki",
+    "HYUNDAI":       "Hyundai Motor India",
     "TATAMOTORS_PV": "Tata Motors — PV",
     "TATAMOTORS_CV": "Tata Motors — CV",
     "MAHINDRA_AUTO": "Mahindra Auto",

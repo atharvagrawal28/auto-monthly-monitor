@@ -33,6 +33,7 @@ SRC = {
     "EICHER":        "Royal Enfield (Eicher Motors) — Sales PR May 2026 (BSE/NSE 01-Jun-2026)",
     "OLA_ELECTRIC":  "Ola Electric — Sales PR May 2026 (VAHAN registrations) (BSE/NSE 01-Jun-2026)",
     "EICHER_VECV":   "VE Commercial Vehicles (Eicher Motors) — Sales PR May 2026 (BSE/NSE 01-Jun-2026)",
+    "HYUNDAI":       "Hyundai Motor India — Sales PR May 2026 (BSE/NSE 01-Jun-2026)",
 }
 
 # ── MAY 2026 rows ────────────────────────────────────────────────────────────
@@ -58,6 +59,9 @@ MAY = [
     ("EICHER",        "2W",  94115,   9116, 103231,  89429, 113164),   # Royal Enfield
     ("OLA_ELECTRIC",  "EV",  15139,      0,  15139,  None,   12323),   # VAHAN reg; no May25 in PR -> yoy blank
     ("EICHER_VECV",   "CV",   7564,    414,   7978,   7401,   7318),   # Eicher dom7,375+Volvo189 ; exp414
+    # Hyundai Motor India (PV). FYTD is domestic-only, so April total not exactly
+    # derivable -> MoM left blank. YoY uses the PR's stated total figure (+4.1%).
+    ("HYUNDAI",       "PV",  47837,  13300,  61137,  58729,  None),    # May25 total 58,729 (61,137/1.041)
 ]
 
 # Manual YoY overrides (where filing gives % but not a clean comparable total)

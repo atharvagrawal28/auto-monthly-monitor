@@ -12,6 +12,7 @@ All figures are **wholesale dispatches (domestic + exports)** per SIAM conventio
 | OEM (key) | Segment | Domestic | Exports | **Total** | YoY | MoM | Source line in PDF |
 |-----------|---------|---------:|--------:|----------:|----:|----:|--------------------|
 | MARUTI | PV | 190,337 | 41,914 | **232,251** | +38.9% | +2.0% | Domestic PV 190,337 + Exports 41,914 (excl. 7,239 OEM-sales & 3,198 Super Carry LCV) |
+| HYUNDAI | PV | 47,837 | 13,300 | **61,137** | +4.1% | — | Domestic 47,837 + Exports 13,300 (FYTD domestic-only, so MoM blank) |
 | TATAMOTORS_PV | PV | 48,573 | 700 | **49,273** | +35.5% | — | PV 59,790 − EV 10,517 (carved out to avoid double-count) |
 | TATAMOTORS_PV | EV | 10,517 | 0 | **10,517** | +85.0% | — | "EV IB + Domestic 10,517" |
 | TATAMOTORS_CV | CV | 30,784 | 2,066 | **32,850** | +16.7% | — | Domestic 30,784 + IB 2,066 |
@@ -29,7 +30,7 @@ All figures are **wholesale dispatches (domestic + exports)** per SIAM conventio
 | OLA_ELECTRIC | EV | 15,139 | 0 | **15,139** | — | +22.9% | VAHAN registrations (15,139 vs Apr 12,323) |
 | EICHER_VECV | CV | 7,564 | 414 | **7,978** | +7.8% | +9.0% | VECV total incl. EVs & Volvo (NEW line) |
 
-**Industry total tracked (May 2026): 2,209,729 units across 13 OEMs.**
+**Industry total tracked (May 2026): 2,270,866 units across 14 OEMs.**
 
 \* Mahindra Auto PV YoY uses the disclosed domestic UV growth (+11%, 52,431→58,021); a comparable May-2025 total-incl-exports was not published.
 
@@ -56,5 +57,6 @@ All figures are **wholesale dispatches (domestic + exports)** per SIAM conventio
 ## Coverage notes
 
 - **Eicher VECV (CV)** added as a new tracked entity (`EICHER_VECV`).
-- **Missing major OEM:** Hyundai Motor India (#2 PV, listed) — not yet tracked; add when its monthly PDF is available.
+- **Hyundai Motor India** added (`HYUNDAI`, PV) — PV coverage now Maruti + Hyundai + Tata + Mahindra ≈ ~80% of the listed PV market.
+- Remaining unlisted PV players (Toyota, Kia, Honda, Skoda-VW) do not file public monthly releases and cannot be tracked freely/legally.
 - **Granular / model detail** for Deep Dive captured for Maruti, Tata-CV, Ashok Leyland, Royal Enfield, Hero, TVS, Mahindra Auto, and Eicher-VECV (with real model names from the filings).
