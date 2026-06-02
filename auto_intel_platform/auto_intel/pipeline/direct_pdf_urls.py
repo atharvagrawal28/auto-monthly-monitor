@@ -217,9 +217,18 @@ def build_candidate_urls(oem_key: str, year: int, month: int) -> list[PdfCandida
 def try_find_pdf(oem_key: str, year: int, month: int,
                  timeout: int = 10) -> str | None:
     """
-    Try each candidate URL with a HEAD request.
-    Returns the first URL that responds with HTTP 200, or None.
-    Logs each attempt.
+    Try each candidate URL and return the first that serves a *genuine* PDF.
+
+    CRITICAL: We do NOT trust HTTP 200 alone. Many OEM servers return 200 with
+    an HTML error/landing page for unknown URLs (a "soft 404"). If we trusted
+    that, the pipeline would try to parse a webpage as sales data and produce
+    garbage numbers — worse than having no data at all.
+
+    So we validate the actual response is a real PDF by checking BOTH:
+      1. Content-Type header contains "pdf", AND
+      2. The body starts with the PDF magic bytes  b"%PDF-"
+
+    Returns the verified PDF URL, or None if nothing real was found.
     """
     import logging
     import requests
@@ -233,16 +242,38 @@ def try_find_pdf(oem_key: str, year: int, month: int,
 
     for c in candidates:
         try:
-            resp = requests.head(c.url, timeout=timeout, allow_redirects=True,
-                                 headers={"User-Agent": "Mozilla/5.0"})
-            if resp.status_code == 200:
-                logger.info(f"[DirectPDF] {oem_key} {year}-{month:02d}: found → {c.url}")
+            # Stream a GET so we can read the first bytes without downloading
+            # the whole file, then validate it's a real PDF.
+            resp = requests.get(
+                c.url, timeout=timeout, allow_redirects=True, stream=True,
+                headers={"User-Agent": "Mozilla/5.0"},
+            )
+            if resp.status_code != 200:
+                logger.debug(f"[DirectPDF] {oem_key}: {resp.status_code} {c.url}")
+                resp.close()
+                continue
+
+            ctype = resp.headers.get("Content-Type", "").lower()
+            first_bytes = next(resp.iter_content(chunk_size=8), b"")
+            resp.close()
+
+            is_pdf = first_bytes.startswith(b"%PDF-") or "pdf" in ctype
+            # Must satisfy the magic-byte test — header alone can lie.
+            if first_bytes.startswith(b"%PDF-"):
+                logger.info(f"[DirectPDF] {oem_key} {year}-{month:02d}: VERIFIED PDF → {c.url}")
                 return c.url
-            logger.debug(f"[DirectPDF] {oem_key}: {resp.status_code} {c.url}")
+
+            logger.debug(
+                f"[DirectPDF] {oem_key}: 200 but NOT a PDF "
+                f"(soft-404; content-type={ctype!r}) {c.url}"
+            )
         except Exception as e:
             logger.debug(f"[DirectPDF] {oem_key}: error {e} on {c.url}")
 
-    logger.info(f"[DirectPDF] {oem_key} {year}-{month:02d}: no direct PDF found, fallback to IR page scrape")
+    logger.info(
+        f"[DirectPDF] {oem_key} {year}-{month:02d}: no genuine PDF found. "
+        f"Flag for manual entry (Review Queue)."
+    )
     return None
 
 
