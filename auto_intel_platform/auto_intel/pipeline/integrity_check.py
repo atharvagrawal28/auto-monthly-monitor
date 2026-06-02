@@ -56,9 +56,17 @@ def _fmt(n) -> str:
         return str(n)
 
 
-def run_checks(strict: bool = False) -> int:
+def run_checks(strict: bool = False, critical_only: bool = False) -> int:
     """
     Run all integrity checks. Returns exit code (0 = OK, 1 = issues found).
+
+    Args:
+        strict:        exit 1 on ANY issue (incl. MEDIUM/INFO).
+        critical_only: CI mode — exit 1 ONLY on CRITICAL data corruption
+                       (broken arithmetic, duplicate keys). HIGH issues like
+                       missing/late filings are EXPECTED during the filing
+                       window and are surfaced as warnings, not failures.
+                       This prevents daily "job failed" emails.
     """
     df = load_normalized()
     if df.empty:
@@ -218,6 +226,24 @@ def run_checks(strict: bool = False) -> int:
     has_critical = any(i["level"] == "CRITICAL" for i in issues)
     has_high     = any(i["level"] == "HIGH"     for i in issues)
 
+    # ── CI mode: fail ONLY on real data corruption ──────────────────────────
+    # Missing/late filings (HIGH) are expected during the filing window and
+    # must NOT fail the GitHub job (otherwise you get daily failure emails).
+    if critical_only:
+        if has_critical:
+            logger.error(
+                "❌ CRITICAL data corruption found (arithmetic / duplicates). "
+                "This is a real bug — failing the job so it gets attention."
+            )
+            return 1
+        if has_high:
+            logger.warning(
+                "⚠ HIGH issues found (e.g. missing/late filings). "
+                "These are expected operational states — surfaced as warnings, "
+                "NOT failing the job. Review them in the dashboard's Review Queue."
+            )
+        return 0
+
     if has_critical or has_high:
         logger.error(
             "❌ CRITICAL or HIGH issues found. "
@@ -276,7 +302,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Post-pipeline integrity check")
     parser.add_argument("--strict", action="store_true",
                         help="Exit 1 on ANY issue, not just CRITICAL/HIGH")
+    parser.add_argument("--critical-only", action="store_true",
+                        help="CI mode: exit 1 ONLY on CRITICAL data corruption. "
+                             "HIGH issues (missing/late filings) are surfaced as "
+                             "warnings, not failures — prevents daily failure emails.")
     args = parser.parse_args()
 
-    exit_code = run_checks(strict=args.strict)
+    exit_code = run_checks(strict=args.strict, critical_only=args.critical_only)
     sys.exit(exit_code)

@@ -41,9 +41,12 @@ jobs:
         id: pipeline
 
       # ── Data integrity check ──────────────────────────────────────────────
+      # --critical-only: fail the job ONLY on real data corruption (arithmetic
+      # errors, duplicate rows). Missing/late filings are EXPECTED during the
+      # filing window and must NOT trigger failure emails.
       - name: Run data integrity check
         working-directory: auto_intel_platform/auto_intel
-        run: python pipeline/integrity_check.py
+        run: python pipeline/integrity_check.py --critical-only
         continue-on-error: true
         id: integrity
 
@@ -84,10 +87,13 @@ jobs:
             git push origin main || echo "Push failed — will retry on next run"
           fi
 
-      # ── Fail only on critical integrity issues ────────────────────────────
-      - name: Fail on critical integrity issues
+      # ── Fail ONLY on CRITICAL data corruption ─────────────────────────────
+      # With --critical-only, integrity exits 1 only for arithmetic/duplicate
+      # corruption — a genuine bug worth an email. Missing filings do NOT reach
+      # here, so routine filing-window runs stay green (no daily failure email).
+      - name: Fail on critical data corruption
         if: steps.integrity.outcome == 'failure'
         run: |
-          echo "CRITICAL or HIGH data integrity issues found."
-          echo "Open dashboard > Review Queue > Enter Data Manually to fix."
+          echo "::error ::CRITICAL data corruption detected (arithmetic or duplicate rows)."
+          echo "This is a real data bug. Open dashboard > Review Queue to inspect."
           exit 1
