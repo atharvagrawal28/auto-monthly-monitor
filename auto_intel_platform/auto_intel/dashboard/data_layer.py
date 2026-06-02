@@ -38,6 +38,7 @@ DISPLAY_NAMES = {
     "ASHOKLEY":      "Ashok Leyland",
     "ESCORTS":       "Escorts Kubota",
     "EICHER":        "Eicher (Royal Enfield)",
+    "EICHER_VECV":   "Eicher VECV (Trucks & Buses)",
     "OLA_ELECTRIC":  "Ola Electric",
 }
 

@@ -292,9 +292,24 @@ def render():
             }
 
             show = gsub[["raw_category", "normalized_category", "units", "share"]].copy()
-            show["models"] = show["normalized_category"].map(
-                lambda c: _MODEL_MAP.get(c, c)  # fallback to category name
-            )
+            # Prefer real model names from the granular 'notes' column (populated
+            # from the actual press release); fall back to the static map, then
+            # to the category name. Never leave the Models column blank.
+            if "notes" in gsub.columns:
+                notes_series = gsub["notes"].fillna("").astype(str)
+            else:
+                notes_series = pd.Series([""] * len(gsub), index=gsub.index)
+
+            def _models(idx, cat):
+                note = notes_series.loc[idx] if idx in notes_series.index else ""
+                if note and note.lower() not in ("sample", "nan", ""):
+                    return note
+                return _MODEL_MAP.get(cat, cat)
+
+            show["models"] = [
+                _models(idx, cat)
+                for idx, cat in zip(gsub.index, gsub["normalized_category"])
+            ]
             show["units"] = show["units"].apply(C.fmt_units)
             show["share"] = show["share"].apply(lambda v: f"{v*100:.1f}%")
             show = show[["raw_category", "normalized_category", "models", "units", "share"]]
